@@ -1,0 +1,667 @@
+The system is: Linux - 5.4.0-81-generic - x86_64
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /opt/GCC/GCC-9.4.0/bin/gfortran 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Driving: /opt/GCC/GCC-9.4.0/bin/gfortran -v CMakeFortranCompilerId.F -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 9.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/cc8wiem5.f90 -quiet -v -imultiarch x86_64-linux-gnu CMakeFortranCompilerId.F -quiet -dumpbase CMakeFortranCompilerId.F -mtune=generic -march=x86-64 -auxbase CMakeFortranCompilerId -version -fintrinsic-modules-path /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude -o /tmp/ccX3Fsm7.s
+GNU Fortran (GCC) version 9.4.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/"
+ignoring duplicate directory "/home/kxzhu/Dixiao"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/opt/GCC/GCC-9.4.0/include"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/home/kxzhu/Downloads/xtl/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/boost/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-fftw/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/fftw/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-blas/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor/include"
+ignoring duplicate directory "."
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude
+ /home/kxzhu/Downloads/xtl/include
+ /home/kxzhu/Downloads/boost/include
+ /home/kxzhu/Downloads/xtensor-fftw/include
+ /home/kxzhu/Downloads/fftw/include
+ /home/kxzhu/Downloads/xtensor-blas/include
+ /home/kxzhu/Downloads/xtensor/include
+ /home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/
+ /home/kxzhu/Dixiao
+ .
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include
+ /usr/local/include
+ /opt/GCC/GCC-9.4.0/include
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 9.4.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o /tmp/ccWQZHib.o /tmp/ccX3Fsm7.s
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+Reading specs from /opt/GCC/GCC-9.4.0/lib64/../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/collect2 -plugin /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/liblto_plugin.so -plugin-opt=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmsFK7f.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtbegin.o -L/opt/GCC/GCC-9.4.0/lib64/../lib64 -L/opt/GCC/GCC-9.4.0/lib/../lib64 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/opt/GCC/GCC-9.4.0/lib64 -L/opt/GCC/GCC-9.4.0/lib -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../.. /tmp/ccWQZHib.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/home/kxzhu/latch/code/build/CMakeFiles/3.16.9/CompilerIdFortran/a.out"
+
+Determining if the Fortran compiler works passed with the following output:
+Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6bc29/fast && /usr/bin/make  -f CMakeFiles/cmTC_6bc29.dir/build.make CMakeFiles/cmTC_6bc29.dir/build
+make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_6bc29.dir/testFortranCompiler.f.o
+/opt/GCC/GCC-9.4.0/bin/gfortran    -c /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_6bc29.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTC_6bc29
+/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bc29.dir/link.txt --verbose=1
+/opt/GCC/GCC-9.4.0/bin/gfortran  -L/home/kxzhu/Downloads/ssl/lib -Wl,-rpath,/home/kxzhu/Downloads/ssl    CMakeFiles/cmTC_6bc29.dir/testFortranCompiler.f.o  -o cmTC_6bc29 
+make[1]: Leaving directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2c8af/fast && /usr/bin/make  -f CMakeFiles/cmTC_2c8af.dir/build.make CMakeFiles/cmTC_2c8af.dir/build
+make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o
+/opt/GCC/GCC-9.4.0/bin/gfortran   -v -c /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o
+Using built-in specs.
+COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/gfortran
+Target: x86_64-pc-linux-gnu
+Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 9.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64'
+ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/f951 /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cc2I5t6F.f90 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeFortranCompilerABI.F -quiet -dumpbase CMakeFortranCompilerABI.F -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o -version -fintrinsic-modules-path /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude -o /tmp/ccllV1YN.s
+GNU Fortran (GCC) version 9.4.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/"
+ignoring duplicate directory "/home/kxzhu/Dixiao"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/opt/GCC/GCC-9.4.0/include"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/home/kxzhu/Downloads/xtl/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/boost/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-fftw/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/fftw/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-blas/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor/include"
+ignoring duplicate directory "."
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude
+ /home/kxzhu/Downloads/xtl/include
+ /home/kxzhu/Downloads/boost/include
+ /home/kxzhu/Downloads/xtensor-fftw/include
+ /home/kxzhu/Downloads/fftw/include
+ /home/kxzhu/Downloads/xtensor-blas/include
+ /home/kxzhu/Downloads/xtensor/include
+ /home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/
+ /home/kxzhu/Dixiao
+ .
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include
+ /usr/local/include
+ /opt/GCC/GCC-9.4.0/include
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 9.4.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o /tmp/ccllV1YN.s
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64'
+Linking Fortran executable cmTC_2c8af
+/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8af.dir/link.txt --verbose=1
+/opt/GCC/GCC-9.4.0/bin/gfortran  -L/home/kxzhu/Downloads/ssl/lib -Wl,-rpath,/home/kxzhu/Downloads/ssl -v   CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o  -o cmTC_2c8af 
+Driving: /opt/GCC/GCC-9.4.0/bin/gfortran -L/home/kxzhu/Downloads/ssl/lib -Wl,-rpath,/home/kxzhu/Downloads/ssl -v CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o -o cmTC_2c8af -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 9.4.0 (GCC) 
+Reading specs from /opt/GCC/GCC-9.4.0/lib64/../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_2c8af' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_2c8af' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/collect2 -plugin /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/liblto_plugin.so -plugin-opt=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyQj5AL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2c8af /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtbegin.o -L/home/kxzhu/Downloads/ssl/lib -L/opt/GCC/GCC-9.4.0/lib64/../lib64 -L/opt/GCC/GCC-9.4.0/lib/../lib64 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/opt/GCC/GCC-9.4.0/lib64 -L/opt/GCC/GCC-9.4.0/lib -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../.. -rpath /home/kxzhu/Downloads/ssl CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_2c8af' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude]
+    add: [/home/kxzhu/Downloads/xtl/include]
+    add: [/home/kxzhu/Downloads/boost/include]
+    add: [/home/kxzhu/Downloads/xtensor-fftw/include]
+    add: [/home/kxzhu/Downloads/fftw/include]
+    add: [/home/kxzhu/Downloads/xtensor-blas/include]
+    add: [/home/kxzhu/Downloads/xtensor/include]
+    add: [/home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/]
+    add: [/home/kxzhu/Dixiao]
+    add: [.]
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include]
+    add: [/usr/local/include]
+    add: [/opt/GCC/GCC-9.4.0/include]
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude] ==> [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude]
+  collapse include dir [/home/kxzhu/Downloads/xtl/include] ==> [/home/kxzhu/Downloads/xtl/include]
+  collapse include dir [/home/kxzhu/Downloads/boost/include] ==> [/home/kxzhu/Downloads/boost/include]
+  collapse include dir [/home/kxzhu/Downloads/xtensor-fftw/include] ==> [/home/kxzhu/Downloads/xtensor-fftw/include]
+  collapse include dir [/home/kxzhu/Downloads/fftw/include] ==> [/home/kxzhu/Downloads/fftw/include]
+  collapse include dir [/home/kxzhu/Downloads/xtensor-blas/include] ==> [/home/kxzhu/Downloads/xtensor-blas/include]
+  collapse include dir [/home/kxzhu/Downloads/xtensor/include] ==> [/home/kxzhu/Downloads/xtensor/include]
+  collapse include dir [/home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/] ==> [/home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include]
+  collapse include dir [/home/kxzhu/Dixiao] ==> [/home/kxzhu/Dixiao]
+  skipping relative include dir [.]
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include] ==> [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/GCC/GCC-9.4.0/include] ==> [/opt/GCC/GCC-9.4.0/include]
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed] ==> [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude;/home/kxzhu/Downloads/xtl/include;/home/kxzhu/Downloads/boost/include;/home/kxzhu/Downloads/xtensor-fftw/include;/home/kxzhu/Downloads/fftw/include;/home/kxzhu/Downloads/xtensor-blas/include;/home/kxzhu/Downloads/xtensor/include;/home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include;/home/kxzhu/Dixiao;/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include;/usr/local/include;/opt/GCC/GCC-9.4.0/include;/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_2c8af/fast && /usr/bin/make  -f CMakeFiles/cmTC_2c8af.dir/build.make CMakeFiles/cmTC_2c8af.dir/build]
+  ignore line: [make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building Fortran object CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/opt/GCC/GCC-9.4.0/bin/gfortran   -v -c /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/gfortran]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c c++ fortran go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/f951 /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cc2I5t6F.f90 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeFortranCompilerABI.F -quiet -dumpbase CMakeFortranCompilerABI.F -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o -version -fintrinsic-modules-path /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude -o /tmp/ccllV1YN.s]
+  ignore line: [GNU Fortran (GCC) version 9.4.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Dixiao"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/opt/GCC/GCC-9.4.0/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtl/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/boost/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-fftw/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/fftw/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-blas/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtensor/include"]
+  ignore line: [ignoring duplicate directory "."]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/finclude]
+  ignore line: [ /home/kxzhu/Downloads/xtl/include]
+  ignore line: [ /home/kxzhu/Downloads/boost/include]
+  ignore line: [ /home/kxzhu/Downloads/xtensor-fftw/include]
+  ignore line: [ /home/kxzhu/Downloads/fftw/include]
+  ignore line: [ /home/kxzhu/Downloads/xtensor-blas/include]
+  ignore line: [ /home/kxzhu/Downloads/xtensor/include]
+  ignore line: [ /home/kxzhu/Downloads/lapack/lapack-3.11.0/LAPACKE/include/]
+  ignore line: [ /home/kxzhu/Dixiao]
+  ignore line: [ .]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/GCC/GCC-9.4.0/include]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU Fortran2008 (GCC) version 9.4.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o /tmp/ccllV1YN.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
+  ignore line: [COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking Fortran executable cmTC_2c8af]
+  ignore line: [/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8af.dir/link.txt --verbose=1]
+  ignore line: [/opt/GCC/GCC-9.4.0/bin/gfortran  -L/home/kxzhu/Downloads/ssl/lib -Wl -rpath /home/kxzhu/Downloads/ssl -v   CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o  -o cmTC_2c8af ]
+  ignore line: [Driving: /opt/GCC/GCC-9.4.0/bin/gfortran -L/home/kxzhu/Downloads/ssl/lib -Wl -rpath /home/kxzhu/Downloads/ssl -v CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o -o cmTC_2c8af -l gfortran -l m -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c c++ fortran go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (GCC) ]
+  ignore line: [Reading specs from /opt/GCC/GCC-9.4.0/lib64/../lib64/libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_2c8af' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_2c8af' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/collect2 -plugin /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/liblto_plugin.so -plugin-opt=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyQj5AL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2c8af /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtbegin.o -L/home/kxzhu/Downloads/ssl/lib -L/opt/GCC/GCC-9.4.0/lib64/../lib64 -L/opt/GCC/GCC-9.4.0/lib/../lib64 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/opt/GCC/GCC-9.4.0/lib64 -L/opt/GCC/GCC-9.4.0/lib -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../.. -rpath /home/kxzhu/Downloads/ssl CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccyQj5AL.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2c8af] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtbegin.o] ==> ignore
+    arg [-L/home/kxzhu/Downloads/ssl/lib] ==> dir [/home/kxzhu/Downloads/ssl/lib]
+    arg [-L/opt/GCC/GCC-9.4.0/lib64/../lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib64/../lib64]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/../lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib/../lib64]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0] ==> dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/opt/GCC/GCC-9.4.0/lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib64]
+    arg [-L/opt/GCC/GCC-9.4.0/lib] ==> dir [/opt/GCC/GCC-9.4.0/lib]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../..] ==> dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../..]
+    arg [-rpath] ==> ignore
+    arg [/home/kxzhu/Downloads/ssl] ==> ignore
+    arg [CMakeFiles/cmTC_2c8af.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/home/kxzhu/Downloads/ssl/lib] ==> [/home/kxzhu/Downloads/ssl/lib]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib64/../lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/../lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0] ==> [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib] ==> [/opt/GCC/GCC-9.4.0/lib]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../..] ==> [/opt/GCC/GCC-9.4.0/lib]
+  implicit libs: [gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/kxzhu/Downloads/ssl/lib;/opt/GCC/GCC-9.4.0/lib64;/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/opt/GCC/GCC-9.4.0/lib]
+  implicit fwks: []
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_37cc6/fast && /usr/bin/make  -f CMakeFiles/cmTC_37cc6.dir/build.make CMakeFiles/cmTC_37cc6.dir/build
+make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_37cc6.dir/testFortranCompilerF90.f90.o
+/opt/GCC/GCC-9.4.0/bin/gfortran    -c /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_37cc6.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTC_37cc6
+/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37cc6.dir/link.txt --verbose=1
+/opt/GCC/GCC-9.4.0/bin/gfortran  -L/home/kxzhu/Downloads/ssl/lib -Wl,-rpath,/home/kxzhu/Downloads/ssl    CMakeFiles/cmTC_37cc6.dir/testFortranCompilerF90.f90.o  -o cmTC_37cc6 
+make[1]: Leaving directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/GCC/GCC-9.4.0/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/kxzhu/latch/code/build/CMakeFiles/3.16.9/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_946fc/fast && /usr/bin/make  -f CMakeFiles/cmTC_946fc.dir/build.make CMakeFiles/cmTC_946fc.dir/build
+make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_946fc.dir/testCXXCompiler.cxx.o
+/opt/GCC/GCC-9.4.0/bin/g++     -o CMakeFiles/cmTC_946fc.dir/testCXXCompiler.cxx.o -c /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_946fc
+/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_946fc.dir/link.txt --verbose=1
+/opt/GCC/GCC-9.4.0/bin/g++     -L/home/kxzhu/Downloads/ssl/lib -Wl,-rpath,/home/kxzhu/Downloads/ssl  CMakeFiles/cmTC_946fc.dir/testCXXCompiler.cxx.o  -o cmTC_946fc 
+make[1]: Leaving directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a9286/fast && /usr/bin/make  -f CMakeFiles/cmTC_a9286.dir/build.make CMakeFiles/cmTC_a9286.dir/build
+make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o
+/opt/GCC/GCC-9.4.0/bin/g++    -v -o CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/g++
+Target: x86_64-pc-linux-gnu
+Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 9.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccFOwRYr.s
+GNU C++14 (GCC) version 9.4.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/opt/GCC/GCC-9.4.0/include"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/home/kxzhu/Downloads/xtl/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/boost/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-fftw/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/fftw/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-blas/include"
+ignoring duplicate directory "/home/kxzhu/Downloads/xtensor/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/kxzhu/Downloads/xtl/include
+ /home/kxzhu/Downloads/boost/include
+ /home/kxzhu/Downloads/xtensor-fftw/include
+ /home/kxzhu/Downloads/fftw/include
+ /home/kxzhu/Downloads/xtensor-blas/include
+ /home/kxzhu/Downloads/xtensor/include
+ .
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/x86_64-pc-linux-gnu
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/backward
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include
+ /usr/local/include
+ /opt/GCC/GCC-9.4.0/include
+ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 9.4.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2782ca6a7632c135709d6ae39d8ac934
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFOwRYr.s
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_a9286
+/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9286.dir/link.txt --verbose=1
+/opt/GCC/GCC-9.4.0/bin/g++     -L/home/kxzhu/Downloads/ssl/lib -Wl,-rpath,/home/kxzhu/Downloads/ssl -v CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a9286 
+Using built-in specs.
+COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/g++
+COLLECT_LTO_WRAPPER=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 9.4.0 (GCC) 
+COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_a9286' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/collect2 -plugin /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/liblto_plugin.so -plugin-opt=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqtVlzv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a9286 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtbegin.o -L/home/kxzhu/Downloads/ssl/lib -L/opt/GCC/GCC-9.4.0/lib64/../lib64 -L/opt/GCC/GCC-9.4.0/lib/../lib64 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/opt/GCC/GCC-9.4.0/lib64 -L/opt/GCC/GCC-9.4.0/lib -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../.. -rpath /home/kxzhu/Downloads/ssl CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_a9286' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/kxzhu/Downloads/xtl/include]
+    add: [/home/kxzhu/Downloads/boost/include]
+    add: [/home/kxzhu/Downloads/xtensor-fftw/include]
+    add: [/home/kxzhu/Downloads/fftw/include]
+    add: [/home/kxzhu/Downloads/xtensor-blas/include]
+    add: [/home/kxzhu/Downloads/xtensor/include]
+    add: [.]
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0]
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/x86_64-pc-linux-gnu]
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/backward]
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include]
+    add: [/usr/local/include]
+    add: [/opt/GCC/GCC-9.4.0/include]
+    add: [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/home/kxzhu/Downloads/xtl/include] ==> [/home/kxzhu/Downloads/xtl/include]
+  collapse include dir [/home/kxzhu/Downloads/boost/include] ==> [/home/kxzhu/Downloads/boost/include]
+  collapse include dir [/home/kxzhu/Downloads/xtensor-fftw/include] ==> [/home/kxzhu/Downloads/xtensor-fftw/include]
+  collapse include dir [/home/kxzhu/Downloads/fftw/include] ==> [/home/kxzhu/Downloads/fftw/include]
+  collapse include dir [/home/kxzhu/Downloads/xtensor-blas/include] ==> [/home/kxzhu/Downloads/xtensor-blas/include]
+  collapse include dir [/home/kxzhu/Downloads/xtensor/include] ==> [/home/kxzhu/Downloads/xtensor/include]
+  skipping relative include dir [.]
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0] ==> [/opt/GCC/GCC-9.4.0/include/c++/9.4.0]
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/x86_64-pc-linux-gnu] ==> [/opt/GCC/GCC-9.4.0/include/c++/9.4.0/x86_64-pc-linux-gnu]
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/backward] ==> [/opt/GCC/GCC-9.4.0/include/c++/9.4.0/backward]
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include] ==> [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/GCC/GCC-9.4.0/include] ==> [/opt/GCC/GCC-9.4.0/include]
+  collapse include dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed] ==> [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/home/kxzhu/Downloads/xtl/include;/home/kxzhu/Downloads/boost/include;/home/kxzhu/Downloads/xtensor-fftw/include;/home/kxzhu/Downloads/fftw/include;/home/kxzhu/Downloads/xtensor-blas/include;/home/kxzhu/Downloads/xtensor/include;/opt/GCC/GCC-9.4.0/include/c++/9.4.0;/opt/GCC/GCC-9.4.0/include/c++/9.4.0/x86_64-pc-linux-gnu;/opt/GCC/GCC-9.4.0/include/c++/9.4.0/backward;/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include;/usr/local/include;/opt/GCC/GCC-9.4.0/include;/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_a9286/fast && /usr/bin/make  -f CMakeFiles/cmTC_a9286.dir/build.make CMakeFiles/cmTC_a9286.dir/build]
+  ignore line: [make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/GCC/GCC-9.4.0/bin/g++    -v -o CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c c++ fortran go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake/cmake-3.16.9-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccFOwRYr.s]
+  ignore line: [GNU C++14 (GCC) version 9.4.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/opt/GCC/GCC-9.4.0/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtl/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/boost/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-fftw/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/fftw/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtensor-blas/include"]
+  ignore line: [ignoring duplicate directory "/home/kxzhu/Downloads/xtensor/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/kxzhu/Downloads/xtl/include]
+  ignore line: [ /home/kxzhu/Downloads/boost/include]
+  ignore line: [ /home/kxzhu/Downloads/xtensor-fftw/include]
+  ignore line: [ /home/kxzhu/Downloads/fftw/include]
+  ignore line: [ /home/kxzhu/Downloads/xtensor-blas/include]
+  ignore line: [ /home/kxzhu/Downloads/xtensor/include]
+  ignore line: [ .]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/x86_64-pc-linux-gnu]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../include/c++/9.4.0/backward]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/GCC/GCC-9.4.0/include]
+  ignore line: [ /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.4.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2782ca6a7632c135709d6ae39d8ac934]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFOwRYr.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
+  ignore line: [COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_a9286]
+  ignore line: [/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9286.dir/link.txt --verbose=1]
+  ignore line: [/opt/GCC/GCC-9.4.0/bin/g++     -L/home/kxzhu/Downloads/ssl/lib -Wl -rpath /home/kxzhu/Downloads/ssl -v CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a9286 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/GCC/GCC-9.4.0/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /home/jbgao/Downloads/gcc/objdir/../gcc-9.4.0/configure --prefix=/opt/GCC/GCC-9.4.0 --enable-languages=c c++ fortran go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/GCC/GCC-9.4.0/lib64/../lib64/:/opt/GCC/GCC-9.4.0/lib/../lib64/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/opt/GCC/GCC-9.4.0/lib64/:/opt/GCC/GCC-9.4.0/lib/:/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/home/kxzhu/Downloads/ssl/lib' '-v' '-o' 'cmTC_a9286' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/collect2 -plugin /opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/liblto_plugin.so -plugin-opt=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqtVlzv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a9286 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtbegin.o -L/home/kxzhu/Downloads/ssl/lib -L/opt/GCC/GCC-9.4.0/lib64/../lib64 -L/opt/GCC/GCC-9.4.0/lib/../lib64 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0 -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/opt/GCC/GCC-9.4.0/lib64 -L/opt/GCC/GCC-9.4.0/lib -L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../.. -rpath /home/kxzhu/Downloads/ssl CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/GCC/GCC-9.4.0/libexec/gcc/x86_64-pc-linux-gnu/9.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccqtVlzv.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a9286] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtbegin.o] ==> ignore
+    arg [-L/home/kxzhu/Downloads/ssl/lib] ==> dir [/home/kxzhu/Downloads/ssl/lib]
+    arg [-L/opt/GCC/GCC-9.4.0/lib64/../lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib64/../lib64]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/../lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib/../lib64]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0] ==> dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/opt/GCC/GCC-9.4.0/lib64] ==> dir [/opt/GCC/GCC-9.4.0/lib64]
+    arg [-L/opt/GCC/GCC-9.4.0/lib] ==> dir [/opt/GCC/GCC-9.4.0/lib]
+    arg [-L/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../..] ==> dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../..]
+    arg [-rpath] ==> ignore
+    arg [/home/kxzhu/Downloads/ssl] ==> ignore
+    arg [CMakeFiles/cmTC_a9286.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/home/kxzhu/Downloads/ssl/lib] ==> [/home/kxzhu/Downloads/ssl/lib]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib64/../lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/../lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0] ==> [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../../../lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib64] ==> [/opt/GCC/GCC-9.4.0/lib64]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib] ==> [/opt/GCC/GCC-9.4.0/lib]
+  collapse library dir [/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0/../../..] ==> [/opt/GCC/GCC-9.4.0/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/kxzhu/Downloads/ssl/lib;/opt/GCC/GCC-9.4.0/lib64;/opt/GCC/GCC-9.4.0/lib/gcc/x86_64-pc-linux-gnu/9.4.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/opt/GCC/GCC-9.4.0/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a15fd/fast && /usr/bin/make  -f CMakeFiles/cmTC_a15fd.dir/build.make CMakeFiles/cmTC_a15fd.dir/build
+make[1]: Entering directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a15fd.dir/CheckIncludeFile.cxx.o
+/opt/GCC/GCC-9.4.0/bin/g++    -std=c++17 -o CMakeFiles/cmTC_a15fd.dir/CheckIncludeFile.cxx.o -c /home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_a15fd
+/opt/cmake/cmake-3.16.9-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a15fd.dir/link.txt --verbose=1
+/opt/GCC/GCC-9.4.0/bin/g++     -L/home/kxzhu/Downloads/ssl/lib -Wl,-rpath,/home/kxzhu/Downloads/ssl  CMakeFiles/cmTC_a15fd.dir/CheckIncludeFile.cxx.o  -o cmTC_a15fd 
+make[1]: Leaving directory '/home/kxzhu/latch/code/build/CMakeFiles/CMakeTmp'
+
+
+

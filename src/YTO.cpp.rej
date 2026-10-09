@@ -1,0 +1,13 @@
+--- src/YTO.cpp
++++ src/YTO.cpp
+@@ -73,9 +73,10 @@
+     while (true)
+     {
+         item = _pq.find_min();
+         _r = _pq.prio(item);
+         if (_r == numeric_limits<double>::infinity())
+             return;
++        std::cerr << "YTO iter: r=" << _r << " ratio would give T=" << (6.58383 - 2*_r) << std::endl;
+         v = _g[_pq.inf(item)].nodeIndex;
+         e = _nodeKey[v];
+ 
