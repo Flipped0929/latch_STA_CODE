@@ -1,0 +1,41 @@
+cmake_minimum_required(VERSION 3.16)
+if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+    project(HowardValidationTests LANGUAGES CXX)
+    enable_testing()
+endif()
+find_package(Boost REQUIRED)
+find_path(HOWARD_GLPK_INCLUDE_DIR glpk.h REQUIRED)
+find_library(HOWARD_GLPK_LIBRARY glpk REQUIRED)
+add_executable(howard_validation_tests
+    test_validation.cpp ../src/howard.cpp ../src/LP.cpp ../src/timing_graph.cpp)
+target_compile_features(howard_validation_tests PRIVATE cxx_std_17)
+target_include_directories(howard_validation_tests PRIVATE
+    ${HOWARD_GLPK_INCLUDE_DIR} ../include ${Boost_INCLUDE_DIRS})
+target_link_libraries(howard_validation_tests PRIVATE ${HOWARD_GLPK_LIBRARY})
+add_test(NAME howard_validation COMMAND howard_validation_tests
+    "${CMAKE_CURRENT_SOURCE_DIR}/fixtures/self.out")
+set_tests_properties(howard_validation PROPERTIES TIMEOUT 30)
+add_executable(howard_graph_tests test_howard_graphs.cpp ../src/howard.cpp)
+target_compile_features(howard_graph_tests PRIVATE cxx_std_17)
+target_include_directories(howard_graph_tests PRIVATE ../include ${Boost_INCLUDE_DIRS})
+add_test(NAME howard_graphs COMMAND howard_graph_tests)
+set_tests_properties(howard_graphs PROPERTIES TIMEOUT 30)
+add_executable(howard_benchmark_validation
+    benchmark_validation.cpp ../src/howard.cpp ../src/LP.cpp ../src/timing_graph.cpp)
+target_compile_features(howard_benchmark_validation PRIVATE cxx_std_17)
+target_include_directories(howard_benchmark_validation PRIVATE
+    ${HOWARD_GLPK_INCLUDE_DIR} ../include ${Boost_INCLUDE_DIRS})
+target_link_libraries(howard_benchmark_validation PRIVATE ${HOWARD_GLPK_LIBRARY})
+foreach(mode baseline duty nonzero override)
+    add_test(NAME howard_s27_${mode} COMMAND howard_benchmark_validation
+        "${CMAKE_CURRENT_SOURCE_DIR}/../benchmark/s27.blif.out" ${mode})
+    set_tests_properties(howard_s27_${mode} PROPERTIES TIMEOUT 30)
+endforeach()
+if(TARGET main)
+    find_package(Python3 COMPONENTS Interpreter)
+    if(Python3_Interpreter_FOUND)
+        add_test(NAME howard_cli_validation COMMAND ${Python3_EXECUTABLE}
+            "${CMAKE_CURRENT_SOURCE_DIR}/test_cli_validation.py" $<TARGET_FILE:main>)
+        set_tests_properties(howard_cli_validation PROPERTIES TIMEOUT 150)
+    endif()
+endif()

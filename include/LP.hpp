@@ -4,6 +4,7 @@
 #include <chrono>
 #include <vector>
 #include "timing_graph.hpp"
+#include "solver_status.hpp"
 
 using namespace chrono;
 
@@ -23,7 +24,8 @@ nanoseconds mcrLP(const string &fileName, double &tlp,
                   const LatchTimingParams &params = {},
                   const LatchTimingParamMap &nodeParams = {},
                   double dutyCycle = 0.5,
-                  vector<TimingConstraintSlack> *slacks = nullptr);
+                  vector<TimingConstraintSlack> *slacks = nullptr,
+                  McrLpResult *result = nullptr);
 /**
  * @brief Linear programing for ell using GLPK
  * 

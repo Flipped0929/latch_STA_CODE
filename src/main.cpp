@@ -293,6 +293,9 @@ int main(int argc, char *const argv[])
      double t_howard, t_yto, t_ell, w_ell;
      vector<Edge> criticalCycle;
      vector<TimingConstraintSlack> constraintSlacks;
+     HowardResult howardResult;
+     McrLpResult lpResult;
+     PeriodComparison comparison;
      for (int iq = 0; iq < iter; iq++)
      {
           //solve mcr by howard
@@ -301,8 +304,32 @@ int main(int argc, char *const argv[])
           how.run();
           auto endTime = high_resolution_clock::now();
           time_howard += endTime - beginTime;
-          t_howard = tInitial - 2 * how.getRatio();
+          howardResult = how.getResult();
+          t_howard = howardResult.period;
           criticalCycle = how.getCycle();
+          // Verify the MCR results before running legacy comparisons or exporting reports.
+          time_lp_mcr += mcrLP(filename, t_lp_mcr, params, nodeParams,
+                              dutyCycle, &constraintSlacks, &lpResult);
+          comparison = comparePeriods(howardResult, lpResult, t_lp_mcr);
+          if (comparison.status != ComparisonStatus::Match)
+          {
+               cerr << "MCR validation failed at iteration " << iq + 1
+                    << ": Howard=" << statusName(howardResult.status)
+                    << ", LP=" << statusName(lpResult.status)
+                    << ", GLPK return=" << lpResult.returnCode
+                    << ", GLPK status=" << lpResult.solutionStatus << endl;
+               cerr << "Howard diagnostics: iterations=" << howardResult.iterations
+                    << ", cyclic SCCs=" << howardResult.cyclicComponents
+                    << ", max violation=" << howardResult.maxViolation
+                    << ", cycle ratio residual=" << howardResult.cycleResidual << endl;
+               if (comparison.status == ComparisonStatus::Mismatch)
+                    cerr << "Period mismatch: Howard=" << t_howard
+                         << " ns, LP=" << t_lp_mcr << " ns, gap=" << comparison.gap
+                         << " ns, tolerance=" << comparison.tolerance << " ns" << endl;
+               else
+                    cerr << "Periods are not comparable; no validated timing report was written." << endl;
+               return comparison.status == ComparisonStatus::Mismatch ? 3 : 2;
+          }
           if (!hasNonzeroParams)
           {
                // Legacy comparison only: the current YTO implementation is not trusted.
@@ -313,9 +340,6 @@ int main(int argc, char *const argv[])
                time_yto += endTime - beginTime;
                t_yto = tInitial - 2 * yto.getRatio();
           }
-          //solve mcr by LP
-          time_lp_mcr += mcrLP(filename, t_lp_mcr, params, nodeParams,
-                              dutyCycle, &constraintSlacks);
           if (!hasNonzeroParams)
           {
                //solve ell
@@ -344,6 +368,14 @@ int main(int argc, char *const argv[])
           cout << "Per-latch overrides: " << nodeParams.size()
                << " from " << nodeParamsFile << endl;
      cout << "MCR:" << endl;
+     cout << "Howard status: " << statusName(howardResult.status)
+          << ", iterations: " << howardResult.iterations
+          << ", cyclic SCCs: " << howardResult.cyclicComponents << endl;
+     cout << "Howard certificate: max violation=" << howardResult.maxViolation
+          << ", cycle ratio residual=" << howardResult.cycleResidual << endl;
+     cout << "LP status: " << statusName(lpResult.status) << endl;
+     cout << "Howard/LP validation: PASS, gap=" << comparison.gap
+          << " ns, tolerance=" << comparison.tolerance << " ns" << endl;
      cout << "\t"
           << "#vertices = " << boost::num_vertices(g_mcr) << ", #edges = " << boost::num_edges(g_mcr) << endl;
      cout << "\t"

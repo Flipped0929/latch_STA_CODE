@@ -3,21 +3,30 @@
 #include <iostream>
 
 #include "LP.hpp"
+#include "lp_result.hpp"
 
 nanoseconds mcrLP(const string &fileName, double &tlp,
                   const LatchTimingParams &params,
                   const LatchTimingParamMap &nodeParams,
                   double dutyCycle,
-                  vector<TimingConstraintSlack> *slacks)
+                  vector<TimingConstraintSlack> *slacks,
+                  McrLpResult *result)
 {
+    McrLpResult localResult;
+    if (result == nullptr) result = &localResult;
+    *result = McrLpResult{};
+    tlp = std::numeric_limits<double>::quiet_NaN();
+    if (slacks != nullptr) slacks->clear();
     auto change = high_resolution_clock::now() - high_resolution_clock::now();
     DelayGraph dg;
     double tInitial = 0;
     string fe = extension(fileName);
-    if (fe == "out")
-        assert(getDelayGraph(fileName, dg, tInitial));
-    else if (fe == "rslt")
-        assert(getRsltDelayGraph(fileName, dg, tInitial));
+    const bool parsed = fe == "out" ? getDelayGraph(fileName, dg, tInitial) :
+                        fe == "rslt" ? getRsltDelayGraph(fileName, dg, tInitial) : false;
+    if (!parsed || boost::num_vertices(dg) == 0) {
+        result->status = LpStatus::InputError;
+        return nanoseconds(0);
+    }
     //cout << "delay graph:" << endl;
     //cout << "#vertices = " << num_vertices(dg) << ", #edges = " << num_edges(dg) << endl;
     auto _v = boost::num_vertices(dg);
@@ -141,12 +150,16 @@ nanoseconds mcrLP(const string &fileName, double &tlp,
     // 	cout<<ia[i]<<" "<<ja[i]<<" "<<ar[i]<<endl;
     glp_load_matrix(lp, numcof, ia, ja, ar);
     auto beginTime = high_resolution_clock::now();
-    glp_simplex(lp, NULL);
+    result->returnCode = glp_simplex(lp, NULL);
+    result->solutionStatus = glp_get_status(lp);
     auto endTime = high_resolution_clock::now();
     change = endTime - beginTime + change;
 
-    tlp = glp_get_obj_val(lp);
-    if (slacks != nullptr)
+    const double objective = result->returnCode == 0 && result->solutionStatus == GLP_OPT ?
+                             glp_get_obj_val(lp) : std::numeric_limits<double>::quiet_NaN();
+    *result = classifyMcrLpResult(result->returnCode, result->solutionStatus, objective);
+    if (result->status == LpStatus::Optimal) tlp = objective;
+    if (slacks != nullptr && result->status == LpStatus::Optimal)
     {
         slacks->clear();
         slacks->reserve(numcon);

@@ -134,6 +134,9 @@ set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
 set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 
 enable_testing()
+if(BP_BUILD_TESTS)
+    add_subdirectory(tests)
+endif()
 
 # ---- Coverage (optional) ----
 if(ENABLE_COVERAGE)
