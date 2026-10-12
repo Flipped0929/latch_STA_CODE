@@ -2,7 +2,6 @@
 #include <fstream>
 #include <map>
 #include <vector>
-
 #include "timing_graph.hpp"
 #include "strOperation.hpp"
 
@@ -208,6 +207,8 @@ bool getRsltDelayGraph(const string &fileName, DelayGraph &dg, double &tInitial)
 
     return true;
 }
+/* LatchTimingParams takes the following four quantities into consideration
+setup,hold,clockToQ,dataToQ  */
 
 void getMcrGraph(const string &fileName, Graph &g, double &tInitial,
                  const LatchTimingParams &params,
@@ -220,10 +221,13 @@ void getMcrGraph(const string &fileName, Graph &g, double &tInitial,
         assert(getDelayGraph(fileName, dg, tInitial));
     else if (fe == "rslt")
         assert(getRsltDelayGraph(fileName, dg, tInitial));
-    // add the vertices to output grpah
-    map<size_t, vector<Vertex>> toSubNode; //a node in dg will split into four node:a,A,d,D
+    //load latch delay diagram by file extension
+    //.out：use getDelayGraph
+    //.rslt：use getRsltDelayGraph
+    map<size_t, vector<Vertex>> toSubNode; 
+    //a node in dg will split into four node:a,A,d,D
     //reference node
-    NodeProperties n_ref = {0, "REF", "t"};
+    N* n_ref = {0, "REF", "t"};
     Vertex ref = boost::add_vertex(n_ref, g);
     boost::graph_traits<DelayGraph>::vertex_iterator vi, viend;
     size_t numNode = 1;
@@ -292,6 +296,10 @@ void getMcrGraph(const string &fileName, Graph &g, double &tInitial,
     }
 
 }
+
+
+
+
 void getEllGraph(const string &fileName, Graph &g, double &tInitial)
 {
     DelayGraph dg;
