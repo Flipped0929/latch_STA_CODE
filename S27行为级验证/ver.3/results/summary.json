@@ -1,0 +1,56 @@
+{
+  "version": "ver.3",
+  "model": "ver.1 event simulator with XOR timing-graph behavior",
+  "v1_sim": "../ver.1/sim.py",
+  "v2_edges": "../ver.2/data/s27_edges.csv",
+  "edge_data_sha256": "4cb293f162e64b7e7f1b053e80f9c27258ae68fdd1756119f812a12d30c526ab",
+  "period_ns": 5.0607,
+  "window_ns": 0.39099,
+  "skews_ns": {
+    "G5": 1.52313,
+    "G6": 0.82549,
+    "G7": 0.70663,
+    "IO": 0.0
+  },
+  "hold_margin_ns": 0.1,
+  "float_tolerance_ns": 1e-08,
+  "nominal_static": {
+    "T": 5.0607,
+    "W": 0.39099,
+    "min_setup_slack_ns": -3.3306690738754696e-16,
+    "min_extended_setup_slack_ns": 0.39099000000000006,
+    "min_hold_slack_ns": -1.1102230246251565e-16,
+    "half_window_slack_ns": 2.13936,
+    "edge_pass": true,
+    "delay_range_valid": true,
+    "parameter_valid": true,
+    "window_pass": true,
+    "pass": true
+  },
+  "nominal_patterns": 256,
+  "nominal_behavior_pass_count": 256,
+  "nominal_behavior_pass_rate": 1.0,
+  "nominal_min_state_match": 1.0,
+  "boundary_grid_points": 81,
+  "boundary_grid_behavior_patterns": 14,
+  "boundary_grid_static_pass_count": 25,
+  "boundary_grid_behavior_pass_points": 69,
+  "perturbation_points": 25,
+  "perturbation_valid_points": 15,
+  "perturbation_static_pass_count": 1,
+  "perturbation_valid_static_pass_count": 1,
+  "perturbation_invalid_points": 10,
+  "boundary_grid_classification": {
+    "both_fail": 12,
+    "static_fail_behavior_pass": 44,
+    "both_pass": 25
+  },
+  "hold_margin_points": 5,
+  "files": {
+    "pattern_results": "pattern_results.csv",
+    "boundary_grid": "boundary_grid.csv",
+    "perturbation": "perturbation.csv",
+    "hold_sensitivity": "hold_sensitivity.csv",
+    "hold_margin_sensitivity": "hold_margin_sensitivity.csv"
+  }
+}
