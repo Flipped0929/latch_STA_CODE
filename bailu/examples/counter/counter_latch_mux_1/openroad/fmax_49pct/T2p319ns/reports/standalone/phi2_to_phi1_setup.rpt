@@ -1,0 +1,351 @@
+Startpoint: state_phi2_bit1 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_bit1 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  1.171095    1.171095   clock phi2 (rise edge)
+                                  0.000000    1.171095   clock source latency
+     1    0.005258    0.060000    0.000000    1.171095 ^ clk_2 (in)
+                                                         clk_2 (net)
+                      0.060227    0.000114    1.171209 ^ clkbuf_0_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.009140    0.044503    0.135323    1.306532 ^ clkbuf_0_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_2 (net)
+                      0.044503    0.000214    1.306746 ^ clkbuf_1_0__f_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.005558    0.035712    0.120623    1.427369 ^ clkbuf_1_0__f_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_0__leaf_clk_2 (net)
+                      0.035712    0.000138    1.427506 ^ state_phi2_bit1/GATE (sky130_fd_sc_hd__dlrtp_4)
+     5    0.024303    0.055922    0.357804    1.785310 v state_phi2_bit1/Q (sky130_fd_sc_hd__dlrtp_4)
+                                                         count_o[1] (net)
+                      0.055922    0.000595    1.785905 v _17_/A (sky130_fd_sc_hd__xor2_1)
+     1    0.002823    0.049578    0.157918    1.943823 v _17_/X (sky130_fd_sc_hd__xor2_1)
+                                                         _02_[1] (net)
+                      0.049578    0.000092    1.943915 v _11_/A1 (sky130_fd_sc_hd__mux2_1)
+     1    0.002447    0.052895    0.285327    2.229242 v _11_/X (sky130_fd_sc_hd__mux2_1)
+                                                         _03_ (net)
+                      0.052895    0.000075    2.229316 v state_phi1_bit1/D (sky130_fd_sc_hd__dlrtp_1)
+                                              2.229316   data arrival time
+
+                                  2.330595    2.330595   clock phi1 (rise edge)
+                                  0.000000    2.330595   clock source latency
+     1    0.005936    0.060000    0.000000    2.330595 ^ clk_1 (in)
+                                                         clk_1 (net)
+                      0.060122    0.000061    2.330656 ^ clkbuf_0_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.008255    0.042279    0.133123    2.463779 ^ clkbuf_0_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_1 (net)
+                      0.042279    0.000159    2.463938 ^ clkbuf_1_0__f_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     3    0.009432    0.045231    0.129410    2.593348 ^ clkbuf_1_0__f_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_0__leaf_clk_1 (net)
+                      0.045231    0.000218    2.593566 ^ state_phi1_bit1/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                 -0.050000    2.543566   inter-clock uncertainty
+                                  0.000000    2.543566   clock reconvergence pessimism
+                                  0.000000    2.543566   time borrowed from endpoint
+                                              2.543566   data required time
+---------------------------------------------------------------------------------------------
+                                              2.543566   data required time
+                                             -2.229316   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.314250   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 nominal pulse width                1.136310
+clock latency difference                0.016592
+library setup time                     -0.043470
+------------------------------------------------
+max time borrow                         1.109432
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi2_bit0 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_bit0 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  1.171095    1.171095   clock phi2 (rise edge)
+                                  0.000000    1.171095   clock source latency
+     1    0.005258    0.060000    0.000000    1.171095 ^ clk_2 (in)
+                                                         clk_2 (net)
+                      0.060227    0.000114    1.171209 ^ clkbuf_0_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.009140    0.044503    0.135323    1.306532 ^ clkbuf_0_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_2 (net)
+                      0.044503    0.000214    1.306746 ^ clkbuf_1_0__f_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.005558    0.035712    0.120623    1.427369 ^ clkbuf_1_0__f_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_0__leaf_clk_2 (net)
+                      0.035712    0.000138    1.427507 ^ state_phi2_bit0/GATE (sky130_fd_sc_hd__dlrtp_4)
+     6    0.029078    0.101350    0.405061    1.832568 ^ state_phi2_bit0/Q (sky130_fd_sc_hd__dlrtp_4)
+                                                         count_o[0] (net)
+                      0.101350    0.000369    1.832937 ^ _20_/A (sky130_fd_sc_hd__inv_1)
+     1    0.002781    0.031696    0.047840    1.880777 v _20_/Y (sky130_fd_sc_hd__inv_1)
+                                                         _01_[0] (net)
+                      0.031696    0.000080    1.880857 v _12_/A1 (sky130_fd_sc_hd__mux2_1)
+     1    0.002611    0.053799    0.282134    2.162991 v _12_/X (sky130_fd_sc_hd__mux2_1)
+                                                         _04_ (net)
+                      0.053799    0.000077    2.163068 v state_phi1_bit0/D (sky130_fd_sc_hd__dlrtp_1)
+                                              2.163068   data arrival time
+
+                                  2.330595    2.330595   clock phi1 (rise edge)
+                                  0.000000    2.330595   clock source latency
+     1    0.005936    0.060000    0.000000    2.330595 ^ clk_1 (in)
+                                                         clk_1 (net)
+                      0.060122    0.000061    2.330656 ^ clkbuf_0_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.008255    0.042279    0.133123    2.463779 ^ clkbuf_0_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_1 (net)
+                      0.042279    0.000159    2.463938 ^ clkbuf_1_0__f_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     3    0.009432    0.045231    0.129410    2.593348 ^ clkbuf_1_0__f_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_0__leaf_clk_1 (net)
+                      0.045231    0.000164    2.593512 ^ state_phi1_bit0/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                 -0.050000    2.543512   inter-clock uncertainty
+                                  0.000000    2.543512   clock reconvergence pessimism
+                                  0.000000    2.543512   time borrowed from endpoint
+                                              2.543512   data required time
+---------------------------------------------------------------------------------------------
+                                              2.543512   data required time
+                                             -2.163068   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.380445   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 nominal pulse width                1.136310
+clock latency difference                0.016595
+library setup time                     -0.043766
+------------------------------------------------
+max time borrow                         1.109139
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi2_bit0 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_toggle3 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  1.171095    1.171095   clock phi2 (rise edge)
+                                  0.000000    1.171095   clock source latency
+     1    0.005258    0.060000    0.000000    1.171095 ^ clk_2 (in)
+                                                         clk_2 (net)
+                      0.060227    0.000114    1.171209 ^ clkbuf_0_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.009140    0.044503    0.135323    1.306532 ^ clkbuf_0_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_2 (net)
+                      0.044503    0.000214    1.306746 ^ clkbuf_1_0__f_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.005558    0.035712    0.120623    1.427369 ^ clkbuf_1_0__f_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_0__leaf_clk_2 (net)
+                      0.035712    0.000138    1.427507 ^ state_phi2_bit0/GATE (sky130_fd_sc_hd__dlrtp_4)
+     6    0.029078    0.101350    0.405061    1.832568 ^ state_phi2_bit0/Q (sky130_fd_sc_hd__dlrtp_4)
+                                                         count_o[0] (net)
+                      0.101353    0.000728    1.833295 ^ _15_/C (sky130_fd_sc_hd__and3_1)
+     1    0.002894    0.050222    0.160173    1.993468 ^ _15_/X (sky130_fd_sc_hd__and3_1)
+                                                         carry3 (net)
+                      0.050222    0.000060    1.993528 ^ bit3_enable/B (sky130_fd_sc_hd__and2_4)
+     1    0.002095    0.029613    0.123599    2.117127 ^ bit3_enable/X (sky130_fd_sc_hd__and2_4)
+                                                         toggle3 (net)
+                      0.029613    0.000041    2.117168 ^ state_phi1_toggle3/D (sky130_fd_sc_hd__dlrtp_1)
+                                              2.117168   data arrival time
+
+                                  2.330595    2.330595   clock phi1 (rise edge)
+                                  0.000000    2.330595   clock source latency
+     1    0.005936    0.060000    0.000000    2.330595 ^ clk_1 (in)
+                                                         clk_1 (net)
+                      0.060122    0.000061    2.330656 ^ clkbuf_0_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.008255    0.042279    0.133123    2.463779 ^ clkbuf_0_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_1 (net)
+                      0.042279    0.000071    2.463850 ^ clkbuf_1_1__f_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     3    0.008959    0.044025    0.128244    2.592094 ^ clkbuf_1_1__f_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_1__leaf_clk_1 (net)
+                      0.044025    0.000167    2.592261 ^ state_phi1_toggle3/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                 -0.050000    2.542261   inter-clock uncertainty
+                                  0.000000    2.542261   clock reconvergence pessimism
+                                  0.000000    2.542261   time borrowed from endpoint
+                                              2.542261   data required time
+---------------------------------------------------------------------------------------------
+                                              2.542261   data required time
+                                             -2.117168   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.425093   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 nominal pulse width                1.136310
+clock latency difference                0.016782
+library setup time                     -0.220192
+------------------------------------------------
+max time borrow                         0.932900
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi2_bit0 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_toggle2 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  1.171095    1.171095   clock phi2 (rise edge)
+                                  0.000000    1.171095   clock source latency
+     1    0.005258    0.060000    0.000000    1.171095 ^ clk_2 (in)
+                                                         clk_2 (net)
+                      0.060227    0.000114    1.171209 ^ clkbuf_0_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.009140    0.044503    0.135323    1.306532 ^ clkbuf_0_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_2 (net)
+                      0.044503    0.000214    1.306746 ^ clkbuf_1_0__f_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.005558    0.035712    0.120623    1.427369 ^ clkbuf_1_0__f_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_0__leaf_clk_2 (net)
+                      0.035712    0.000138    1.427507 ^ state_phi2_bit0/GATE (sky130_fd_sc_hd__dlrtp_4)
+     6    0.029078    0.101350    0.405061    1.832568 ^ state_phi2_bit0/Q (sky130_fd_sc_hd__dlrtp_4)
+                                                         count_o[0] (net)
+                      0.101351    0.000504    1.833071 ^ _16_/B (sky130_fd_sc_hd__and3_1)
+     1    0.003726    0.057249    0.164434    1.997506 ^ _16_/X (sky130_fd_sc_hd__and3_1)
+                                                         toggle2 (net)
+                      0.057249    0.000129    1.997635 ^ state_phi1_toggle2/D (sky130_fd_sc_hd__dlrtp_1)
+                                              1.997635   data arrival time
+
+                                  2.330595    2.330595   clock phi1 (rise edge)
+                                  0.000000    2.330595   clock source latency
+     1    0.005936    0.060000    0.000000    2.330595 ^ clk_1 (in)
+                                                         clk_1 (net)
+                      0.060122    0.000061    2.330656 ^ clkbuf_0_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.008255    0.042279    0.133123    2.463779 ^ clkbuf_0_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_1 (net)
+                      0.042279    0.000071    2.463850 ^ clkbuf_1_1__f_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     3    0.008959    0.044025    0.128244    2.592094 ^ clkbuf_1_1__f_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_1__leaf_clk_1 (net)
+                      0.044025    0.000224    2.592318 ^ state_phi1_toggle2/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                 -0.050000    2.542318   inter-clock uncertainty
+                                  0.000000    2.542318   clock reconvergence pessimism
+                                  0.000000    2.542318   time borrowed from endpoint
+                                              2.542318   data required time
+---------------------------------------------------------------------------------------------
+                                              2.542318   data required time
+                                             -1.997635   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.544683   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 nominal pulse width                1.136310
+clock latency difference                0.016781
+library setup time                     -0.224907
+------------------------------------------------
+max time borrow                         0.928184
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi2_bit2 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_bit2 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  1.171095    1.171095   clock phi2 (rise edge)
+                                  0.000000    1.171095   clock source latency
+     1    0.005258    0.060000    0.000000    1.171095 ^ clk_2 (in)
+                                                         clk_2 (net)
+                      0.060227    0.000114    1.171209 ^ clkbuf_0_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.009140    0.044503    0.135323    1.306532 ^ clkbuf_0_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_2 (net)
+                      0.044503    0.000209    1.306741 ^ clkbuf_1_1__f_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.006410    0.037774    0.122731    1.429472 ^ clkbuf_1_1__f_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_1__leaf_clk_2 (net)
+                      0.037774    0.000170    1.429642 ^ state_phi2_bit2/GATE (sky130_fd_sc_hd__dlrtp_2)
+     3    0.018875    0.112540    0.378010    1.807651 ^ state_phi2_bit2/Q (sky130_fd_sc_hd__dlrtp_2)
+                                                         count_o[2] (net)
+                      0.112540    0.000486    1.808137 ^ state_phi1_bit2/D (sky130_fd_sc_hd__dlrtp_1)
+                                              1.808137   data arrival time
+
+                                  2.330595    2.330595   clock phi1 (rise edge)
+                                  0.000000    2.330595   clock source latency
+     1    0.005936    0.060000    0.000000    2.330595 ^ clk_1 (in)
+                                                         clk_1 (net)
+                      0.060122    0.000061    2.330656 ^ clkbuf_0_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.008255    0.042279    0.133123    2.463779 ^ clkbuf_0_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_1 (net)
+                      0.042279    0.000159    2.463938 ^ clkbuf_1_0__f_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     3    0.009432    0.045231    0.129410    2.593348 ^ clkbuf_1_0__f_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_0__leaf_clk_1 (net)
+                      0.045232    0.000258    2.593606 ^ state_phi1_bit2/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                 -0.050000    2.543606   inter-clock uncertainty
+                                  0.000000    2.543606   clock reconvergence pessimism
+                                  0.000000    2.543606   time borrowed from endpoint
+                                              2.543606   data required time
+---------------------------------------------------------------------------------------------
+                                              2.543606   data required time
+                                             -1.808137   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.735469   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 nominal pulse width                1.136310
+clock latency difference                0.016592
+library setup time                     -0.234186
+------------------------------------------------
+max time borrow                         0.918716
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi2_bit3 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_bit3 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  1.171095    1.171095   clock phi2 (rise edge)
+                                  0.000000    1.171095   clock source latency
+     1    0.005258    0.060000    0.000000    1.171095 ^ clk_2 (in)
+                                                         clk_2 (net)
+                      0.060227    0.000114    1.171209 ^ clkbuf_0_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.009140    0.044503    0.135323    1.306532 ^ clkbuf_0_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_2 (net)
+                      0.044503    0.000209    1.306741 ^ clkbuf_1_1__f_clk_2/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.006410    0.037774    0.122731    1.429472 ^ clkbuf_1_1__f_clk_2/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_1__leaf_clk_2 (net)
+                      0.037775    0.000195    1.429667 ^ state_phi2_bit3/GATE (sky130_fd_sc_hd__dlrtp_2)
+     2    0.014871    0.092529    0.363534    1.793201 ^ state_phi2_bit3/Q (sky130_fd_sc_hd__dlrtp_2)
+                                                         count_o[3] (net)
+                      0.092529    0.000404    1.793605 ^ state_phi1_bit3/D (sky130_fd_sc_hd__dlrtp_1)
+                                              1.793605   data arrival time
+
+                                  2.330595    2.330595   clock phi1 (rise edge)
+                                  0.000000    2.330595   clock source latency
+     1    0.005936    0.060000    0.000000    2.330595 ^ clk_1 (in)
+                                                         clk_1 (net)
+                      0.060122    0.000061    2.330656 ^ clkbuf_0_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     2    0.008255    0.042279    0.133123    2.463779 ^ clkbuf_0_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_0_clk_1 (net)
+                      0.042279    0.000071    2.463850 ^ clkbuf_1_1__f_clk_1/A (sky130_fd_sc_hd__clkbuf_4)
+     3    0.008959    0.044025    0.128244    2.592094 ^ clkbuf_1_1__f_clk_1/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         clknet_1_1__leaf_clk_1 (net)
+                      0.044025    0.000192    2.592286 ^ state_phi1_bit3/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                 -0.050000    2.542286   inter-clock uncertainty
+                                  0.000000    2.542286   clock reconvergence pessimism
+                                  0.000000    2.542286   time borrowed from endpoint
+                                              2.542286   data required time
+---------------------------------------------------------------------------------------------
+                                              2.542286   data required time
+                                             -1.793605   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.748681   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 nominal pulse width                1.136310
+clock latency difference                0.016781
+library setup time                     -0.230927
+------------------------------------------------
+max time borrow                         0.922164
+actual time borrow                      0.000000
+------------------------------------------------
+
+

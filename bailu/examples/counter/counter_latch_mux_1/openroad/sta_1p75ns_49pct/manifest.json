@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-11-08T05:23:45.862264+00:00",
+  "openroad": "OpenROAD 26Q2-1164-g08f67ee5ec ",
+  "opensta": "OpenSTA 3.1.0 d1e43c6f9f Copyright (c) 2026, Parallax Software, Inc.",
+  "netlist_source": "counter_sky130_2.v routed implementation",
+  "corner": "SKY130 HD TT / 25 C / 1.8 V / existing nominal OpenRCX SPEF",
+  "inputs": [
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/sta_1p75ns_49pct/counter.sdc",
+      "sha256": "6a0713b1cdda5c4c28332dc4eab018a31811ad215cf39de8d9993d21ed10b20f",
+      "bytes": 1521
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/sta_1p75ns_49pct/counter_before.sdc",
+      "sha256": "792d1955c5ffa98e77a2a4b18835c203253f0b5abcfce78afe749ffff2b9d1be",
+      "bytes": 1515
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/results/counter_routed.v",
+      "sha256": "b4eb8bd5ab73058937bec2efb81ae3eda9e6ef92d8a7a65c38de0f6d7c582a3b",
+      "bytes": 3629
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/results/counter.spef",
+      "sha256": "ef47215b78d0b3379e5b72e68ab831c1bfcc24b3c5b85599194f4b27bf17aae2",
+      "bytes": 26548
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/sky130_pdk/sky130_fd_sc_hd__tt_025C_1v80.lib",
+      "sha256": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+      "bytes": 12800135
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/scripts/config.tcl",
+      "sha256": "998e672a05f97411bfb22e7ddccd56ea5ef45525ce77b6499a35a83d5f261b32",
+      "bytes": 555
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/scripts/postroute_sta.tcl",
+      "sha256": "efcb9d5f391753abcb12f769a64d24314e148c6f6cb8388f84d0aa8df65c0dc0",
+      "bytes": 5251
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/sta_1p75ns_49pct/run_sta.tcl",
+      "sha256": "8e61f3dda2958c2d87c56f136d78c7e59ee7bc4aa9ed04f241356808555a1353",
+      "bytes": 387
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/sta_1p75ns_49pct/run.sh",
+      "sha256": "6a1f42010e1ab3be137833abbf5ed43d1cf761707e5e69f75a5f0c14fd8334b5",
+      "bytes": 355
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/openroad_sky130_2/sta_1p75ns_49pct/summarize.py",
+      "sha256": "43e0f87f656a0b669144c1a75b1c9945c2597e944950ad1eb6eedde6e2b45c3a",
+      "bytes": 12118
+    }
+  ],
+  "project_sdc_matches_snapshot": true,
+  "physical_artifacts_unchanged": [
+    "counter_routed.v",
+    "counter_routed.def",
+    "counter_routed.odb",
+    "counter.spef"
+  ],
+  "waveforms": {
+    "phi1": {
+      "period_ns": 1.75,
+      "rise_ns": 0.00875,
+      "fall_ns": 0.86625,
+      "high_ns": 0.8574999999999999,
+      "high_fraction": 0.48999999999999994
+    },
+    "phi2": {
+      "period_ns": 1.75,
+      "rise_ns": 0.88375,
+      "fall_ns": 1.74125,
+      "high_ns": 0.8574999999999999,
+      "high_fraction": 0.48999999999999994
+    }
+  },
+  "propagated_clocks": true,
+  "independent_sta_match": true,
+  "constraint_sanity_passed": true,
+  "endpoint_results": 48,
+  "negative_endpoint_slacks": 0,
+  "conventional_sta_passed": true,
+  "worst_slacks_ns": {
+    "max": 0.0,
+    "min": 0.027322
+  },
+  "tns_ns": {
+    "max": 0.0,
+    "min": 0.0
+  },
+  "slacks_ns": {
+    "data_setup": 0.0,
+    "data_hold": 0.027322,
+    "output_setup": 0.02006,
+    "output_hold": 0.497689,
+    "phi1_to_phi2_setup": 0.299176,
+    "phi1_to_phi2_hold": 0.267929,
+    "phi2_to_phi1_setup": 0.02975,
+    "phi2_to_phi1_hold": 0.299379,
+    "rst_n_setup": 0.265338,
+    "rst_n_hold": 0.215387
+  },
+  "output_setup_slacks_ns": {
+    "count[0]": 0.02006,
+    "count[1]": 0.028789,
+    "count[2]": 0.044925,
+    "count[3]": 0.059554
+  },
+  "maximum_reported_time_borrow_ns": 0.207303,
+  "pulse_width_slack_ns": 0.639732,
+  "clock_latency_ns": {
+    "phi1": {
+      "rise_min": 0.261666,
+      "rise_max": 0.263011,
+      "fall_min": 0.278448,
+      "fall_max": 0.279602
+    },
+    "phi2": {
+      "rise_min": 0.256411,
+      "rise_max": 0.258572,
+      "fall_min": 0.274473,
+      "fall_max": 0.276296
+    }
+  },
+  "nominal_sink_nonoverlap_gaps_ns": {
+    "phi1_to_phi2": -0.005691,
+    "phi2_to_next_phi1": 0.00287
+  },
+  "strict_nominal_nonoverlap_passed": false
+}

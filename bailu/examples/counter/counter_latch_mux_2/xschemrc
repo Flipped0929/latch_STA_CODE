@@ -1,0 +1,22 @@
+# Self-contained standard-cell symbols are resolved relative to this project.
+set project_library [file dirname [file normalize [info script]]]
+set XSCHEM_LIBRARY_PATH "$project_library:${XSCHEM_SHAREDIR}/xschem_library:${XSCHEM_SHAREDIR}/xschem_library/devices"
+set XSCHEM_START_WINDOW {}
+set local_netlist_dir 1
+set netlist_type spice
+set top_is_subckt 1
+set show_infowindow_after_netlist never
+set initial_geometry 1660x1050
+set zoom_full_center 1
+set draw_grid 0
+set dark_colorscheme 0
+set color_ps 1
+set change_lw 0
+set line_width 1.1
+set light_colors {
+  "#ffffff" "#0057a6" "#d6dce4" "#1f2937" "#1f2937"
+  "#be123c" "#0066cc" "#dc2626" "#7c6b00" "#007f86"
+  "#880088" "#00a050" "#0000cc" "#666600" "#557755"
+  "#aa2222" "#448c24" "#00a699" "#ce0097" "#b5ab36"
+  "#c55549" "#d6dce4"
+}

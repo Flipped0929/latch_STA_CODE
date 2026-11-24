@@ -1,0 +1,4 @@
+read_verilog -icells counter_gated.v
+hierarchy -check -top counter
+script retiming_core.ys
+write_verilog -noattr -noexpr counter_retimed.v

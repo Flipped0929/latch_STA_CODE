@@ -1,0 +1,16 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {type=primitive
+verilog_format="yosys_not @name ( .A( @@A ), .Y( @@Y ) );"
+template="name=U1"}
+V {}
+S {}
+E {}
+L 4 -70 0 -40 0 {}
+P 4 4 -40 -35 -40 35 35 0 -40 -35 {}
+A 4 41 0 6 0 360 {}
+L 4 47 0 70 0 {}
+B 5 -72.5 -2.5 -67.5 2.5 {name=A dir=in}
+B 5 67.5 -2.5 72.5 2.5 {name=Y dir=out}
+T {@name} -45 -85 0 0 0.25 0.25 {}
+T {NOT / $_NOT_} -45 -65 0 0 0.22 0.22 {}

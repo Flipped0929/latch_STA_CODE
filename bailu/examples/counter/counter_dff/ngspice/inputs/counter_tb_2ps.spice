@@ -1,0 +1,115 @@
+Counter postroute transistor transient: TT 25C 1.8V 1.8ns
+.lib "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.include "models/sky130_fd_sc_hd__and2_1.spice"
+.include "models/sky130_fd_sc_hd__clkbuf_4.spice"
+.include "models/sky130_fd_sc_hd__dfrtp_1.spice"
+.include "models/sky130_fd_sc_hd__inv_1.spice"
+.include "models/sky130_fd_sc_hd__mux2_1.spice"
+.include "models/sky130_fd_sc_hd__xor2_1.spice"
+.include "inputs/counter_postlayout.spice"
+.temp 25
+.option reltol=1e-4 abstol=1e-12 vntol=1e-6 method=trap maxord=2
+.option klu
+VDD vdd 0 1.8
+* 100ps full ramps give 60ps 20%-80% input slew; 50% clock duty = 50%.
+VCLK clk 0 PULSE(0 1.8 3.95n 0.10n 0.10n 0.80n 1.80n)
+VEN en 0 PWL(
++ 0 1.8
++ 62.550000n 1.8
++ 62.650000n 0
++ 64.350000n 0
++ 64.450000n 1.8
++ 66.150000n 1.8
++ 66.250000n 0
++ 67.950000n 0
++ 68.050000n 1.8
++ 69.750000n 1.8
++ 69.850000n 0
++ 71.550000n 0
++ 71.650000n 1.8
++ 73.350000n 1.8
++ 73.450000n 0
++ 75.150000n 0
++ 75.250000n 1.8
++ 76.950000n 1.8
++ 77.050000n 0
++ 78.750000n 0
++ 78.850000n 1.8
++ 80.550000n 1.8
++ 80.650000n 0
++ 82.350000n 0
++ 82.450000n 1.8
++ 84.150000n 1.8
++ 84.250000n 0
++ 85.950000n 0
++ 86.050000n 1.8
++ 87.750000n 1.8
++ 87.850000n 0
++ 89.550000n 0
++ 89.650000n 1.8
++ 91.350000n 1.8
++ 91.450000n 0
++ 93.150000n 0
++ 93.250000n 1.8
++ 94.950000n 1.8
++ 95.050000n 0
++ 96.750000n 0
++ 96.850000n 1.8
++ 98.550000n 1.8
++ 98.650000n 0
++ 100.350000n 0
++ 100.450000n 1.8
++ 102.150000n 1.8
++ 102.250000n 0
++ 103.950000n 0
++ 104.050000n 1.8
++ 105.750000n 1.8
++ 105.850000n 0
++ 107.550000n 0
++ 107.650000n 1.8
++ 109.350000n 1.8
++ 109.450000n 0
++ 111.150000n 0
++ 111.250000n 1.8
++ 112.950000n 1.8
++ 113.050000n 0
++ 114.750000n 0
++ 114.850000n 1.8
++ 116.550000n 1.8
++ 116.650000n 0
++ 118.350000n 0
++ 118.450000n 1.8
++ 147.150000n 1.8
++ 147.250000n 0
++ 161.550000n 0
++ 161.650000n 1.8)
+VRST rst_n 0 PWL(
++ 0 0
++ 2.600000n 0
++ 2.700000n 1.8
++ 126.700000n 1.8
++ 126.800000n 0
++ 127.600000n 0
++ 127.700000n 1.8
++ 138.170000n 1.8
++ 138.270000n 0
++ 138.550000n 0
++ 138.650000n 1.8)
+Xdut clk en rst_n count0 count1 count2 count3 vdd 0 counter_postlayout
+Cload0 count0 0 10f
+Cload1 count1 0 10f
+Cload2 count2 0 10f
+Cload3 count3 0 10f
+.save v(clk) v(en) v(rst_n) v(count0) v(count1) v(count2) v(count3) i(VDD) v(xdut.n0064) v(xdut.n0066) v(xdut.n0067) v(xdut.n0068) v(xdut.n0070) v(xdut.n0071) v(xdut.n0072) v(xdut.n0074) v(xdut.n0075) v(xdut.n0076) v(xdut.n0078) v(xdut.n0079)
+.control
+set noaskquit
+set filetype=binary
+set wr_singlescale
+set wr_vecnames
+set numdgt=12
+tran 2p 192.000000n 0 2p
+write results/transient.raw v(clk) v(en) v(rst_n) v(count0) v(count1) v(count2) v(count3) i(VDD) v(xdut.n0064) v(xdut.n0066) v(xdut.n0067) v(xdut.n0068) v(xdut.n0070) v(xdut.n0071) v(xdut.n0072) v(xdut.n0074) v(xdut.n0075) v(xdut.n0076) v(xdut.n0078) v(xdut.n0079)
+wrdata results/transient.tsv v(clk) v(en) v(rst_n) v(count0) v(count1) v(count2) v(count3) i(VDD) v(xdut.n0064) v(xdut.n0066) v(xdut.n0067) v(xdut.n0068) v(xdut.n0070) v(xdut.n0071) v(xdut.n0072) v(xdut.n0074) v(xdut.n0075) v(xdut.n0076) v(xdut.n0078) v(xdut.n0079)
+quit
+.endc
+.end

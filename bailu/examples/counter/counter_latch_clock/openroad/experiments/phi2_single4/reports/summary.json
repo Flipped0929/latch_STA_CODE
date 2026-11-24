@@ -1,0 +1,77 @@
+{
+  "corner": "TT, 25 C, 1.80 V; ORFS sky130hd default RCX model index 0",
+  "period_ns": 1.75,
+  "die_um": [
+    60,
+    60
+  ],
+  "core_um": [
+    48.76,
+    48.96
+  ],
+  "original_cells": 18,
+  "routed_timing_cells": 23,
+  "clock_buffers": 4,
+  "clock_dummy_loads": 1,
+  "physical_instances": 336,
+  "routed_nets": 26,
+  "spef_nets": 26,
+  "timing_ns": {
+    "worst slack max": 0.024927,
+    "worst slack min": -0.179876,
+    "tns max": 0.0,
+    "tns min": -0.759371
+  },
+  "max_violating_endpoints": [],
+  "min_violating_endpoints": [
+    "enable_phi1 (positive level-sensitive latch clocked by phi1)",
+    "state_phi2_bit0 (removal check against falling-edge clock phi2)",
+    "state_phi2_bit1 (removal check against falling-edge clock phi2)",
+    "state_phi2_bit2 (removal check against falling-edge clock phi2)",
+    "state_phi2_bit3 (removal check against falling-edge clock phi2)"
+  ],
+  "worst_max": {
+    "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+    "endpoint": "count[0] (output port clocked by phi1)",
+    "group": "phi1",
+    "slack_ns": 0.024927
+  },
+  "worst_min": {
+    "startpoint": "rst_n (input port clocked by phi2)",
+    "endpoint": "state_phi2_bit2 (removal check against falling-edge clock phi2)",
+    "group": "asynchronous",
+    "slack_ns": -0.179876
+  },
+  "original_cell_connectivity_preserved": true,
+  "output_latch_sizes_match_mux_reference": true,
+  "intentional_cell_resizing": {
+    "state_phi2_bit0": {
+      "input": "sky130_fd_sc_hd__dlrtp_1",
+      "routed": "sky130_fd_sc_hd__dlrtp_4"
+    },
+    "state_phi2_bit1": {
+      "input": "sky130_fd_sc_hd__dlrtp_1",
+      "routed": "sky130_fd_sc_hd__dlrtp_4"
+    },
+    "state_phi2_bit2": {
+      "input": "sky130_fd_sc_hd__dlrtp_1",
+      "routed": "sky130_fd_sc_hd__dlrtp_2"
+    },
+    "state_phi2_bit3": {
+      "input": "sky130_fd_sc_hd__dlrtp_1",
+      "routed": "sky130_fd_sc_hd__dlrtp_2"
+    }
+  },
+  "spef_coverage_complete": true,
+  "sha256": {
+    "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_clock/counter_sky130.v": "f25e7c5c4ea8a95408b928123b7a5a2c23c20d6a8d158a0ede165dac704d8dee",
+    "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_clock/counter.sdc": "f4d082cdfd23cde88d0ac11c0414e8a011f5822f0cec1800f97acf86929aaae5",
+    "/home/bailufrost/eda/OpenROAD-flow-scripts-live/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+    "/home/bailufrost/eda/OpenROAD-flow-scripts-live/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef": "8e99b4e8b016db0713029ebcae6b2cc2aedd9c2c49682e2f23521dd0b1a2085e",
+    "/home/bailufrost/eda/OpenROAD-flow-scripts-live/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef": "44180aaa0068b1fcb0789f128b090304c01ad48f511d3f7afa66c90b3e176ec5",
+    "/home/bailufrost/eda/OpenROAD-flow-scripts-live/flow/platforms/sky130hd/rcx_patterns.rules": "d5bd9b1077ceac9929416abca272a6d52e51cd9a575453a31d129817bb286476",
+    "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_clock/openroad/inputs/output_latch_sizes.tsv": "b3ffdab31ff351a3cfed4195a464a23ff55ad4807100cd86bb10287dff9d1763",
+    "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_clock/openroad/inputs/mux_reference_counter_routed.v": "b4eb8bd5ab73058937bec2efb81ae3eda9e6ef92d8a7a65c38de0f6d7c582a3b",
+    "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_clock/openroad/scripts/clock_tree.tcl": "8067daaa8b30dbf9c15e6fc2aca094f1f1d5cf1dd4e2f0da8b8715ae6773738d"
+  }
+}

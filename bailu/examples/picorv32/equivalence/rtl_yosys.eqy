@@ -1,0 +1,66 @@
+# Run from examples/picorv32:
+# eqy -d equivalence/rtl_yosys equivalence/rtl_yosys.eqy
+# RTL defaults match trans/run_flow.sh, which applies no parameter overrides.
+# Do not enable FORMAL: it adds CPU properties and environment restrictions.
+
+[gold]
+read_verilog picorv32.v
+prep -top picorv32 -flatten
+memory_map
+opt_clean
+check -assert
+
+[gate]
+# Expand the actual Yosys primitive models; do not load them as blackboxes.
+read_verilog +/simcells.v
+read_verilog picorv32_latch/picorv32_yosys.v
+prep -top picorv32 -flatten
+check -assert
+
+[strategy induction]
+use sat
+depth 10
+
+[strategy pdr]
+use sby
+engine abc pdr
+option aigsmt z3
+timeout 3000
+
+[collect picorv32]
+bind pcpi_rs1
+bind pcpi_rs2
+
+[partition picorv32]
+# 合并比较结果与使用这些结果的分支判断逻辑。
+merge alu_out_0,alu_eq,alu_lts,alu_ltu
+
+# 将存储器信号与对应的调试别名放在一起检查。
+merge mem_addr,dbg_mem_addr
+merge mem_wdata,dbg_mem_wdata
+merge mem_wstrb,dbg_mem_wstrb
+merge mem_valid,dbg_mem_valid
+merge mem_instr,dbg_mem_instr
+
+# 保留调试别名与实际接口信号的关系。
+sticky dbg_mem_*
+
+# 保留前瞻地址、写数据与生成逻辑的关系。
+sticky mem_la_*
+
+# 保留存储器握手和各级读数据之间的关系。
+sticky mem_xfer
+sticky mem_rdata_*
+
+# 保留译码字段、指令标志和组合分类信号的关系。
+sticky decoded_*
+sticky instr_*
+sticky is_*
+
+sticky compressed_instr
+sticky do_waitirq
+
+[match picorv32]
+gold-nomatch cpu_state
+gold-nomatch next_pc
+gold-nomatch mem_wordsize

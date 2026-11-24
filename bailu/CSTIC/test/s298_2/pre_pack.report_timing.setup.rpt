@@ -1,0 +1,1365 @@
+#Timing report of worst 14 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n855.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+[563].in[0] (.names)                                             0.000    16.954
+| (primitive '.names' combinational delay)                       0.235    17.189
+[563].out[0] (.names)                                            0.000    17.189
+| (inter-cluster net delay estimate)                             1.338    18.527
+[5782].in[0] (.names)                                            0.000    18.527
+| (primitive '.names' combinational delay)                       0.235    18.762
+[5782].out[0] (.names)                                           0.000    18.762
+| (inter-cluster net delay estimate)                             1.338    20.100
+[5788].in[0] (.names)                                            0.000    20.100
+| (primitive '.names' combinational delay)                       0.235    20.335
+[5788].out[0] (.names)                                           0.000    20.335
+| (inter-cluster net delay estimate)                             1.338    21.673
+[5791].in[0] (.names)                                            0.000    21.673
+| (primitive '.names' combinational delay)                       0.235    21.908
+[5791].out[0] (.names)                                           0.000    21.908
+| (inter-cluster net delay estimate)                             1.338    23.246
+n_n52.in[0] (.names)                                             0.000    23.246
+| (primitive '.names' combinational delay)                       0.235    23.481
+n_n52.out[0] (.names)                                            0.000    23.481
+| (inter-cluster net delay estimate)                             1.338    24.818
+[535].in[0] (.names)                                             0.000    24.818
+| (primitive '.names' combinational delay)                       0.235    25.053
+[535].out[0] (.names)                                            0.000    25.053
+| (inter-cluster net delay estimate)                             1.338    26.391
+[6013].in[0] (.names)                                            0.000    26.391
+| (primitive '.names' combinational delay)                       0.235    26.626
+[6013].out[0] (.names)                                           0.000    26.626
+| (inter-cluster net delay estimate)                             1.338    27.964
+[6017].in[0] (.names)                                            0.000    27.964
+| (primitive '.names' combinational delay)                       0.235    28.199
+[6017].out[0] (.names)                                           0.000    28.199
+| (inter-cluster net delay estimate)                             1.338    29.537
+[6019].in[0] (.names)                                            0.000    29.537
+| (primitive '.names' combinational delay)                       0.235    29.772
+[6019].out[0] (.names)                                           0.000    29.772
+| (inter-cluster net delay estimate)                             1.338    31.109
+n_n50.in[1] (.names)                                             0.000    31.109
+| (primitive '.names' combinational delay)                       0.235    31.344
+n_n50.out[0] (.names)                                            0.000    31.344
+| (inter-cluster net delay estimate)                             1.338    32.682
+[478].in[0] (.names)                                             0.000    32.682
+| (primitive '.names' combinational delay)                       0.235    32.917
+[478].out[0] (.names)                                            0.000    32.917
+| (inter-cluster net delay estimate)                             1.338    34.255
+[6362].in[0] (.names)                                            0.000    34.255
+| (primitive '.names' combinational delay)                       0.235    34.490
+[6362].out[0] (.names)                                           0.000    34.490
+| (inter-cluster net delay estimate)                             1.338    35.828
+[6370].in[0] (.names)                                            0.000    35.828
+| (primitive '.names' combinational delay)                       0.235    36.063
+[6370].out[0] (.names)                                           0.000    36.063
+| (inter-cluster net delay estimate)                             1.338    37.400
+[6374].in[0] (.names)                                            0.000    37.400
+| (primitive '.names' combinational delay)                       0.235    37.635
+[6374].out[0] (.names)                                           0.000    37.635
+| (inter-cluster net delay estimate)                             1.338    38.973
+[6376].in[0] (.names)                                            0.000    38.973
+| (primitive '.names' combinational delay)                       0.235    39.208
+[6376].out[0] (.names)                                           0.000    39.208
+| (inter-cluster net delay estimate)                             1.338    40.546
+n_n49.in[1] (.names)                                             0.000    40.546
+| (primitive '.names' combinational delay)                       0.235    40.781
+n_n49.out[0] (.names)                                            0.000    40.781
+| (inter-cluster net delay estimate)                             1.338    42.119
+[31].in[0] (.names)                                              0.000    42.119
+| (primitive '.names' combinational delay)                       0.235    42.354
+[31].out[0] (.names)                                             0.000    42.354
+| (inter-cluster net delay estimate)                             1.338    43.691
+[9131].in[0] (.names)                                            0.000    43.691
+| (primitive '.names' combinational delay)                       0.235    43.926
+[9131].out[0] (.names)                                           0.000    43.926
+| (inter-cluster net delay estimate)                             1.338    45.264
+[9147].in[0] (.names)                                            0.000    45.264
+| (primitive '.names' combinational delay)                       0.235    45.499
+[9147].out[0] (.names)                                           0.000    45.499
+| (inter-cluster net delay estimate)                             1.338    46.837
+[9155].in[0] (.names)                                            0.000    46.837
+| (primitive '.names' combinational delay)                       0.235    47.072
+[9155].out[0] (.names)                                           0.000    47.072
+| (inter-cluster net delay estimate)                             1.338    48.410
+[9159].in[0] (.names)                                            0.000    48.410
+| (primitive '.names' combinational delay)                       0.235    48.645
+[9159].out[0] (.names)                                           0.000    48.645
+| (inter-cluster net delay estimate)                             1.338    49.983
+[9161].in[0] (.names)                                            0.000    49.983
+| (primitive '.names' combinational delay)                       0.235    50.218
+[9161].out[0] (.names)                                           0.000    50.218
+| (inter-cluster net delay estimate)                             1.338    51.555
+n_n48.in[1] (.names)                                             0.000    51.555
+| (primitive '.names' combinational delay)                       0.235    51.790
+n_n48.out[0] (.names)                                            0.000    51.790
+| (inter-cluster net delay estimate)                             1.338    53.128
+n_n855.D[0] (.latch)                                             0.000    53.128
+data arrival time                                                         53.128
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n855.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -53.128
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -51.856
+
+
+#Path 2
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n854.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+[563].in[0] (.names)                                             0.000    16.954
+| (primitive '.names' combinational delay)                       0.235    17.189
+[563].out[0] (.names)                                            0.000    17.189
+| (inter-cluster net delay estimate)                             1.338    18.527
+[5782].in[0] (.names)                                            0.000    18.527
+| (primitive '.names' combinational delay)                       0.235    18.762
+[5782].out[0] (.names)                                           0.000    18.762
+| (inter-cluster net delay estimate)                             1.338    20.100
+[5788].in[0] (.names)                                            0.000    20.100
+| (primitive '.names' combinational delay)                       0.235    20.335
+[5788].out[0] (.names)                                           0.000    20.335
+| (inter-cluster net delay estimate)                             1.338    21.673
+[5791].in[0] (.names)                                            0.000    21.673
+| (primitive '.names' combinational delay)                       0.235    21.908
+[5791].out[0] (.names)                                           0.000    21.908
+| (inter-cluster net delay estimate)                             1.338    23.246
+n_n52.in[0] (.names)                                             0.000    23.246
+| (primitive '.names' combinational delay)                       0.235    23.481
+n_n52.out[0] (.names)                                            0.000    23.481
+| (inter-cluster net delay estimate)                             1.338    24.818
+[535].in[0] (.names)                                             0.000    24.818
+| (primitive '.names' combinational delay)                       0.235    25.053
+[535].out[0] (.names)                                            0.000    25.053
+| (inter-cluster net delay estimate)                             1.338    26.391
+[6013].in[0] (.names)                                            0.000    26.391
+| (primitive '.names' combinational delay)                       0.235    26.626
+[6013].out[0] (.names)                                           0.000    26.626
+| (inter-cluster net delay estimate)                             1.338    27.964
+[6017].in[0] (.names)                                            0.000    27.964
+| (primitive '.names' combinational delay)                       0.235    28.199
+[6017].out[0] (.names)                                           0.000    28.199
+| (inter-cluster net delay estimate)                             1.338    29.537
+[6019].in[0] (.names)                                            0.000    29.537
+| (primitive '.names' combinational delay)                       0.235    29.772
+[6019].out[0] (.names)                                           0.000    29.772
+| (inter-cluster net delay estimate)                             1.338    31.109
+n_n50.in[1] (.names)                                             0.000    31.109
+| (primitive '.names' combinational delay)                       0.235    31.344
+n_n50.out[0] (.names)                                            0.000    31.344
+| (inter-cluster net delay estimate)                             1.338    32.682
+[478].in[0] (.names)                                             0.000    32.682
+| (primitive '.names' combinational delay)                       0.235    32.917
+[478].out[0] (.names)                                            0.000    32.917
+| (inter-cluster net delay estimate)                             1.338    34.255
+[6362].in[0] (.names)                                            0.000    34.255
+| (primitive '.names' combinational delay)                       0.235    34.490
+[6362].out[0] (.names)                                           0.000    34.490
+| (inter-cluster net delay estimate)                             1.338    35.828
+[6370].in[0] (.names)                                            0.000    35.828
+| (primitive '.names' combinational delay)                       0.235    36.063
+[6370].out[0] (.names)                                           0.000    36.063
+| (inter-cluster net delay estimate)                             1.338    37.400
+[6374].in[0] (.names)                                            0.000    37.400
+| (primitive '.names' combinational delay)                       0.235    37.635
+[6374].out[0] (.names)                                           0.000    37.635
+| (inter-cluster net delay estimate)                             1.338    38.973
+[6376].in[0] (.names)                                            0.000    38.973
+| (primitive '.names' combinational delay)                       0.235    39.208
+[6376].out[0] (.names)                                           0.000    39.208
+| (inter-cluster net delay estimate)                             1.338    40.546
+n_n49.in[1] (.names)                                             0.000    40.546
+| (primitive '.names' combinational delay)                       0.235    40.781
+n_n49.out[0] (.names)                                            0.000    40.781
+| (inter-cluster net delay estimate)                             1.338    42.119
+[172].in[0] (.names)                                             0.000    42.119
+| (primitive '.names' combinational delay)                       0.235    42.354
+[172].out[0] (.names)                                            0.000    42.354
+| (inter-cluster net delay estimate)                             1.338    43.691
+[8720].in[0] (.names)                                            0.000    43.691
+| (primitive '.names' combinational delay)                       0.235    43.926
+[8720].out[0] (.names)                                           0.000    43.926
+| (inter-cluster net delay estimate)                             1.338    45.264
+[8736].in[0] (.names)                                            0.000    45.264
+| (primitive '.names' combinational delay)                       0.235    45.499
+[8736].out[0] (.names)                                           0.000    45.499
+| (inter-cluster net delay estimate)                             1.338    46.837
+[8744].in[0] (.names)                                            0.000    46.837
+| (primitive '.names' combinational delay)                       0.235    47.072
+[8744].out[0] (.names)                                           0.000    47.072
+| (inter-cluster net delay estimate)                             1.338    48.410
+[8748].in[0] (.names)                                            0.000    48.410
+| (primitive '.names' combinational delay)                       0.235    48.645
+[8748].out[0] (.names)                                           0.000    48.645
+| (inter-cluster net delay estimate)                             1.338    49.983
+[8750].in[0] (.names)                                            0.000    49.983
+| (primitive '.names' combinational delay)                       0.235    50.218
+[8750].out[0] (.names)                                           0.000    50.218
+| (inter-cluster net delay estimate)                             1.338    51.555
+n_n47.in[1] (.names)                                             0.000    51.555
+| (primitive '.names' combinational delay)                       0.235    51.790
+n_n47.out[0] (.names)                                            0.000    51.790
+| (inter-cluster net delay estimate)                             1.338    53.128
+n_n854.D[0] (.latch)                                             0.000    53.128
+data arrival time                                                         53.128
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n854.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -53.128
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -51.856
+
+
+#Path 3
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n853.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+[563].in[0] (.names)                                             0.000    16.954
+| (primitive '.names' combinational delay)                       0.235    17.189
+[563].out[0] (.names)                                            0.000    17.189
+| (inter-cluster net delay estimate)                             1.338    18.527
+[5782].in[0] (.names)                                            0.000    18.527
+| (primitive '.names' combinational delay)                       0.235    18.762
+[5782].out[0] (.names)                                           0.000    18.762
+| (inter-cluster net delay estimate)                             1.338    20.100
+[5788].in[0] (.names)                                            0.000    20.100
+| (primitive '.names' combinational delay)                       0.235    20.335
+[5788].out[0] (.names)                                           0.000    20.335
+| (inter-cluster net delay estimate)                             1.338    21.673
+[5791].in[0] (.names)                                            0.000    21.673
+| (primitive '.names' combinational delay)                       0.235    21.908
+[5791].out[0] (.names)                                           0.000    21.908
+| (inter-cluster net delay estimate)                             1.338    23.246
+n_n52.in[0] (.names)                                             0.000    23.246
+| (primitive '.names' combinational delay)                       0.235    23.481
+n_n52.out[0] (.names)                                            0.000    23.481
+| (inter-cluster net delay estimate)                             1.338    24.818
+[535].in[0] (.names)                                             0.000    24.818
+| (primitive '.names' combinational delay)                       0.235    25.053
+[535].out[0] (.names)                                            0.000    25.053
+| (inter-cluster net delay estimate)                             1.338    26.391
+[6013].in[0] (.names)                                            0.000    26.391
+| (primitive '.names' combinational delay)                       0.235    26.626
+[6013].out[0] (.names)                                           0.000    26.626
+| (inter-cluster net delay estimate)                             1.338    27.964
+[6017].in[0] (.names)                                            0.000    27.964
+| (primitive '.names' combinational delay)                       0.235    28.199
+[6017].out[0] (.names)                                           0.000    28.199
+| (inter-cluster net delay estimate)                             1.338    29.537
+[6019].in[0] (.names)                                            0.000    29.537
+| (primitive '.names' combinational delay)                       0.235    29.772
+[6019].out[0] (.names)                                           0.000    29.772
+| (inter-cluster net delay estimate)                             1.338    31.109
+n_n50.in[1] (.names)                                             0.000    31.109
+| (primitive '.names' combinational delay)                       0.235    31.344
+n_n50.out[0] (.names)                                            0.000    31.344
+| (inter-cluster net delay estimate)                             1.338    32.682
+[478].in[0] (.names)                                             0.000    32.682
+| (primitive '.names' combinational delay)                       0.235    32.917
+[478].out[0] (.names)                                            0.000    32.917
+| (inter-cluster net delay estimate)                             1.338    34.255
+[6362].in[0] (.names)                                            0.000    34.255
+| (primitive '.names' combinational delay)                       0.235    34.490
+[6362].out[0] (.names)                                           0.000    34.490
+| (inter-cluster net delay estimate)                             1.338    35.828
+[6370].in[0] (.names)                                            0.000    35.828
+| (primitive '.names' combinational delay)                       0.235    36.063
+[6370].out[0] (.names)                                           0.000    36.063
+| (inter-cluster net delay estimate)                             1.338    37.400
+[6374].in[0] (.names)                                            0.000    37.400
+| (primitive '.names' combinational delay)                       0.235    37.635
+[6374].out[0] (.names)                                           0.000    37.635
+| (inter-cluster net delay estimate)                             1.338    38.973
+[6376].in[0] (.names)                                            0.000    38.973
+| (primitive '.names' combinational delay)                       0.235    39.208
+[6376].out[0] (.names)                                           0.000    39.208
+| (inter-cluster net delay estimate)                             1.338    40.546
+n_n49.in[1] (.names)                                             0.000    40.546
+| (primitive '.names' combinational delay)                       0.235    40.781
+n_n49.out[0] (.names)                                            0.000    40.781
+| (inter-cluster net delay estimate)                             1.338    42.119
+[290].in[0] (.names)                                             0.000    42.119
+| (primitive '.names' combinational delay)                       0.235    42.354
+[290].out[0] (.names)                                            0.000    42.354
+| (inter-cluster net delay estimate)                             1.338    43.691
+[7977].in[0] (.names)                                            0.000    43.691
+| (primitive '.names' combinational delay)                       0.235    43.926
+[7977].out[0] (.names)                                           0.000    43.926
+| (inter-cluster net delay estimate)                             1.338    45.264
+[7993].in[0] (.names)                                            0.000    45.264
+| (primitive '.names' combinational delay)                       0.235    45.499
+[7993].out[0] (.names)                                           0.000    45.499
+| (inter-cluster net delay estimate)                             1.338    46.837
+[8001].in[0] (.names)                                            0.000    46.837
+| (primitive '.names' combinational delay)                       0.235    47.072
+[8001].out[0] (.names)                                           0.000    47.072
+| (inter-cluster net delay estimate)                             1.338    48.410
+[8005].in[0] (.names)                                            0.000    48.410
+| (primitive '.names' combinational delay)                       0.235    48.645
+[8005].out[0] (.names)                                           0.000    48.645
+| (inter-cluster net delay estimate)                             1.338    49.983
+[8007].in[0] (.names)                                            0.000    49.983
+| (primitive '.names' combinational delay)                       0.235    50.218
+[8007].out[0] (.names)                                           0.000    50.218
+| (inter-cluster net delay estimate)                             1.338    51.555
+n_n46.in[1] (.names)                                             0.000    51.555
+| (primitive '.names' combinational delay)                       0.235    51.790
+n_n46.out[0] (.names)                                            0.000    51.790
+| (inter-cluster net delay estimate)                             1.338    53.128
+n_n853.D[0] (.latch)                                             0.000    53.128
+data arrival time                                                         53.128
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n853.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -53.128
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -51.856
+
+
+#Path 4
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n852.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+[563].in[0] (.names)                                             0.000    16.954
+| (primitive '.names' combinational delay)                       0.235    17.189
+[563].out[0] (.names)                                            0.000    17.189
+| (inter-cluster net delay estimate)                             1.338    18.527
+[5782].in[0] (.names)                                            0.000    18.527
+| (primitive '.names' combinational delay)                       0.235    18.762
+[5782].out[0] (.names)                                           0.000    18.762
+| (inter-cluster net delay estimate)                             1.338    20.100
+[5788].in[0] (.names)                                            0.000    20.100
+| (primitive '.names' combinational delay)                       0.235    20.335
+[5788].out[0] (.names)                                           0.000    20.335
+| (inter-cluster net delay estimate)                             1.338    21.673
+[5791].in[0] (.names)                                            0.000    21.673
+| (primitive '.names' combinational delay)                       0.235    21.908
+[5791].out[0] (.names)                                           0.000    21.908
+| (inter-cluster net delay estimate)                             1.338    23.246
+n_n52.in[0] (.names)                                             0.000    23.246
+| (primitive '.names' combinational delay)                       0.235    23.481
+n_n52.out[0] (.names)                                            0.000    23.481
+| (inter-cluster net delay estimate)                             1.338    24.818
+[535].in[0] (.names)                                             0.000    24.818
+| (primitive '.names' combinational delay)                       0.235    25.053
+[535].out[0] (.names)                                            0.000    25.053
+| (inter-cluster net delay estimate)                             1.338    26.391
+[6013].in[0] (.names)                                            0.000    26.391
+| (primitive '.names' combinational delay)                       0.235    26.626
+[6013].out[0] (.names)                                           0.000    26.626
+| (inter-cluster net delay estimate)                             1.338    27.964
+[6017].in[0] (.names)                                            0.000    27.964
+| (primitive '.names' combinational delay)                       0.235    28.199
+[6017].out[0] (.names)                                           0.000    28.199
+| (inter-cluster net delay estimate)                             1.338    29.537
+[6019].in[0] (.names)                                            0.000    29.537
+| (primitive '.names' combinational delay)                       0.235    29.772
+[6019].out[0] (.names)                                           0.000    29.772
+| (inter-cluster net delay estimate)                             1.338    31.109
+n_n50.in[1] (.names)                                             0.000    31.109
+| (primitive '.names' combinational delay)                       0.235    31.344
+n_n50.out[0] (.names)                                            0.000    31.344
+| (inter-cluster net delay estimate)                             1.338    32.682
+[478].in[0] (.names)                                             0.000    32.682
+| (primitive '.names' combinational delay)                       0.235    32.917
+[478].out[0] (.names)                                            0.000    32.917
+| (inter-cluster net delay estimate)                             1.338    34.255
+[6362].in[0] (.names)                                            0.000    34.255
+| (primitive '.names' combinational delay)                       0.235    34.490
+[6362].out[0] (.names)                                           0.000    34.490
+| (inter-cluster net delay estimate)                             1.338    35.828
+[6370].in[0] (.names)                                            0.000    35.828
+| (primitive '.names' combinational delay)                       0.235    36.063
+[6370].out[0] (.names)                                           0.000    36.063
+| (inter-cluster net delay estimate)                             1.338    37.400
+[6374].in[0] (.names)                                            0.000    37.400
+| (primitive '.names' combinational delay)                       0.235    37.635
+[6374].out[0] (.names)                                           0.000    37.635
+| (inter-cluster net delay estimate)                             1.338    38.973
+[6376].in[0] (.names)                                            0.000    38.973
+| (primitive '.names' combinational delay)                       0.235    39.208
+[6376].out[0] (.names)                                           0.000    39.208
+| (inter-cluster net delay estimate)                             1.338    40.546
+n_n49.in[1] (.names)                                             0.000    40.546
+| (primitive '.names' combinational delay)                       0.235    40.781
+n_n49.out[0] (.names)                                            0.000    40.781
+| (inter-cluster net delay estimate)                             1.338    42.119
+[370].in[0] (.names)                                             0.000    42.119
+| (primitive '.names' combinational delay)                       0.235    42.354
+[370].out[0] (.names)                                            0.000    42.354
+| (inter-cluster net delay estimate)                             1.338    43.691
+[7205].in[0] (.names)                                            0.000    43.691
+| (primitive '.names' combinational delay)                       0.235    43.926
+[7205].out[0] (.names)                                           0.000    43.926
+| (inter-cluster net delay estimate)                             1.338    45.264
+[7221].in[0] (.names)                                            0.000    45.264
+| (primitive '.names' combinational delay)                       0.235    45.499
+[7221].out[0] (.names)                                           0.000    45.499
+| (inter-cluster net delay estimate)                             1.338    46.837
+[7229].in[0] (.names)                                            0.000    46.837
+| (primitive '.names' combinational delay)                       0.235    47.072
+[7229].out[0] (.names)                                           0.000    47.072
+| (inter-cluster net delay estimate)                             1.338    48.410
+[7233].in[0] (.names)                                            0.000    48.410
+| (primitive '.names' combinational delay)                       0.235    48.645
+[7233].out[0] (.names)                                           0.000    48.645
+| (inter-cluster net delay estimate)                             1.338    49.983
+[7235].in[0] (.names)                                            0.000    49.983
+| (primitive '.names' combinational delay)                       0.235    50.218
+[7235].out[0] (.names)                                           0.000    50.218
+| (inter-cluster net delay estimate)                             1.338    51.555
+n_n45.in[1] (.names)                                             0.000    51.555
+| (primitive '.names' combinational delay)                       0.235    51.790
+n_n45.out[0] (.names)                                            0.000    51.790
+| (inter-cluster net delay estimate)                             1.338    53.128
+n_n852.D[0] (.latch)                                             0.000    53.128
+data arrival time                                                         53.128
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n852.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -53.128
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -51.856
+
+
+#Path 5
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n856.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+[563].in[0] (.names)                                             0.000    16.954
+| (primitive '.names' combinational delay)                       0.235    17.189
+[563].out[0] (.names)                                            0.000    17.189
+| (inter-cluster net delay estimate)                             1.338    18.527
+[5782].in[0] (.names)                                            0.000    18.527
+| (primitive '.names' combinational delay)                       0.235    18.762
+[5782].out[0] (.names)                                           0.000    18.762
+| (inter-cluster net delay estimate)                             1.338    20.100
+[5788].in[0] (.names)                                            0.000    20.100
+| (primitive '.names' combinational delay)                       0.235    20.335
+[5788].out[0] (.names)                                           0.000    20.335
+| (inter-cluster net delay estimate)                             1.338    21.673
+[5791].in[0] (.names)                                            0.000    21.673
+| (primitive '.names' combinational delay)                       0.235    21.908
+[5791].out[0] (.names)                                           0.000    21.908
+| (inter-cluster net delay estimate)                             1.338    23.246
+n_n52.in[0] (.names)                                             0.000    23.246
+| (primitive '.names' combinational delay)                       0.235    23.481
+n_n52.out[0] (.names)                                            0.000    23.481
+| (inter-cluster net delay estimate)                             1.338    24.818
+[535].in[0] (.names)                                             0.000    24.818
+| (primitive '.names' combinational delay)                       0.235    25.053
+[535].out[0] (.names)                                            0.000    25.053
+| (inter-cluster net delay estimate)                             1.338    26.391
+[6013].in[0] (.names)                                            0.000    26.391
+| (primitive '.names' combinational delay)                       0.235    26.626
+[6013].out[0] (.names)                                           0.000    26.626
+| (inter-cluster net delay estimate)                             1.338    27.964
+[6017].in[0] (.names)                                            0.000    27.964
+| (primitive '.names' combinational delay)                       0.235    28.199
+[6017].out[0] (.names)                                           0.000    28.199
+| (inter-cluster net delay estimate)                             1.338    29.537
+[6019].in[0] (.names)                                            0.000    29.537
+| (primitive '.names' combinational delay)                       0.235    29.772
+[6019].out[0] (.names)                                           0.000    29.772
+| (inter-cluster net delay estimate)                             1.338    31.109
+n_n50.in[1] (.names)                                             0.000    31.109
+| (primitive '.names' combinational delay)                       0.235    31.344
+n_n50.out[0] (.names)                                            0.000    31.344
+| (inter-cluster net delay estimate)                             1.338    32.682
+[478].in[0] (.names)                                             0.000    32.682
+| (primitive '.names' combinational delay)                       0.235    32.917
+[478].out[0] (.names)                                            0.000    32.917
+| (inter-cluster net delay estimate)                             1.338    34.255
+[6362].in[0] (.names)                                            0.000    34.255
+| (primitive '.names' combinational delay)                       0.235    34.490
+[6362].out[0] (.names)                                           0.000    34.490
+| (inter-cluster net delay estimate)                             1.338    35.828
+[6370].in[0] (.names)                                            0.000    35.828
+| (primitive '.names' combinational delay)                       0.235    36.063
+[6370].out[0] (.names)                                           0.000    36.063
+| (inter-cluster net delay estimate)                             1.338    37.400
+[6374].in[0] (.names)                                            0.000    37.400
+| (primitive '.names' combinational delay)                       0.235    37.635
+[6374].out[0] (.names)                                           0.000    37.635
+| (inter-cluster net delay estimate)                             1.338    38.973
+[6376].in[0] (.names)                                            0.000    38.973
+| (primitive '.names' combinational delay)                       0.235    39.208
+[6376].out[0] (.names)                                           0.000    39.208
+| (inter-cluster net delay estimate)                             1.338    40.546
+n_n49.in[1] (.names)                                             0.000    40.546
+| (primitive '.names' combinational delay)                       0.235    40.781
+n_n49.out[0] (.names)                                            0.000    40.781
+| (inter-cluster net delay estimate)                             1.338    42.119
+n_n856.D[0] (.latch)                                             0.000    42.119
+data arrival time                                                         42.119
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -42.119
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -40.847
+
+
+#Path 6
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n857.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+[563].in[0] (.names)                                             0.000    16.954
+| (primitive '.names' combinational delay)                       0.235    17.189
+[563].out[0] (.names)                                            0.000    17.189
+| (inter-cluster net delay estimate)                             1.338    18.527
+[5782].in[0] (.names)                                            0.000    18.527
+| (primitive '.names' combinational delay)                       0.235    18.762
+[5782].out[0] (.names)                                           0.000    18.762
+| (inter-cluster net delay estimate)                             1.338    20.100
+[5788].in[0] (.names)                                            0.000    20.100
+| (primitive '.names' combinational delay)                       0.235    20.335
+[5788].out[0] (.names)                                           0.000    20.335
+| (inter-cluster net delay estimate)                             1.338    21.673
+[5791].in[0] (.names)                                            0.000    21.673
+| (primitive '.names' combinational delay)                       0.235    21.908
+[5791].out[0] (.names)                                           0.000    21.908
+| (inter-cluster net delay estimate)                             1.338    23.246
+n_n52.in[0] (.names)                                             0.000    23.246
+| (primitive '.names' combinational delay)                       0.235    23.481
+n_n52.out[0] (.names)                                            0.000    23.481
+| (inter-cluster net delay estimate)                             1.338    24.818
+[535].in[0] (.names)                                             0.000    24.818
+| (primitive '.names' combinational delay)                       0.235    25.053
+[535].out[0] (.names)                                            0.000    25.053
+| (inter-cluster net delay estimate)                             1.338    26.391
+[6013].in[0] (.names)                                            0.000    26.391
+| (primitive '.names' combinational delay)                       0.235    26.626
+[6013].out[0] (.names)                                           0.000    26.626
+| (inter-cluster net delay estimate)                             1.338    27.964
+[6017].in[0] (.names)                                            0.000    27.964
+| (primitive '.names' combinational delay)                       0.235    28.199
+[6017].out[0] (.names)                                           0.000    28.199
+| (inter-cluster net delay estimate)                             1.338    29.537
+[6019].in[0] (.names)                                            0.000    29.537
+| (primitive '.names' combinational delay)                       0.235    29.772
+[6019].out[0] (.names)                                           0.000    29.772
+| (inter-cluster net delay estimate)                             1.338    31.109
+n_n50.in[1] (.names)                                             0.000    31.109
+| (primitive '.names' combinational delay)                       0.235    31.344
+n_n50.out[0] (.names)                                            0.000    31.344
+| (inter-cluster net delay estimate)                             1.338    32.682
+n_n857.D[0] (.latch)                                             0.000    32.682
+data arrival time                                                         32.682
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n857.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -32.682
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -31.410
+
+
+#Path 7
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n859.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+[563].in[0] (.names)                                             0.000    16.954
+| (primitive '.names' combinational delay)                       0.235    17.189
+[563].out[0] (.names)                                            0.000    17.189
+| (inter-cluster net delay estimate)                             1.338    18.527
+[5782].in[0] (.names)                                            0.000    18.527
+| (primitive '.names' combinational delay)                       0.235    18.762
+[5782].out[0] (.names)                                           0.000    18.762
+| (inter-cluster net delay estimate)                             1.338    20.100
+[5788].in[0] (.names)                                            0.000    20.100
+| (primitive '.names' combinational delay)                       0.235    20.335
+[5788].out[0] (.names)                                           0.000    20.335
+| (inter-cluster net delay estimate)                             1.338    21.673
+[5791].in[0] (.names)                                            0.000    21.673
+| (primitive '.names' combinational delay)                       0.235    21.908
+[5791].out[0] (.names)                                           0.000    21.908
+| (inter-cluster net delay estimate)                             1.338    23.246
+n_n52.in[0] (.names)                                             0.000    23.246
+| (primitive '.names' combinational delay)                       0.235    23.481
+n_n52.out[0] (.names)                                            0.000    23.481
+| (inter-cluster net delay estimate)                             1.338    24.818
+n_n859.D[0] (.latch)                                             0.000    24.818
+data arrival time                                                         24.818
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n859.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -24.818
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -23.547
+
+
+#Path 8
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : out:s298_out_0_.outpad[0] (.output clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+[578].in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+[578].out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+s298_out_0_.in[0] (.names)                                       0.000    15.382
+| (primitive '.names' combinational delay)                       0.235    15.617
+s298_out_0_.out[0] (.names)                                      0.000    15.617
+| (inter-cluster net delay estimate)                             1.338    16.954
+out:s298_out_0_.outpad[0] (.output)                              0.000    16.954
+data arrival time                                                         16.954
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -16.954
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -16.954
+
+
+#Path 9
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : n_n858.D[0] (.latch clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5617].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5617].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[5619].in[0] (.names)                                            0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[5619].out[0] (.names)                                           0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[598].in[1] (.names)                                             0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[598].out[0] (.names)                                            0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+[5683].in[0] (.names)                                            0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+[5683].out[0] (.names)                                           0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[5695].in[0] (.names)                                            0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[5695].out[0] (.names)                                           0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5701].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5701].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+[5704].in[0] (.names)                                            0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+[5704].out[0] (.names)                                           0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+n_n51.in[0] (.names)                                             0.000    13.809
+| (primitive '.names' combinational delay)                       0.235    14.044
+n_n51.out[0] (.names)                                            0.000    14.044
+| (inter-cluster net delay estimate)                             1.338    15.382
+n_n858.D[0] (.latch)                                             0.000    15.382
+data arrival time                                                         15.382
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n858.clk[0] (.latch)                                           0.000     1.338
+clock uncertainty                                                0.000     1.338
+cell setup time                                                 -0.066     1.272
+data required time                                                         1.272
+--------------------------------------------------------------------------------
+data required time                                                         1.272
+data arrival time                                                        -15.382
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -14.110
+
+
+#Path 10
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : out:s298_out_1_.outpad[0] (.output clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[581].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[581].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+[5527].in[0] (.names)                                            0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+[5527].out[0] (.names)                                           0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_1_.in[1] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_1_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+out:s298_out_1_.outpad[0] (.output)                              0.000    13.809
+data arrival time                                                         13.809
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -13.809
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -13.809
+
+
+#Path 11
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : out:s298_out_2_.outpad[0] (.output clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[621].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[621].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+s298_out_4_.in[0] (.names)                                       0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+s298_out_4_.out[0] (.names)                                      0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+s298_out_2_.in[0] (.names)                                       0.000    12.236
+| (primitive '.names' combinational delay)                       0.235    12.471
+s298_out_2_.out[0] (.names)                                      0.000    12.471
+| (inter-cluster net delay estimate)                             1.338    13.809
+out:s298_out_2_.outpad[0] (.output)                              0.000    13.809
+data arrival time                                                         13.809
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -13.809
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -13.809
+
+
+#Path 12
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : out:s298_out_4_.outpad[0] (.output clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+[621].in[0] (.names)                                             0.000     9.091
+| (primitive '.names' combinational delay)                       0.235     9.326
+[621].out[0] (.names)                                            0.000     9.326
+| (inter-cluster net delay estimate)                             1.338    10.663
+s298_out_4_.in[0] (.names)                                       0.000    10.663
+| (primitive '.names' combinational delay)                       0.235    10.898
+s298_out_4_.out[0] (.names)                                      0.000    10.898
+| (inter-cluster net delay estimate)                             1.338    12.236
+out:s298_out_4_.outpad[0] (.output)                              0.000    12.236
+data arrival time                                                         12.236
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -12.236
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -12.236
+
+
+#Path 13
+Startpoint: n_n856.Q[0] (.latch clocked by clock)
+Endpoint  : out:s298_out_5_.outpad[0] (.output clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n856.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n856.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5509].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5509].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+[623].in[0] (.names)                                             0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+[623].out[0] (.names)                                            0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+[5512].in[0] (.names)                                            0.000     5.945
+| (primitive '.names' combinational delay)                       0.235     6.180
+[5512].out[0] (.names)                                           0.000     6.180
+| (inter-cluster net delay estimate)                             1.338     7.518
+s298_out_5_.in[1] (.names)                                       0.000     7.518
+| (primitive '.names' combinational delay)                       0.235     7.753
+s298_out_5_.out[0] (.names)                                      0.000     7.753
+| (inter-cluster net delay estimate)                             1.338     9.091
+out:s298_out_5_.outpad[0] (.output)                              0.000     9.091
+data arrival time                                                          9.091
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -9.091
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -9.091
+
+
+#Path 14
+Startpoint: n_n857.Q[0] (.latch clocked by clock)
+Endpoint  : out:s298_out_3_.outpad[0] (.output clocked by clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input)                                          0.000     0.000
+| (inter-cluster net delay estimate)                             1.338     1.338
+n_n857.clk[0] (.latch)                                           0.000     1.338
+| (primitive '.latch' Tcq_max)                                   0.124     1.462
+n_n857.Q[0] (.latch) [clock-to-output]                           0.000     1.462
+| (inter-cluster net delay estimate)                             1.338     2.800
+[5521].in[0] (.names)                                            0.000     2.800
+| (primitive '.names' combinational delay)                       0.235     3.035
+[5521].out[0] (.names)                                           0.000     3.035
+| (inter-cluster net delay estimate)                             1.338     4.372
+s298_out_3_.in[0] (.names)                                       0.000     4.372
+| (primitive '.names' combinational delay)                       0.235     4.607
+s298_out_3_.out[0] (.names)                                      0.000     4.607
+| (inter-cluster net delay estimate)                             1.338     5.945
+out:s298_out_3_.outpad[0] (.output)                              0.000     5.945
+data arrival time                                                          5.945
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -5.945
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -5.945
+
+
+#End of timing report

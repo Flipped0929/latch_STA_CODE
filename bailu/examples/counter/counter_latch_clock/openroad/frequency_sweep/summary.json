@@ -1,0 +1,236 @@
+{
+  "corner": "SKY130 HD TT / 25 C / 1.80 V, fixed routed netlist and SPEF",
+  "waveform_fractions": {
+    "phi1": [
+      0.005,
+      0.495
+    ],
+    "phi2": [
+      0.505,
+      0.995
+    ]
+  },
+  "output_setup_period_coefficient": 0.9900000000000001,
+  "estimated_setup_limit_ns": 1.722060606060606,
+  "estimated_setup_fmax_mhz": 580.6996550995988,
+  "selected_period_ns": 1.73,
+  "selected_frequency_mhz": 578.0346820809249,
+  "limitation": "Setup-limited estimate; en hold and reset removal remain violated at every tested period.",
+  "points": [
+    {
+      "period_ns": 2.0,
+      "frequency_mhz": 500.0,
+      "max_slack_ns": 0.223793,
+      "max_tns_ns": 0.0,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.69987,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.273031,
+      "max_critical": {
+        "startpoint": "en (input port clocked by phi1)",
+        "endpoint": "enable_phi1 (positive level-sensitive latch clocked by phi1)",
+        "slack_ns": 0.223793
+      },
+      "output_slacks_ns": {
+        "count[0]": 0.27516,
+        "count[1]": 0.279994,
+        "count[2]": 0.287676,
+        "count[3]": 0.306074
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.022312,
+        "phi2_close_to_next_phi1_open_ns": 0.008584
+      },
+      "reports": "T_2p0000ns/reports"
+    },
+    {
+      "period_ns": 1.75,
+      "frequency_mhz": 571.4285714285714,
+      "max_slack_ns": 0.02766,
+      "max_tns_ns": 0.0,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.699869,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.270531,
+      "max_critical": {
+        "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+        "endpoint": "count[0] (output port clocked by phi1)",
+        "slack_ns": 0.02766
+      },
+      "output_slacks_ns": {
+        "count[0]": 0.02766,
+        "count[1]": 0.032494,
+        "count[2]": 0.040176,
+        "count[3]": 0.058574
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.019812,
+        "phi2_close_to_next_phi1_open_ns": 0.006084
+      },
+      "reports": "T_1p7500ns/reports"
+    },
+    {
+      "period_ns": 1.73,
+      "frequency_mhz": 578.0346820809249,
+      "max_slack_ns": 0.00786,
+      "max_tns_ns": 0.0,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.69987,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.270331,
+      "max_critical": {
+        "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+        "endpoint": "count[0] (output port clocked by phi1)",
+        "slack_ns": 0.00786
+      },
+      "output_slacks_ns": {
+        "count[0]": 0.00786,
+        "count[1]": 0.012694,
+        "count[2]": 0.020376,
+        "count[3]": 0.038774
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.019612,
+        "phi2_close_to_next_phi1_open_ns": 0.005884
+      },
+      "reports": "T_1p7300ns/reports"
+    },
+    {
+      "period_ns": 1.725,
+      "frequency_mhz": 579.7101449275362,
+      "max_slack_ns": 0.00291,
+      "max_tns_ns": 0.0,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.69987,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.270281,
+      "max_critical": {
+        "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+        "endpoint": "count[0] (output port clocked by phi1)",
+        "slack_ns": 0.00291
+      },
+      "output_slacks_ns": {
+        "count[0]": 0.00291,
+        "count[1]": 0.007744,
+        "count[2]": 0.015426,
+        "count[3]": 0.033824
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.019562,
+        "phi2_close_to_next_phi1_open_ns": 0.005834
+      },
+      "reports": "T_1p7250ns/reports"
+    },
+    {
+      "period_ns": 1.7221,
+      "frequency_mhz": 580.6863712908658,
+      "max_slack_ns": 3.9e-05,
+      "max_tns_ns": 0.0,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.699869,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.270252,
+      "max_critical": {
+        "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+        "endpoint": "count[0] (output port clocked by phi1)",
+        "slack_ns": 3.9e-05
+      },
+      "output_slacks_ns": {
+        "count[0]": 3.9e-05,
+        "count[1]": 0.004873,
+        "count[2]": 0.012555,
+        "count[3]": 0.030953
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.019534,
+        "phi2_close_to_next_phi1_open_ns": 0.005805
+      },
+      "reports": "T_1p7221ns/reports"
+    },
+    {
+      "period_ns": 1.722,
+      "frequency_mhz": 580.7200929152149,
+      "max_slack_ns": -6e-05,
+      "max_tns_ns": -6e-05,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.699869,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.270251,
+      "max_critical": {
+        "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+        "endpoint": "count[0] (output port clocked by phi1)",
+        "slack_ns": -6e-05
+      },
+      "output_slacks_ns": {
+        "count[0]": -6e-05,
+        "count[1]": 0.004775,
+        "count[2]": 0.012456,
+        "count[3]": 0.030854
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.019532,
+        "phi2_close_to_next_phi1_open_ns": 0.005804
+      },
+      "reports": "T_1p7220ns/reports"
+    },
+    {
+      "period_ns": 1.72,
+      "frequency_mhz": 581.3953488372093,
+      "max_slack_ns": -0.00204,
+      "max_tns_ns": -0.00204,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.699869,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.270231,
+      "max_critical": {
+        "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+        "endpoint": "count[0] (output port clocked by phi1)",
+        "slack_ns": -0.00204
+      },
+      "output_slacks_ns": {
+        "count[0]": -0.00204,
+        "count[1]": 0.002795,
+        "count[2]": 0.010476,
+        "count[3]": 0.028874
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.019512,
+        "phi2_close_to_next_phi1_open_ns": 0.005784
+      },
+      "reports": "T_1p7200ns/reports"
+    },
+    {
+      "period_ns": 1.7,
+      "frequency_mhz": 588.2352941176471,
+      "max_slack_ns": -0.02184,
+      "max_tns_ns": -0.04817,
+      "min_slack_ns": -0.165028,
+      "min_tns_ns": -0.699869,
+      "en_hold_ns": -0.070319,
+      "internal_latch_hold_ns": 0.270031,
+      "max_critical": {
+        "startpoint": "state_phi2_bit0 (positive level-sensitive latch clocked by phi2)",
+        "endpoint": "count[0] (output port clocked by phi1)",
+        "slack_ns": -0.02184
+      },
+      "output_slacks_ns": {
+        "count[0]": -0.02184,
+        "count[1]": -0.017006,
+        "count[2]": -0.009324,
+        "count[3]": 0.009074
+      },
+      "nominal_phase_gaps": {
+        "phi1_close_to_phi2_open_ns": 0.019312,
+        "phi2_close_to_next_phi1_open_ns": 0.005584
+      },
+      "reports": "T_1p7000ns/reports"
+    }
+  ],
+  "sha256": {
+    "frequency_sweep/inputs/counter_routed.v": "5b40e31a101caa0d291cc945aff3461f996b0dd1a1071d8b8190563824f4549d",
+    "frequency_sweep/inputs/counter.spef": "d793b96d3f7b60309283e8e41660b9e83b3054365722e74a943d6f565be2835c",
+    "frequency_sweep/inputs/template.sdc": "7c32e2bd200929ffc465e9b6ef253f09b7ef48823dafd6ac0a6ea13205bc7dca",
+    "scripts/sta.tcl": "001185271f321cbb80c4d55d6da0910f1fb57f8199ce053d4851faedfb30a207",
+    "scripts/common.tcl": "8c83e128373458f294ea1607ccf0dd1e751c7db55ed9e398700ce3f0251a8b6e"
+  }
+}

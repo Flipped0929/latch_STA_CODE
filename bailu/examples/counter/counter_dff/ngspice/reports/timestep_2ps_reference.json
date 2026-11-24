@@ -1,0 +1,91 @@
+{
+  "corner": "SKY130 TT / 25 C / 1.80 V",
+  "period_ns": 1.8,
+  "frequency_mhz": 555.5555555555555,
+  "simulated_cycles": 104,
+  "max_timestep_ps": 2.0,
+  "data_points": 97394,
+  "functional_passed": true,
+  "functional_checks": 213,
+  "functional_failures": [],
+  "logic_thresholds_v": {
+    "low_max": 0.36,
+    "high_min": 1.44
+  },
+  "coverage": "Continuous count, repeated overflow, hold at every state, asynchronous reset with clock high/low, reset release",
+  "transistor_timing_ns": {
+    "measurement_threshold_v": 0.9,
+    "transitions_measured": 143,
+    "clock_insertion": {
+      "min": 0.18446652291656562,
+      "max": 0.18970633653432856,
+      "mean": 0.18709179071001236
+    },
+    "external_clock_to_output_ns": {
+      "min": 0.43332815820753723,
+      "max": 0.5206066669650804,
+      "mean": 0.47836101939449704
+    },
+    "local_clock_to_q_ns": {
+      "min": 0.24856290900373068,
+      "max": 0.3302656600902223,
+      "mean": 0.2890834296253644
+    },
+    "output_slew_20_80_ns": {
+      "min": 0.07918223851702066,
+      "max": 0.23813958959013348,
+      "mean": 0.15755747104039658
+    }
+  },
+  "supply_power": {
+    "continuous_counting": {
+      "start_ns": 32.8,
+      "end_ns": 61.6,
+      "average_power_uw": 220.99832160907474,
+      "energy_pj": 6.364751662341353
+    },
+    "enable_low_clock_running": {
+      "start_ns": 149.8,
+      "end_ns": 162.4,
+      "average_power_uw": 131.57176977989351,
+      "energy_pj": 1.6578042992266573
+    },
+    "scope": "Energy from ideal 1.8 V VDD source; excludes energy delivered by input drivers"
+  },
+  "asynchronous_reset_delays": [
+    {
+      "assertion_ns": 126.75,
+      "bit": 2,
+      "reset_to_output_ns": 0.19721554645495587
+    },
+    {
+      "assertion_ns": 138.22000000000003,
+      "bit": 1,
+      "reset_to_output_ns": 0.20029867772620946
+    },
+    {
+      "assertion_ns": 138.22000000000003,
+      "bit": 2,
+      "reset_to_output_ns": 0.19859369751401346
+    }
+  ],
+  "limitations": [
+    "Existing OpenRCX signal/clock interconnect RC, including coupling, is used.",
+    "Official transistor cell netlists include no full extracted cell-internal interconnect RC or explicit diffusion areas.",
+    "Ideal supply and input drivers; power-grid RC, package, tap/filler and multi-corner analysis are excluded.",
+    "Transient scenario validation supplements STA; it does not prove all timing paths or corner cases."
+  ],
+  "input_hashes": {
+    "inputs/counter_routed.v": "0195d27162861547f83a092eb2f0b69f55dfe21d2f32dcee333af60cba32c901",
+    "inputs/counter.spef": "4944e62c7d493c9192804d3cc17d4665126583fb657c516ba310b48fcb834eaa",
+    "inputs/counter_postlayout.spice": "aeea5e70d483620d623900cdcd737f0670b41e6fefbe012b971e865b36985f45",
+    "models/sky130_fd_sc_hd__and2_1.spice": "c5e376f026990d9c0c7c5d353d3145669dd73cdf111b8a23865babaa6e3306a5",
+    "models/sky130_fd_sc_hd__clkbuf_4.spice": "2a40c03d2bfec621a6f5499bb27f7ba206a851bc45e50a29104518905a20d52a",
+    "models/sky130_fd_sc_hd__dfrtp_1.spice": "624808d817faf1b89a4299580acb8873fc0b6e9898cc3cfab8493bff836f1101",
+    "models/sky130_fd_sc_hd__inv_1.spice": "1099e3641c46d241852db47974540b3ad161e20e01b74f2fd5cc152627011909",
+    "models/sky130_fd_sc_hd__mux2_1.spice": "dc4b217a91a494168cbcdc4e948c29171905017a2b5f928596a7039352c426b9",
+    "models/sky130_fd_sc_hd__xor2_1.spice": "51aad892e3bd16850b5d8718df4ef97e576766e13af717d5c0b034c77fe84c28"
+  },
+  "ngspice_log_sha256": "9588af5f57369bf176ec417bfb1682d2456d3f9473dd5c36d793750b90fcd27a",
+  "transient_raw_sha256": "fa98d34f0a822b4a56a1627c2ee1a8e4bba065e597614a96bd3272f027850e88"
+}

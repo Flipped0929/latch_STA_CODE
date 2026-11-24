@@ -1,0 +1,363 @@
+{
+  "generated_utc": "2026-11-10T02:13:42.207733+00:00",
+  "openroad": "26Q2-1164-g08f67ee5ec",
+  "corner": "SKY130 HD TT / 25 C / 1.80 V, fixed routed SPEF",
+  "clock_period_ns": 1.73,
+  "clock_frequency_MHz": 578.0346820809249,
+  "waveforms_ns": {
+    "phi1": [
+      1.73,
+      0.00865,
+      0.85635
+    ],
+    "phi2": [
+      1.73,
+      0.87365,
+      1.72135
+    ]
+  },
+  "measured_cycles": 4096,
+  "measurement_duration_ns": 7086.08,
+  "routed_cells": 23,
+  "latches": 11,
+  "clock_buffers": 4,
+  "clock_dummy_loads": 1,
+  "scenarios": {
+    "active": {
+      "power_W": {
+        "Sequential": {
+          "internal": 0.0002517027897,
+          "switching": 4.616106162e-05,
+          "leakage": 8.227579729e-11,
+          "total": 0.0002978639386
+        },
+        "Combinational": {
+          "internal": 9.905572369e-06,
+          "switching": 9.460011825e-06,
+          "leakage": 2.528194147e-11,
+          "total": 1.936560875e-05
+        },
+        "Clock": {
+          "internal": 7.826244837e-05,
+          "switching": 9.112134285e-05,
+          "leakage": 2.283887315e-11,
+          "total": 0.0001693838276
+        },
+        "Macro": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Pad": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Total": {
+          "internal": 0.0003398708068,
+          "switching": 0.0001467424154,
+          "leakage": 1.303966102e-10,
+          "total": 0.0004866133386
+        }
+      },
+      "groups_W": {
+        "logic": {
+          "internal": 9.905572881052649e-06,
+          "switching": 9.460011256123835e-06,
+          "leakage": 2.5281943422453268e-11,
+          "total": 1.936560931881104e-05
+        },
+        "clock_phi1": {
+          "internal": 4.656649980461225e-05,
+          "switching": 6.217627560545225e-05,
+          "leakage": 1.2490610108717437e-11,
+          "total": 0.00010874278450501151
+        },
+        "clock_phi2": {
+          "internal": 1.5645546227460727e-05,
+          "switching": 2.20475467358483e-05,
+          "leakage": 4.163536702905812e-12,
+          "total": 3.769309478229843e-05
+        },
+        "clock_dummy": {
+          "internal": 5.066158792033093e-06,
+          "switching": 0.0,
+          "leakage": 3.8447470034064235e-12,
+          "total": 5.0661624300119e-06
+        },
+        "enable_latch": {
+          "internal": 1.5371942936326377e-05,
+          "switching": 0.0,
+          "leakage": 8.472892526478759e-12,
+          "total": 1.5371952031273395e-05
+        },
+        "clock_gate": {
+          "internal": 1.0984241271216888e-05,
+          "switching": 6.897519142512465e-06,
+          "leakage": 2.339978037724233e-12,
+          "total": 1.7881762687466107e-05
+        },
+        "phase1_latches": {
+          "internal": 0.00013158881483832374,
+          "switching": 1.0006973866438784e-05,
+          "leakage": 3.9902743435848986e-11,
+          "total": 0.00014159582860884257
+        },
+        "phase2_latches": {
+          "internal": 0.00010474207374500111,
+          "switching": 3.6154089116280375e-05,
+          "leakage": 3.390016739546198e-11,
+          "total": 0.00014089619071455672
+        }
+      },
+      "dynamic_W": 0.0004866132222,
+      "energy_per_cycle_pJ": 0.8418410757779999,
+      "validation": {
+        "cell_signal_pins": 73,
+        "unknown_cell_pins": 0,
+        "clock_transitions_each": 8192,
+        "clock_high_fraction": 0.49,
+        "gated_clock_transitions": 8192,
+        "gated_clock_high_fraction": 0.49,
+        "count_transitions": [
+          4096,
+          2048,
+          1024,
+          512
+        ]
+      },
+      "window": {
+        "begin_ns": 31.140001,
+        "end_ns": 7117.220001,
+        "cycles": 4096,
+        "period_ns": 1.73
+      }
+    },
+    "mixed": {
+      "power_W": {
+        "Sequential": {
+          "internal": 0.0001810617396,
+          "switching": 2.327860784e-05,
+          "leakage": 8.02586192e-11,
+          "total": 0.0002043404384
+        },
+        "Combinational": {
+          "internal": 4.952816198e-06,
+          "switching": 4.730005912e-06,
+          "leakage": 2.928704501e-11,
+          "total": 9.682851669e-06
+        },
+        "Clock": {
+          "internal": 6.513667904e-05,
+          "switching": 7.664880832e-05,
+          "leakage": 2.341298336e-11,
+          "total": 0.0001417855092
+        },
+        "Macro": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Pad": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Total": {
+          "internal": 0.0002511512139,
+          "switching": 0.0001046574253,
+          "leakage": 1.32958658e-10,
+          "total": 0.0003558087919
+        }
+      },
+      "groups_W": {
+        "logic": {
+          "internal": 4.952816453851483e-06,
+          "switching": 4.730005628061917e-06,
+          "leakage": 2.928704696293638e-11,
+          "total": 9.682851441539242e-06
+        },
+        "clock_phi1": {
+          "internal": 4.656649980461225e-05,
+          "switching": 6.217627560545225e-05,
+          "leakage": 1.2490610108717437e-11,
+          "total": 0.00010874278450501151
+        },
+        "clock_phi2": {
+          "internal": 7.822773113730364e-06,
+          "switching": 1.102377336792415e-05,
+          "leakage": 4.405768284920786e-12,
+          "total": 1.884654921013862e-05
+        },
+        "clock_dummy": {
+          "internal": 5.066158792033093e-06,
+          "switching": 0.0,
+          "leakage": 3.8447470034064235e-12,
+          "total": 5.0661624300119e-06
+        },
+        "enable_latch": {
+          "internal": 1.6243413483607583e-05,
+          "switching": 1.917135676876569e-07,
+          "leakage": 7.928501605247718e-12,
+          "total": 1.6435134966741316e-05
+        },
+        "clock_gate": {
+          "internal": 5.681244601873914e-06,
+          "switching": 3.4487595712562324e-06,
+          "leakage": 2.6718581774137773e-12,
+          "total": 9.130007128987927e-06
+        },
+        "phase1_latches": {
+          "internal": 0.00011244649795116857,
+          "switching": 5.009849985526671e-06,
+          "leakage": 3.904915366753636e-11,
+          "total": 0.00011745638585125562
+        },
+        "phase2_latches": {
+          "internal": 5.237181539996527e-05,
+          "switching": 1.8077044558140187e-05,
+          "leakage": 3.328096825905291e-11,
+          "total": 7.044889389362652e-05
+        }
+      },
+      "dynamic_W": 0.0003558086392,
+      "energy_per_cycle_pJ": 0.6155492099869999,
+      "validation": {
+        "cell_signal_pins": 73,
+        "unknown_cell_pins": 0,
+        "clock_transitions_each": 8192,
+        "clock_high_fraction": 0.49,
+        "gated_clock_transitions": 4096,
+        "gated_clock_high_fraction": 0.245,
+        "count_transitions": [
+          2048,
+          1024,
+          512,
+          256
+        ]
+      },
+      "window": {
+        "begin_ns": 31.140001,
+        "end_ns": 7117.220001,
+        "cycles": 4096,
+        "period_ns": 1.73
+      }
+    },
+    "hold": {
+      "power_W": {
+        "Sequential": {
+          "internal": 0.0001088277495,
+          "switching": 0.0,
+          "leakage": 7.790414147e-11,
+          "total": 0.0001088278295
+        },
+        "Combinational": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 3.446270005e-11,
+          "total": 3.446270005e-11
+        },
+        "Clock": {
+          "internal": 5.197133578e-05,
+          "switching": 6.217627379e-05,
+          "leakage": 2.398709703e-11,
+          "total": 0.0001141476314
+        },
+        "Macro": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Pad": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Total": {
+          "internal": 0.0001607990998,
+          "switching": 6.217627379e-05,
+          "leakage": 1.363539281e-10,
+          "total": 0.0002229755046
+        }
+      },
+      "groups_W": {
+        "logic": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 3.446269964822897e-11,
+          "total": 3.446269964822897e-11
+        },
+        "clock_phi1": {
+          "internal": 4.656649980461225e-05,
+          "switching": 6.217627560545225e-05,
+          "leakage": 1.2490610108717437e-11,
+          "total": 0.00010874278450501151
+        },
+        "clock_phi2": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 4.647999866935759e-12,
+          "total": 4.647999866935759e-12
+        },
+        "clock_dummy": {
+          "internal": 5.066158792033093e-06,
+          "switching": 0.0,
+          "leakage": 3.8447470034064235e-12,
+          "total": 5.0661624300119e-06
+        },
+        "enable_latch": {
+          "internal": 1.5371942936326377e-05,
+          "switching": 0.0,
+          "leakage": 7.21113229892878e-12,
+          "total": 1.537195021228399e-05
+        },
+        "clock_gate": {
+          "internal": 3.3867840443235764e-07,
+          "switching": 0.0,
+          "leakage": 3.003739834986363e-12,
+          "total": 3.3868141713355726e-07
+        },
+        "phase1_latches": {
+          "internal": 9.345580838271417e-05,
+          "switching": 0.0,
+          "leakage": 3.807930750235333e-11,
+          "total": 9.345584294351283e-05
+        },
+        "phase2_latches": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 3.261369906776279e-11,
+          "total": 3.261369906776279e-11
+        }
+      },
+      "dynamic_W": 0.00022297537358999999,
+      "energy_per_cycle_pJ": 0.38574762295799997,
+      "validation": {
+        "cell_signal_pins": 73,
+        "unknown_cell_pins": 0,
+        "clock_transitions_each": 8192,
+        "clock_high_fraction": 0.49,
+        "gated_clock_transitions": 0,
+        "gated_clock_high_fraction": 0.0,
+        "count_transitions": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "window": {
+        "begin_ns": 34.600001,
+        "end_ns": 7120.680001,
+        "cycles": 4096,
+        "period_ns": 1.73
+      }
+    }
+  }
+}

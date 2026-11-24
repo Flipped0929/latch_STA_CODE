@@ -1,0 +1,9 @@
+read_verilog picorv32.v
+prep -top picorv32 -flatten
+memory_map
+opt_clean
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil equivalence/rtl_yosys_10/gold.il

@@ -1,0 +1,30 @@
+** sch_path: /mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_mux_1/counter_postroute.sch
+.subckt counter_postroute clk_1 clk_2 rst_n en VDD VSS count[3] count[2] count[1] count[0]
+*.PININFO clk_1:I clk_2:I rst_n:I en:I VDD:B VSS:B count[3:0]:O
+xstate_phi1_bit0 _04_ CK1_A RST_BUF VSS VSS VDD VDD phase_1[0] sky130_fd_sc_hd__dlrtp_1
+x_12_ count[0] _01_[0] en VSS VSS VDD VDD _04_ sky130_fd_sc_hd__mux2_1
+x_20_ count[0] VSS VSS VDD VDD _01_[0] sky130_fd_sc_hd__inv_1
+xstate_phi2_bit0 phase_1[0] CK2_A RST_BUF VSS VSS VDD VDD count[0] sky130_fd_sc_hd__dlrtp_4
+xstate_phi1_bit1 _03_ CK1_A RST_BUF VSS VSS VDD VDD phase_1[1] sky130_fd_sc_hd__dlrtp_1
+x_11_ count[1] _02_[1] en VSS VSS VDD VDD _03_ sky130_fd_sc_hd__mux2_1
+x_17_ count[1] count[0] VSS VSS VDD VDD _02_[1] sky130_fd_sc_hd__xor2_1
+xstate_phi2_bit1 phase_1[1] CK2_A RST_BUF VSS VSS VDD VDD count[1] sky130_fd_sc_hd__dlrtp_4
+xstate_phi1_bit2 count[2] CK1_A RST_BUF VSS VSS VDD VDD phase_1[2] sky130_fd_sc_hd__dlrtp_1
+x_18_ phase_1[2] phase_1_toggle2 VSS VSS VDD VDD next_bit2 sky130_fd_sc_hd__xor2_1
+xstate_phi2_bit2 next_bit2 CK2_B RST_BUF VSS VSS VDD VDD count[2] sky130_fd_sc_hd__dlrtp_2
+xstate_phi1_toggle2 toggle2 CK1_B RST_BUF VSS VSS VDD VDD phase_1_toggle2 sky130_fd_sc_hd__dlrtp_1
+x_16_ count[1] count[0] en VSS VSS VDD VDD toggle2 sky130_fd_sc_hd__and3_1
+xstate_phi1_bit3 count[3] CK1_B RST_BUF VSS VSS VDD VDD phase_1[3] sky130_fd_sc_hd__dlrtp_1
+x_19_ phase_1[3] phase_1_toggle3 VSS VSS VDD VDD next_bit3 sky130_fd_sc_hd__xor2_1
+xstate_phi2_bit3 next_bit3 CK2_B RST_BUF VSS VSS VDD VDD count[3] sky130_fd_sc_hd__dlrtp_2
+xstate_phi1_toggle3 toggle3 CK1_B RST_BUF VSS VSS VDD VDD phase_1_toggle3 sky130_fd_sc_hd__dlrtp_1
+x_15_ count[2] count[1] count[0] VSS VSS VDD VDD carry3 sky130_fd_sc_hd__and3_1
+xbit3_enable en carry3 VSS VSS VDD VDD toggle3 sky130_fd_sc_hd__and2_4
+xclkbuf_0_clk_1 clk_1 VSS VSS VDD VDD CK1_ROOT sky130_fd_sc_hd__clkbuf_4
+xclkbuf_1_0__f_clk_1 CK1_ROOT VSS VSS VDD VDD CK1_A sky130_fd_sc_hd__clkbuf_4
+xclkbuf_1_1__f_clk_1 CK1_ROOT VSS VSS VDD VDD CK1_B sky130_fd_sc_hd__clkbuf_4
+xclkbuf_0_clk_2 clk_2 VSS VSS VDD VDD CK2_ROOT sky130_fd_sc_hd__clkbuf_4
+xclkbuf_1_0__f_clk_2 CK2_ROOT VSS VSS VDD VDD CK2_A sky130_fd_sc_hd__clkbuf_4
+xclkbuf_1_1__f_clk_2 CK2_ROOT VSS VSS VDD VDD CK2_B sky130_fd_sc_hd__clkbuf_4
+xreset_release_buf1 rst_n VSS VSS VDD VDD RST_BUF sky130_fd_sc_hd__buf_1
+.ends

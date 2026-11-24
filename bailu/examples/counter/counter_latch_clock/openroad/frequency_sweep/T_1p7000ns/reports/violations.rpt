@@ -1,0 +1,26 @@
+min_delay/hold group asynchronous
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+state_phi2_bit2/RESET_B (sky130_fd_sc_hd__dlrtp_2)    2.058038    1.893010   -0.165028 (VIOLATED)
+state_phi2_bit3/RESET_B (sky130_fd_sc_hd__dlrtp_2)    2.058066    1.893086   -0.164980 (VIOLATED)
+state_phi2_bit1/RESET_B (sky130_fd_sc_hd__dlrtp_4)    2.042431    1.892399   -0.150032 (VIOLATED)
+state_phi2_bit0/RESET_B (sky130_fd_sc_hd__dlrtp_4)    2.042286    1.892776   -0.149510 (VIOLATED)
+
+min_delay/hold group phi1
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+enable_phi1/D (sky130_fd_sc_hd__dlxtp_1)    1.111885    1.041565   -0.070319 (VIOLATED)
+
+max_delay/setup group phi1
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+count[0] (output)                       1.491500    1.513340   -0.021840 (VIOLATED)
+count[1] (output)                       1.491500    1.508506   -0.017006 (VIOLATED)
+count[2] (output)                       1.491500    1.500824   -0.009324 (VIOLATED)
+

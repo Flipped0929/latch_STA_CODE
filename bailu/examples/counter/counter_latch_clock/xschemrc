@@ -1,0 +1,15 @@
+# Local SKY130 configuration; use the PDK installed on this machine.
+set PDK_ROOT $env(HOME)/eda/pdk
+set PDK sky130A
+source $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc
+append XSCHEM_LIBRARY_PATH :[file dirname [file normalize [info script]]]
+set XSCHEM_START_WINDOW {}
+set netlist_type verilog
+set local_netlist_dir 1
+set verilog_2001 1
+set show_infowindow 0
+set dark_colorscheme 0
+set color_ps 1
+set svg_font_name {DejaVu Sans}
+set initial_geometry {1500x1000}
+set zoom_full_center 1

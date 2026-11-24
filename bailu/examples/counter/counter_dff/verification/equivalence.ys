@@ -1,0 +1,18 @@
+read_verilog counter.v
+prep -top counter
+async2sync
+rename counter gold
+design -stash gold
+read_verilog verification/cells.v verification/counter_from_schematic.v
+prep -top counter
+flatten
+async2sync
+rename counter gate
+design -stash gate
+design -copy-from gold -as gold gold
+design -copy-from gate -as gate gate
+equiv_make gold gate equiv
+hierarchy -top equiv
+equiv_simple
+equiv_induct
+equiv_status -assert

@@ -1,0 +1,27 @@
+min_delay/hold group asynchronous
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+count_o_reg[2]/RESET_B (sky130_fd_sc_hd__dlrtp_1)    2.111555    1.921993   -0.189561 (VIOLATED)
+count_o_reg[1]/RESET_B (sky130_fd_sc_hd__dlrtp_1)    2.111471    1.922048   -0.189423 (VIOLATED)
+count_o_reg[3]/RESET_B (sky130_fd_sc_hd__dlrtp_1)    2.111501    1.922380   -0.189121 (VIOLATED)
+count_o_reg[0]/RESET_B (sky130_fd_sc_hd__dlrtp_1)    2.111398    1.922494   -0.188904 (VIOLATED)
+
+min_delay/hold group phi1
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+dup_enable_2/D (sky130_fd_sc_hd__dlxtp_1)    1.119684    1.056390   -0.063293 (VIOLATED)
+
+max_delay/setup group phi1
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+count[0] (output)                       1.536350    1.654981   -0.118631 (VIOLATED)
+count[1] (output)                       1.536350    1.630965   -0.094615 (VIOLATED)
+count[2] (output)                       1.536350    1.599918   -0.063568 (VIOLATED)
+count[3] (output)                       1.536350    1.554621   -0.018272 (VIOLATED)
+

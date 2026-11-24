@@ -1,0 +1,27 @@
+Transistor postlayout counter: refined; TT 25C 1.8V; full interconnect RC
+.include "netlists/tt_used_models.spice"
+.include "netlists/sky130_cells.spice"
+.include "netlists/counter_postlayout.spice"
+.temp 25
+.option reltol=1e-4 abstol=1e-12 vntol=1e-6 method=gear maxord=2 minbreak=1e-15
+VDD vdd 0 1.8
+VCLK1 clk_1 0 PULSE(0 1.8 3.958750000n 0.100000000n 0.100000000n 0.757500000n 1.750000000n)
+VCLK2 clk_2 0 PULSE(0 1.8 4.833750000n 0.100000000n 0.100000000n 0.757500000n 1.750000000n)
+VRST rst_n 0 PWL(0.000000000n 0 3.100000000n 0 3.200000000n 1.8 88.650000000n 1.8 88.750000000n 0 91.050000000n 0 91.150000000n 1.8 119.700000000n 1.8)
+VEN en 0 PWL(0.000000000n 1.8 45.550000000n 1.8 45.650000000n 0 59.550000000n 0 59.650000000n 1.8 119.700000000n 1.8)
+Xdut clk_1 clk_2 rst_n en vdd 0 count3 count2 count1 count0 counter_postlayout
+Cload0 count0 0 10f
+Cload1 count1 0 10f
+Cload2 count2 0 10f
+Cload3 count3 0 10f
+.save v(clk_1) v(clk_2) v(rst_n) v(en) v(count0) v(count1) v(count2) v(count3) i(vdd) v(xdut.n0086) v(xdut.n0087) v(xdut.n0090) v(xdut.n0091) v(xdut.n0094) v(xdut.n0095) v(xdut.n0098) v(xdut.n0099) v(xdut.n0102) v(xdut.n0103) v(xdut.n0106) v(xdut.n0107) v(xdut.n0110) v(xdut.n0111) v(xdut.n0114) v(xdut.n0115) v(xdut.n0118) v(xdut.n0119) v(xdut.n0122) v(xdut.n0123)
+.tran 2p 119.700000000n 0 2.500000000p
+.control
+set noaskquit
+set filetype=binary
+run
+write results/refined.raw v(clk_1) v(clk_2) v(rst_n) v(en) v(count0) v(count1) v(count2) v(count3) i(vdd) v(xdut.n0086) v(xdut.n0087) v(xdut.n0090) v(xdut.n0091) v(xdut.n0094) v(xdut.n0095) v(xdut.n0098) v(xdut.n0099) v(xdut.n0102) v(xdut.n0103) v(xdut.n0106) v(xdut.n0107) v(xdut.n0110) v(xdut.n0111) v(xdut.n0114) v(xdut.n0115) v(xdut.n0118) v(xdut.n0119) v(xdut.n0122) v(xdut.n0123)
+meas tran pwr_current_avg AVG i(vdd) from=11.000000000n to=39.000000000n
+quit
+.endc
+.end

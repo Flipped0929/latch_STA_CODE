@@ -1,0 +1,55 @@
+{
+  "cell": "sky130_fd_sc_hd__dlxtp_1",
+  "corner_from_filename": "tt_025C_1v80",
+  "conditions": {
+    "data_slew_ns": 0.01,
+    "clock_slew_ns": 0.01,
+    "load_pf": 0.0005
+  },
+  "sources": [
+    {
+      "file": "sky130_fd_sc_hd__common.lib.json",
+      "sha256": "f2e44ee9535bca3badb2748c12f7bf90c0cd1a67d01e5ed7659e43d964a791de"
+    },
+    {
+      "file": "sky130_fd_sc_hd__dlxtp_1__tt_025C_1v80.lib.json",
+      "sha256": "ceda3df7a93c21ab9ea03e5a1cc89fe0a195a93ada785c105dccf4cf13d8442b"
+    }
+  ],
+  "method": "Bilinear interpolation; setup/hold use max(rise, fall); propagation uses min/max(rise, fall). Pulse widths use linear interpolation at clock slew. No extrapolation.",
+  "limitations": [
+    "One TT condition, not a multi-PVT envelope.",
+    "Fixed slew/load; no circuit path delays or IO constraints.",
+    "Minimum pulse width and other library checks are not included in these six MCR parameters."
+  ],
+  "parameters_ns": {
+    "tsu": 0.1948711,
+    "thd": -0.0260762,
+    "tdqMin": 0.1956779,
+    "tdqMax": 0.2897848,
+    "tcqMin": 0.2408861,
+    "tcqMax": 0.2727443
+  },
+  "clock_checks_ns": {
+    "min_pulse_width_high": 0.1774742,
+    "min_pulse_width_low": null
+  },
+  "arc_values_ns": {
+    "setup": {
+      "rise_constraint": 0.1948711,
+      "fall_constraint": 0.0374004
+    },
+    "hold": {
+      "rise_constraint": -0.1835469,
+      "fall_constraint": -0.0260762
+    },
+    "dq": {
+      "cell_rise": 0.2897848,
+      "cell_fall": 0.1956779
+    },
+    "cq": {
+      "cell_rise": 0.2727443,
+      "cell_fall": 0.2408861
+    }
+  }
+}

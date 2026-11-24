@@ -1,0 +1,11 @@
+# The design has one flattened top module. Keep enable samplers and clock gates outside ABC.
+check -assert
+select -set phi1_data */w:clk_1 %co1:+[C] */t:$_DFF* %i */c:dup_enable_* %d
+select -assert-any @phi1_data
+abc -dff -markgroups -script +strash;,balance;,print_stats;,retime,-M,5,-v;,print_stats;,strash;,map */t:$_* */t:$_DFF* %d */c:gate_phi2_* %d @phi1_data
+select -assert-any */t:$_DFF* */a:abcgroup %i
+select -assert-none */t:$_DFF* */a:abcgroup %i */w:clk_1 %co1:+[C] %d
+select *
+clean
+check -assert
+stat

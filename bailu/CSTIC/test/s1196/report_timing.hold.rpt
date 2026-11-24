@@ -1,0 +1,1401 @@
+#Timing report of worst 32 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: pg10.inpad[0] (.input at (2,0) clocked by pclk)
+Endpoint  : ng30.D[0] (.latch at (1,3) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg10.inpad[0] (.input at (2,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.305     0.305
+| (intra 'clb' routing)                                          0.000     0.305
+ng503.in[0] (.names at (1,3))                                    0.000     0.305
+| (primitive '.names' combinational delay)                       0.235     0.540
+ng503.out[0] (.names at (1,3))                                   0.000     0.540
+| (intra 'clb' routing)                                          0.000     0.540
+ng30.D[0] (.latch at (1,3))                                      0.000     0.540
+data arrival time                                                          0.540
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng30.clk[0] (.latch at (1,3))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.540
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.474
+
+
+#Path 2
+Startpoint: pg9.inpad[0] (.input at (0,4) clocked by pclk)
+Endpoint  : ng37.D[0] (.latch at (3,7) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg9.inpad[0] (.input at (0,4))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.411     0.411
+| (intra 'clb' routing)                                          0.000     0.411
+ng510.in[1] (.names at (3,7))                                    0.000     0.411
+| (primitive '.names' combinational delay)                       0.235     0.646
+ng510.out[0] (.names at (3,7))                                   0.000     0.646
+| (intra 'clb' routing)                                          0.000     0.646
+ng37.D[0] (.latch at (3,7))                                      0.000     0.646
+data arrival time                                                          0.646
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng37.clk[0] (.latch at (3,7))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.646
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.580
+
+
+#Path 3
+Startpoint: pg2.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : ng39.D[0] (.latch at (5,3) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg2.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.451     0.451
+| (intra 'clb' routing)                                          0.000     0.451
+ng512.in[0] (.names at (5,3))                                    0.000     0.451
+| (primitive '.names' combinational delay)                       0.235     0.686
+ng512.out[0] (.names at (5,3))                                   0.000     0.686
+| (intra 'clb' routing)                                          0.000     0.686
+ng39.D[0] (.latch at (5,3))                                      0.000     0.686
+data arrival time                                                          0.686
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng39.clk[0] (.latch at (5,3))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.686
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.620
+
+
+#Path 4
+Startpoint: pg45.Q[0] (.latch at (4,4) clocked by pclk)
+Endpoint  : out:pg45.outpad[0] (.output at (0,4) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+pg45.clk[0] (.latch at (4,4))                                    0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+pg45.Q[0] (.latch at (4,4)) [clock-to-output]                    0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.703     0.827
+| (intra 'io' routing)                                           0.000     0.827
+out:pg45.outpad[0] (.output at (0,4))                            0.000     0.827
+data arrival time                                                          0.827
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.827
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.827
+
+
+#Path 5
+Startpoint: pg7.inpad[0] (.input at (0,4) clocked by pclk)
+Endpoint  : ng38.D[0] (.latch at (3,7) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg7.inpad[0] (.input at (0,4))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.433     0.433
+| (intra 'clb' routing)                                          0.000     0.433
+[1211].in[1] (.names at (3,7))                                   0.000     0.433
+| (primitive '.names' combinational delay)                       0.235     0.668
+[1211].out[0] (.names at (3,7))                                  0.000     0.668
+| (intra 'clb' routing)                                          0.000     0.668
+ng511.in[0] (.names at (3,7))                                    0.000     0.668
+| (primitive '.names' combinational delay)                       0.235     0.903
+ng511.out[0] (.names at (3,7))                                   0.000     0.903
+| (intra 'clb' routing)                                          0.000     0.903
+ng38.D[0] (.latch at (3,7))                                      0.000     0.903
+data arrival time                                                          0.903
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng38.clk[0] (.latch at (3,7))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.903
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.837
+
+
+#Path 6
+Startpoint: pg8.inpad[0] (.input at (3,0) clocked by pclk)
+Endpoint  : ng35.D[0] (.latch at (4,1) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg8.inpad[0] (.input at (3,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.218     0.218
+| (intra 'clb' routing)                                          0.000     0.218
+[1222].in[0] (.names at (4,1))                                   0.000     0.218
+| (primitive '.names' combinational delay)                       0.235     0.453
+[1222].out[0] (.names at (4,1))                                  0.000     0.453
+| (intra 'clb' routing)                                          0.000     0.453
+[144].in[1] (.names at (4,1))                                    0.000     0.453
+| (primitive '.names' combinational delay)                       0.235     0.688
+[144].out[0] (.names at (4,1))                                   0.000     0.688
+| (intra 'clb' routing)                                          0.000     0.688
+ng508.in[0] (.names at (4,1))                                    0.000     0.688
+| (primitive '.names' combinational delay)                       0.235     0.923
+ng508.out[0] (.names at (4,1))                                   0.000     0.923
+| (intra 'clb' routing)                                          0.000     0.923
+ng35.D[0] (.latch at (4,1))                                      0.000     0.923
+data arrival time                                                          0.923
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng35.clk[0] (.latch at (4,1))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.923
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.857
+
+
+#Path 7
+Startpoint: pg12.inpad[0] (.input at (8,4) clocked by pclk)
+Endpoint  : pg45.D[0] (.latch at (4,4) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg12.inpad[0] (.input at (8,4))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.460     0.460
+| (intra 'clb' routing)                                          0.000     0.460
+[296].in[0] (.names at (4,4))                                    0.000     0.460
+| (primitive '.names' combinational delay)                       0.235     0.695
+[296].out[0] (.names at (4,4))                                   0.000     0.695
+| (intra 'clb' routing)                                          0.000     0.695
+ng518.in[0] (.names at (4,4))                                    0.000     0.695
+| (primitive '.names' combinational delay)                       0.235     0.930
+ng518.out[0] (.names at (4,4))                                   0.000     0.930
+| (intra 'clb' routing)                                          0.000     0.930
+pg45.D[0] (.latch at (4,4))                                      0.000     0.930
+data arrival time                                                          0.930
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+pg45.clk[0] (.latch at (4,4))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.930
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.864
+
+
+#Path 8
+Startpoint: pg11.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : ng42.D[0] (.latch at (3,4) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg11.inpad[0] (.input at (4,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.483     0.483
+| (intra 'clb' routing)                                          0.000     0.483
+ng388.in[0] (.names at (3,4))                                    0.000     0.483
+| (primitive '.names' combinational delay)                       0.235     0.718
+ng388.out[0] (.names at (3,4))                                   0.000     0.718
+| (intra 'clb' routing)                                          0.000     0.718
+ng515.in[0] (.names at (3,4))                                    0.000     0.718
+| (primitive '.names' combinational delay)                       0.235     0.953
+ng515.out[0] (.names at (3,4))                                   0.000     0.953
+| (intra 'clb' routing)                                          0.000     0.953
+ng42.D[0] (.latch at (3,4))                                      0.000     0.953
+data arrival time                                                          0.953
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng42.clk[0] (.latch at (3,4))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.953
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.887
+
+
+#Path 9
+Startpoint: pg7.inpad[0] (.input at (0,4) clocked by pclk)
+Endpoint  : ng41.D[0] (.latch at (3,3) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg7.inpad[0] (.input at (0,4))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.361     0.361
+| (intra 'clb' routing)                                          0.000     0.361
+[117].in[0] (.names at (3,3))                                    0.000     0.361
+| (primitive '.names' combinational delay)                       0.235     0.596
+[117].out[0] (.names at (3,3))                                   0.000     0.596
+| (intra 'clb' routing)                                          0.000     0.596
+ng279.in[0] (.names at (3,3))                                    0.000     0.596
+| (primitive '.names' combinational delay)                       0.235     0.831
+ng279.out[0] (.names at (3,3))                                   0.000     0.831
+| (intra 'clb' routing)                                          0.000     0.831
+ng514.in[0] (.names at (3,3))                                    0.000     0.831
+| (primitive '.names' combinational delay)                       0.235     1.066
+ng514.out[0] (.names at (3,3))                                   0.000     1.066
+| (intra 'clb' routing)                                          0.000     1.066
+ng41.D[0] (.latch at (3,3))                                      0.000     1.066
+data arrival time                                                          1.066
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng41.clk[0] (.latch at (3,3))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.066
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.000
+
+
+#Path 10
+Startpoint: pg7.inpad[0] (.input at (0,4) clocked by pclk)
+Endpoint  : ng31.D[0] (.latch at (1,6) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg7.inpad[0] (.input at (0,4))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.433     0.433
+| (intra 'clb' routing)                                          0.000     0.433
+[358].in[0] (.names at (3,7))                                    0.000     0.433
+| (primitive '.names' combinational delay)                       0.235     0.668
+[358].out[0] (.names at (3,7))                                   0.000     0.668
+| (intra 'clb' routing)                                          0.000     0.668
+| (inter-block routing)                                          0.191     0.859
+| (intra 'clb' routing)                                          0.000     0.859
+ng504.in[1] (.names at (1,6))                                    0.000     0.859
+| (primitive '.names' combinational delay)                       0.235     1.094
+ng504.out[0] (.names at (1,6))                                   0.000     1.094
+| (intra 'clb' routing)                                          0.000     1.094
+ng31.D[0] (.latch at (1,6))                                      0.000     1.094
+data arrival time                                                          1.094
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng31.clk[0] (.latch at (1,6))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.094
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.028
+
+
+#Path 11
+Startpoint: pg1.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : ng46.D[0] (.latch at (3,2) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg1.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.476     0.476
+| (intra 'clb' routing)                                          0.000     0.476
+[217].in[0] (.names at (3,1))                                    0.000     0.476
+| (primitive '.names' combinational delay)                       0.235     0.711
+[217].out[0] (.names at (3,1))                                   0.000     0.711
+| (intra 'clb' routing)                                          0.000     0.711
+| (inter-block routing)                                          0.189     0.900
+| (intra 'clb' routing)                                          0.000     0.900
+ng519.in[0] (.names at (3,2))                                    0.000     0.900
+| (primitive '.names' combinational delay)                       0.235     1.135
+ng519.out[0] (.names at (3,2))                                   0.000     1.135
+| (intra 'clb' routing)                                          0.000     1.135
+ng46.D[0] (.latch at (3,2))                                      0.000     1.135
+data arrival time                                                          1.135
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng46.clk[0] (.latch at (3,2))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.135
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.069
+
+
+#Path 12
+Startpoint: pg5.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : ng36.D[0] (.latch at (5,6) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg5.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.684     0.684
+| (intra 'clb' routing)                                          0.000     0.684
+[364].in[0] (.names at (5,6))                                    0.000     0.684
+| (primitive '.names' combinational delay)                       0.235     0.919
+[364].out[0] (.names at (5,6))                                   0.000     0.919
+| (intra 'clb' routing)                                          0.000     0.919
+ng509.in[1] (.names at (5,6))                                    0.000     0.919
+| (primitive '.names' combinational delay)                       0.235     1.154
+ng509.out[0] (.names at (5,6))                                   0.000     1.154
+| (intra 'clb' routing)                                          0.000     1.154
+ng36.D[0] (.latch at (5,6))                                      0.000     1.154
+data arrival time                                                          1.154
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng36.clk[0] (.latch at (5,6))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.154
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.088
+
+
+#Path 13
+Startpoint: ng31.Q[0] (.latch at (1,6) clocked by pclk)
+Endpoint  : ng40.D[0] (.latch at (1,7) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng31.clk[0] (.latch at (1,6))                                    0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+ng31.Q[0] (.latch at (1,6)) [clock-to-output]                    0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.150     0.274
+| (intra 'clb' routing)                                          0.000     0.274
+[199].in[0] (.names at (1,7))                                    0.000     0.274
+| (primitive '.names' combinational delay)                       0.235     0.509
+[199].out[0] (.names at (1,7))                                   0.000     0.509
+| (intra 'clb' routing)                                          0.000     0.509
+[335].in[1] (.names at (1,7))                                    0.000     0.509
+| (primitive '.names' combinational delay)                       0.235     0.744
+[335].out[0] (.names at (1,7))                                   0.000     0.744
+| (intra 'clb' routing)                                          0.000     0.744
+ng360.in[0] (.names at (1,7))                                    0.000     0.744
+| (primitive '.names' combinational delay)                       0.235     0.979
+ng360.out[0] (.names at (1,7))                                   0.000     0.979
+| (intra 'clb' routing)                                          0.000     0.979
+ng513.in[0] (.names at (1,7))                                    0.000     0.979
+| (primitive '.names' combinational delay)                       0.235     1.214
+ng513.out[0] (.names at (1,7))                                   0.000     1.214
+| (intra 'clb' routing)                                          0.000     1.214
+ng40.D[0] (.latch at (1,7))                                      0.000     1.214
+data arrival time                                                          1.214
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng40.clk[0] (.latch at (1,7))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.214
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.148
+
+
+#Path 14
+Startpoint: pg13.inpad[0] (.input at (8,5) clocked by pclk)
+Endpoint  : ng34.D[0] (.latch at (4,3) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg13.inpad[0] (.input at (8,5))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.361     0.361
+| (intra 'clb' routing)                                          0.000     0.361
+[1220].in[0] (.names at (5,5))                                   0.000     0.361
+| (primitive '.names' combinational delay)                       0.235     0.596
+[1220].out[0] (.names at (5,5))                                  0.000     0.596
+| (intra 'clb' routing)                                          0.000     0.596
+| (inter-block routing)                                          0.219     0.815
+| (intra 'clb' routing)                                          0.000     0.815
+[53].in[1] (.names at (4,3))                                     0.000     0.815
+| (primitive '.names' combinational delay)                       0.235     1.050
+[53].out[0] (.names at (4,3))                                    0.000     1.050
+| (intra 'clb' routing)                                          0.000     1.050
+ng507.in[1] (.names at (4,3))                                    0.000     1.050
+| (primitive '.names' combinational delay)                       0.235     1.285
+ng507.out[0] (.names at (4,3))                                   0.000     1.285
+| (intra 'clb' routing)                                          0.000     1.285
+ng34.D[0] (.latch at (4,3))                                      0.000     1.285
+data arrival time                                                          1.285
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng34.clk[0] (.latch at (4,3))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.285
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.219
+
+
+#Path 15
+Startpoint: pg5.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : ng29.D[0] (.latch at (4,2) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg5.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.594     0.594
+| (intra 'clb' routing)                                          0.000     0.594
+[209].in[0] (.names at (4,2))                                    0.000     0.594
+| (primitive '.names' combinational delay)                       0.235     0.829
+[209].out[0] (.names at (4,2))                                   0.000     0.829
+| (intra 'clb' routing)                                          0.000     0.829
+[208].in[1] (.names at (4,2))                                    0.000     0.829
+| (primitive '.names' combinational delay)                       0.235     1.064
+[208].out[0] (.names at (4,2))                                   0.000     1.064
+| (intra 'clb' routing)                                          0.000     1.064
+ng502.in[0] (.names at (4,2))                                    0.000     1.064
+| (primitive '.names' combinational delay)                       0.235     1.299
+ng502.out[0] (.names at (4,2))                                   0.000     1.299
+| (intra 'clb' routing)                                          0.000     1.299
+ng29.D[0] (.latch at (4,2))                                      0.000     1.299
+data arrival time                                                          1.299
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng29.clk[0] (.latch at (4,2))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.299
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.233
+
+
+#Path 16
+Startpoint: pg12.inpad[0] (.input at (8,4) clocked by pclk)
+Endpoint  : out:pg537.outpad[0] (.output at (4,8) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg12.inpad[0] (.input at (8,4))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.348     0.348
+| (intra 'clb' routing)                                          0.000     0.348
+[126].in[0] (.names at (4,5))                                    0.000     0.348
+| (primitive '.names' combinational delay)                       0.235     0.583
+[126].out[0] (.names at (4,5))                                   0.000     0.583
+| (intra 'clb' routing)                                          0.000     0.583
+pg537.in[1] (.names at (4,5))                                    0.000     0.583
+| (primitive '.names' combinational delay)                       0.235     0.818
+pg537.out[0] (.names at (4,5))                                   0.000     0.818
+| (intra 'clb' routing)                                          0.000     0.818
+| (inter-block routing)                                          0.453     1.271
+| (intra 'io' routing)                                           0.000     1.271
+out:pg537.outpad[0] (.output at (4,8))                           0.000     1.271
+data arrival time                                                          1.271
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.271
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.271
+
+
+#Path 17
+Startpoint: ng29.Q[0] (.latch at (4,2) clocked by pclk)
+Endpoint  : out:pg550.outpad[0] (.output at (3,0) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng29.clk[0] (.latch at (4,2))                                    0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+ng29.Q[0] (.latch at (4,2)) [clock-to-output]                    0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+[286].in[0] (.names at (4,2))                                    0.000     0.124
+| (primitive '.names' combinational delay)                       0.235     0.359
+[286].out[0] (.names at (4,2))                                   0.000     0.359
+| (intra 'clb' routing)                                          0.000     0.359
+[1293].in[0] (.names at (4,2))                                   0.000     0.359
+| (primitive '.names' combinational delay)                       0.235     0.594
+[1293].out[0] (.names at (4,2))                                  0.000     0.594
+| (intra 'clb' routing)                                          0.000     0.594
+pg550.in[0] (.names at (4,2))                                    0.000     0.594
+| (primitive '.names' combinational delay)                       0.235     0.829
+pg550.out[0] (.names at (4,2))                                   0.000     0.829
+| (intra 'clb' routing)                                          0.000     0.829
+| (inter-block routing)                                          0.458     1.287
+| (intra 'io' routing)                                           0.000     1.287
+out:pg550.outpad[0] (.output at (3,0))                           0.000     1.287
+data arrival time                                                          1.287
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.287
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.287
+
+
+#Path 18
+Startpoint: pg7.inpad[0] (.input at (0,4) clocked by pclk)
+Endpoint  : ng44.D[0] (.latch at (4,5) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg7.inpad[0] (.input at (0,4))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.361     0.361
+| (intra 'clb' routing)                                          0.000     0.361
+[131].in[0] (.names at (3,3))                                    0.000     0.361
+| (primitive '.names' combinational delay)                       0.235     0.596
+[131].out[0] (.names at (3,3))                                   0.000     0.596
+| (intra 'clb' routing)                                          0.000     0.596
+| (inter-block routing)                                          0.356     0.952
+| (intra 'clb' routing)                                          0.000     0.952
+[220].in[0] (.names at (4,5))                                    0.000     0.952
+| (primitive '.names' combinational delay)                       0.235     1.187
+[220].out[0] (.names at (4,5))                                   0.000     1.187
+| (intra 'clb' routing)                                          0.000     1.187
+ng517.in[0] (.names at (4,5))                                    0.000     1.187
+| (primitive '.names' combinational delay)                       0.235     1.422
+ng517.out[0] (.names at (4,5))                                   0.000     1.422
+| (intra 'clb' routing)                                          0.000     1.422
+ng44.D[0] (.latch at (4,5))                                      0.000     1.422
+data arrival time                                                          1.422
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng44.clk[0] (.latch at (4,5))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.422
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.356
+
+
+#Path 19
+Startpoint: pg1.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : ng43.D[0] (.latch at (3,5) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg1.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.503     0.503
+| (intra 'clb' routing)                                          0.000     0.503
+[112].in[1] (.names at (3,5))                                    0.000     0.503
+| (primitive '.names' combinational delay)                       0.235     0.738
+[112].out[0] (.names at (3,5))                                   0.000     0.738
+| (intra 'clb' routing)                                          0.000     0.738
+[321].in[0] (.names at (3,5))                                    0.000     0.738
+| (primitive '.names' combinational delay)                       0.235     0.973
+[321].out[0] (.names at (3,5))                                   0.000     0.973
+| (intra 'clb' routing)                                          0.000     0.973
+ng411.in[1] (.names at (3,5))                                    0.000     0.973
+| (primitive '.names' combinational delay)                       0.235     1.208
+ng411.out[0] (.names at (3,5))                                   0.000     1.208
+| (intra 'clb' routing)                                          0.000     1.208
+ng516.in[0] (.names at (3,5))                                    0.000     1.208
+| (primitive '.names' combinational delay)                       0.235     1.443
+ng516.out[0] (.names at (3,5))                                   0.000     1.443
+| (intra 'clb' routing)                                          0.000     1.443
+ng43.D[0] (.latch at (3,5))                                      0.000     1.443
+data arrival time                                                          1.443
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng43.clk[0] (.latch at (3,5))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.443
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.377
+
+
+#Path 20
+Startpoint: pg12.inpad[0] (.input at (8,4) clocked by pclk)
+Endpoint  : ng33.D[0] (.latch at (1,6) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg12.inpad[0] (.input at (8,4))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.325     0.325
+| (intra 'clb' routing)                                          0.000     0.325
+[1244].in[1] (.names at (5,4))                                   0.000     0.325
+| (primitive '.names' combinational delay)                       0.235     0.560
+[1244].out[0] (.names at (5,4))                                  0.000     0.560
+| (intra 'clb' routing)                                          0.000     0.560
+[206].in[1] (.names at (5,4))                                    0.000     0.560
+| (primitive '.names' combinational delay)                       0.235     0.795
+[206].out[0] (.names at (5,4))                                   0.000     0.795
+| (intra 'clb' routing)                                          0.000     0.795
+| (inter-block routing)                                          0.428     1.223
+| (intra 'clb' routing)                                          0.000     1.223
+ng506.in[1] (.names at (1,6))                                    0.000     1.223
+| (primitive '.names' combinational delay)                       0.235     1.458
+ng506.out[0] (.names at (1,6))                                   0.000     1.458
+| (intra 'clb' routing)                                          0.000     1.458
+ng33.D[0] (.latch at (1,6))                                      0.000     1.458
+data arrival time                                                          1.458
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng33.clk[0] (.latch at (1,6))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.458
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.392
+
+
+#Path 21
+Startpoint: pg12.inpad[0] (.input at (8,4) clocked by pclk)
+Endpoint  : out:pg535.outpad[0] (.output at (0,6) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg12.inpad[0] (.input at (8,4))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.443     0.443
+| (intra 'clb' routing)                                          0.000     0.443
+[59].in[0] (.names at (3,6))                                     0.000     0.443
+| (primitive '.names' combinational delay)                       0.235     0.678
+[59].out[0] (.names at (3,6))                                    0.000     0.678
+| (intra 'clb' routing)                                          0.000     0.678
+pg535.in[0] (.names at (3,6))                                    0.000     0.678
+| (primitive '.names' combinational delay)                       0.235     0.913
+pg535.out[0] (.names at (3,6))                                   0.000     0.913
+| (intra 'clb' routing)                                          0.000     0.913
+| (inter-block routing)                                          0.485     1.398
+| (intra 'io' routing)                                           0.000     1.398
+out:pg535.outpad[0] (.output at (0,6))                           0.000     1.398
+data arrival time                                                          1.398
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.398
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.398
+
+
+#Path 22
+Startpoint: pg1.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : out:pg551.outpad[0] (.output at (5,0) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg1.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.356     0.356
+| (intra 'clb' routing)                                          0.000     0.356
+[1337].in[1] (.names at (5,1))                                   0.000     0.356
+| (primitive '.names' combinational delay)                       0.235     0.591
+[1337].out[0] (.names at (5,1))                                  0.000     0.591
+| (intra 'clb' routing)                                          0.000     0.591
+[102].in[1] (.names at (5,1))                                    0.000     0.591
+| (primitive '.names' combinational delay)                       0.235     0.826
+[102].out[0] (.names at (5,1))                                   0.000     0.826
+| (intra 'clb' routing)                                          0.000     0.826
+[1341].in[1] (.names at (5,1))                                   0.000     0.826
+| (primitive '.names' combinational delay)                       0.235     1.061
+[1341].out[0] (.names at (5,1))                                  0.000     1.061
+| (intra 'clb' routing)                                          0.000     1.061
+pg551.in[0] (.names at (5,1))                                    0.000     1.061
+| (primitive '.names' combinational delay)                       0.235     1.296
+pg551.out[0] (.names at (5,1))                                   0.000     1.296
+| (intra 'clb' routing)                                          0.000     1.296
+| (inter-block routing)                                          0.218     1.514
+| (intra 'io' routing)                                           0.000     1.514
+out:pg551.outpad[0] (.output at (5,0))                           0.000     1.514
+data arrival time                                                          1.514
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.514
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.514
+
+
+#Path 23
+Startpoint: pg3.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : ng32.D[0] (.latch at (3,6) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg3.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.666     0.666
+| (intra 'clb' routing)                                          0.000     0.666
+[107].in[0] (.names at (3,6))                                    0.000     0.666
+| (primitive '.names' combinational delay)                       0.235     0.901
+[107].out[0] (.names at (3,6))                                   0.000     0.901
+| (intra 'clb' routing)                                          0.000     0.901
+[354].in[1] (.names at (3,6))                                    0.000     0.901
+| (primitive '.names' combinational delay)                       0.235     1.136
+[354].out[0] (.names at (3,6))                                   0.000     1.136
+| (intra 'clb' routing)                                          0.000     1.136
+[1227].in[0] (.names at (3,6))                                   0.000     1.136
+| (primitive '.names' combinational delay)                       0.235     1.371
+[1227].out[0] (.names at (3,6))                                  0.000     1.371
+| (intra 'clb' routing)                                          0.000     1.371
+ng505.in[1] (.names at (3,6))                                    0.000     1.371
+| (primitive '.names' combinational delay)                       0.235     1.606
+ng505.out[0] (.names at (3,6))                                   0.000     1.606
+| (intra 'clb' routing)                                          0.000     1.606
+ng32.D[0] (.latch at (3,6))                                      0.000     1.606
+data arrival time                                                          1.606
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng32.clk[0] (.latch at (3,6))                                    0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          1.606
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.540
+
+
+#Path 24
+Startpoint: ng41.Q[0] (.latch at (3,3) clocked by pclk)
+Endpoint  : out:pg546.outpad[0] (.output at (8,3) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng41.clk[0] (.latch at (3,3))                                    0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+ng41.Q[0] (.latch at (3,3)) [clock-to-output]                    0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.499     0.623
+| (intra 'clb' routing)                                          0.000     0.623
+pg546.in[0] (.names at (7,3))                                    0.000     0.623
+| (primitive '.names' combinational delay)                       0.235     0.858
+pg546.out[0] (.names at (7,3))                                   0.000     0.858
+| (intra 'clb' routing)                                          0.000     0.858
+| (inter-block routing)                                          0.726     1.584
+| (intra 'io' routing)                                           0.000     1.584
+out:pg546.outpad[0] (.output at (8,3))                           0.000     1.584
+data arrival time                                                          1.584
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.584
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.584
+
+
+#Path 25
+Startpoint: pg12.inpad[0] (.input at (8,4) clocked by pclk)
+Endpoint  : out:pg539.outpad[0] (.output at (5,0) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg12.inpad[0] (.input at (8,4))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.446     0.446
+| (intra 'clb' routing)                                          0.000     0.446
+[273].in[0] (.names at (5,5))                                    0.000     0.446
+| (primitive '.names' combinational delay)                       0.235     0.681
+[273].out[0] (.names at (5,5))                                   0.000     0.681
+| (intra 'clb' routing)                                          0.000     0.681
+pg539.in[0] (.names at (5,5))                                    0.000     0.681
+| (primitive '.names' combinational delay)                       0.235     0.916
+pg539.out[0] (.names at (5,5))                                   0.000     0.916
+| (intra 'clb' routing)                                          0.000     0.916
+| (inter-block routing)                                          0.671     1.586
+| (intra 'io' routing)                                           0.000     1.586
+out:pg539.outpad[0] (.output at (5,0))                           0.000     1.586
+data arrival time                                                          1.586
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.586
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.586
+
+
+#Path 26
+Startpoint: pg12.inpad[0] (.input at (8,4) clocked by pclk)
+Endpoint  : out:pg532.outpad[0] (.output at (0,4) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg12.inpad[0] (.input at (8,4))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.483     0.483
+| (intra 'clb' routing)                                          0.000     0.483
+[240].in[0] (.names at (3,4))                                    0.000     0.483
+| (primitive '.names' combinational delay)                       0.235     0.718
+[240].out[0] (.names at (3,4))                                   0.000     0.718
+| (intra 'clb' routing)                                          0.000     0.718
+pg532.in[0] (.names at (3,4))                                    0.000     0.718
+| (primitive '.names' combinational delay)                       0.235     0.953
+pg532.out[0] (.names at (3,4))                                   0.000     0.953
+| (intra 'clb' routing)                                          0.000     0.953
+| (inter-block routing)                                          0.675     1.628
+| (intra 'io' routing)                                           0.000     1.628
+out:pg532.outpad[0] (.output at (0,4))                           0.000     1.628
+data arrival time                                                          1.628
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.628
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.628
+
+
+#Path 27
+Startpoint: pg6.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : out:pg552.outpad[0] (.output at (5,0) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg6.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.485     0.485
+| (intra 'clb' routing)                                          0.000     0.485
+[71].in[0] (.names at (5,3))                                     0.000     0.485
+| (primitive '.names' combinational delay)                       0.235     0.720
+[71].out[0] (.names at (5,3))                                    0.000     0.720
+| (intra 'clb' routing)                                          0.000     0.720
+pg552.in[0] (.names at (5,3))                                    0.000     0.720
+| (primitive '.names' combinational delay)                       0.235     0.955
+pg552.out[0] (.names at (5,3))                                   0.000     0.955
+| (intra 'clb' routing)                                          0.000     0.955
+| (inter-block routing)                                          0.732     1.687
+| (intra 'io' routing)                                           0.000     1.687
+out:pg552.outpad[0] (.output at (5,0))                           0.000     1.687
+data arrival time                                                          1.687
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.687
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.687
+
+
+#Path 28
+Startpoint: ng34.Q[0] (.latch at (4,3) clocked by pclk)
+Endpoint  : out:pg547.outpad[0] (.output at (0,4) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng34.clk[0] (.latch at (4,3))                                    0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+ng34.Q[0] (.latch at (4,3)) [clock-to-output]                    0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.336     0.460
+| (intra 'clb' routing)                                          0.000     0.460
+[84].in[0] (.names at (1,4))                                     0.000     0.460
+| (primitive '.names' combinational delay)                       0.235     0.695
+[84].out[0] (.names at (1,4))                                    0.000     0.695
+| (intra 'clb' routing)                                          0.000     0.695
+pg547.in[0] (.names at (1,4))                                    0.000     0.695
+| (primitive '.names' combinational delay)                       0.235     0.930
+pg547.out[0] (.names at (1,4))                                   0.000     0.930
+| (intra 'clb' routing)                                          0.000     0.930
+| (inter-block routing)                                          0.853     1.783
+| (intra 'io' routing)                                           0.000     1.783
+out:pg547.outpad[0] (.output at (0,4))                           0.000     1.783
+data arrival time                                                          1.783
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.783
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.783
+
+
+#Path 29
+Startpoint: ng42.Q[0] (.latch at (3,4) clocked by pclk)
+Endpoint  : out:pg548.outpad[0] (.output at (0,2) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+pclk.inpad[0] (.input at (1,0))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+ng42.clk[0] (.latch at (3,4))                                    0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+ng42.Q[0] (.latch at (3,4)) [clock-to-output]                    0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+[120].in[0] (.names at (3,4))                                    0.000     0.124
+| (primitive '.names' combinational delay)                       0.235     0.359
+[120].out[0] (.names at (3,4))                                   0.000     0.359
+| (intra 'clb' routing)                                          0.000     0.359
+| (inter-block routing)                                          0.639     0.998
+| (intra 'clb' routing)                                          0.000     0.998
+pg548.in[1] (.names at (1,2))                                    0.000     0.998
+| (primitive '.names' combinational delay)                       0.235     1.233
+pg548.out[0] (.names at (1,2))                                   0.000     1.233
+| (intra 'clb' routing)                                          0.000     1.233
+| (inter-block routing)                                          0.646     1.879
+| (intra 'io' routing)                                           0.000     1.879
+out:pg548.outpad[0] (.output at (0,2))                           0.000     1.879
+data arrival time                                                          1.879
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.879
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.879
+
+
+#Path 30
+Startpoint: pg6.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : out:pg542.outpad[0] (.output at (0,7) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg6.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.535     0.535
+| (intra 'clb' routing)                                          0.000     0.535
+[1311].in[1] (.names at (1,7))                                   0.000     0.535
+| (primitive '.names' combinational delay)                       0.235     0.770
+[1311].out[0] (.names at (1,7))                                  0.000     0.770
+| (intra 'clb' routing)                                          0.000     0.770
+[257].in[1] (.names at (1,7))                                    0.000     0.770
+| (primitive '.names' combinational delay)                       0.235     1.005
+[257].out[0] (.names at (1,7))                                   0.000     1.005
+| (intra 'clb' routing)                                          0.000     1.005
+[1312].in[0] (.names at (1,7))                                   0.000     1.005
+| (primitive '.names' combinational delay)                       0.235     1.240
+[1312].out[0] (.names at (1,7))                                  0.000     1.240
+| (intra 'clb' routing)                                          0.000     1.240
+pg542.in[1] (.names at (1,7))                                    0.000     1.240
+| (primitive '.names' combinational delay)                       0.235     1.475
+pg542.out[0] (.names at (1,7))                                   0.000     1.475
+| (intra 'clb' routing)                                          0.000     1.475
+| (inter-block routing)                                          0.484     1.959
+| (intra 'io' routing)                                           0.000     1.959
+out:pg542.outpad[0] (.output at (0,7))                           0.000     1.959
+data arrival time                                                          1.959
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.959
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.959
+
+
+#Path 31
+Startpoint: pg1.inpad[0] (.input at (4,0) clocked by pclk)
+Endpoint  : out:pg549.outpad[0] (.output at (5,0) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg1.inpad[0] (.input at (4,0))                                   0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.360     0.360
+| (intra 'clb' routing)                                          0.000     0.360
+[150].in[0] (.names at (4,2))                                    0.000     0.360
+| (primitive '.names' combinational delay)                       0.235     0.595
+[150].out[0] (.names at (4,2))                                   0.000     0.595
+| (intra 'clb' routing)                                          0.000     0.595
+[266].in[0] (.names at (4,2))                                    0.000     0.595
+| (primitive '.names' combinational delay)                       0.235     0.830
+[266].out[0] (.names at (4,2))                                   0.000     0.830
+| (intra 'clb' routing)                                          0.000     0.830
+[1308].in[0] (.names at (4,2))                                   0.000     0.830
+| (primitive '.names' combinational delay)                       0.235     1.065
+[1308].out[0] (.names at (4,2))                                  0.000     1.065
+| (intra 'clb' routing)                                          0.000     1.065
+pg549.in[1] (.names at (4,2))                                    0.000     1.065
+| (primitive '.names' combinational delay)                       0.235     1.300
+pg549.out[0] (.names at (4,2))                                   0.000     1.300
+| (intra 'clb' routing)                                          0.000     1.300
+| (inter-block routing)                                          0.664     1.964
+| (intra 'io' routing)                                           0.000     1.964
+out:pg549.outpad[0] (.output at (5,0))                           0.000     1.964
+data arrival time                                                          1.964
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          1.964
+--------------------------------------------------------------------------------
+slack (MET)                                                                1.964
+
+
+#Path 32
+Startpoint: pg12.inpad[0] (.input at (8,4) clocked by pclk)
+Endpoint  : out:pg530.outpad[0] (.output at (3,0) clocked by pclk)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pg12.inpad[0] (.input at (8,4))                                  0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.325     0.325
+| (intra 'clb' routing)                                          0.000     0.325
+[1297].in[1] (.names at (5,4))                                   0.000     0.325
+| (primitive '.names' combinational delay)                       0.235     0.560
+[1297].out[0] (.names at (5,4))                                  0.000     0.560
+| (intra 'clb' routing)                                          0.000     0.560
+| (inter-block routing)                                          0.357     0.917
+| (intra 'clb' routing)                                          0.000     0.917
+[278].in[1] (.names at (3,5))                                    0.000     0.917
+| (primitive '.names' combinational delay)                       0.235     1.152
+[278].out[0] (.names at (3,5))                                   0.000     1.152
+| (intra 'clb' routing)                                          0.000     1.152
+pg530.in[0] (.names at (3,5))                                    0.000     1.152
+| (primitive '.names' combinational delay)                       0.235     1.387
+pg530.out[0] (.names at (3,5))                                   0.000     1.387
+| (intra 'clb' routing)                                          0.000     1.387
+| (inter-block routing)                                          0.704     2.091
+| (intra 'io' routing)                                           0.000     2.091
+out:pg530.outpad[0] (.output at (3,0))                           0.000     2.091
+data arrival time                                                          2.091
+
+clock pclk (rise edge)                                           0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          2.091
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.091
+
+
+#End of timing report

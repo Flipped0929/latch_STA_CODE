@@ -1,0 +1,29 @@
+read_liberty -ignore_miss_func -ignore_miss_dir -ignore_miss_data_latch -ignore_buses /home/bailufrost/eda/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /tmp/counter_dff_openroad_v5h1vhyu/inputs/counter_sky130.v
+hierarchy -top counter
+proc
+flatten
+opt
+clk2fflogic
+opt
+rename counter gold
+design -stash gold
+read_liberty -ignore_miss_func -ignore_miss_dir -ignore_miss_data_latch -ignore_buses /home/bailufrost/eda/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /tmp/counter_dff_openroad_v5h1vhyu/results/counter_routed.v
+hierarchy -top counter
+proc
+flatten
+opt
+clk2fflogic
+opt
+delete counter/VDD counter/VSS
+rename counter gate
+design -stash gate
+design -copy-from gold -as gold gold
+design -copy-from gate -as gate gate
+equiv_make gold gate equiv
+hierarchy -top equiv
+equiv_struct
+equiv_simple -seq 5
+equiv_induct -seq 5
+equiv_status -assert

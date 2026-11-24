@@ -1,0 +1,201 @@
+min_delay/hold group asynchronous
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+state_phi2_bit2/RESET_B (sky130_fd_sc_hd__dlrtp_2)    2.017664    2.233052    0.215387 (MET)
+
+min_delay/hold group phi1
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+state_phi1_toggle3/D (sky130_fd_sc_hd__dlrtp_1)    1.148160    1.175483    0.027322 (MET)
+
+min_delay/hold group phi2
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+state_phi2_bit1/D (sky130_fd_sc_hd__dlrtp_4)    1.978875    2.246305    0.267429 (MET)
+
+max_delay/setup group asynchronous
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+state_phi1_bit3/RESET_B (sky130_fd_sc_hd__dlrtp_1)    2.773604    2.533266    0.240338 (MET)
+
+max_delay/setup group phi1
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+count[0] (output)                       1.491500    1.520940   -0.029440 (VIOLATED)
+
+max_delay/setup group phi2
+
+                                        Required      Actual
+Endpoint                                   Delay       Delay       Slack
+------------------------------------------------------------------------
+state_phi2_bit2/D (sky130_fd_sc_hd__dlrtp_2)    1.067047    0.818370    0.248676 (MET)
+
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+state_phi1_bit3/RESET_B                 1.500000    0.409999    1.090001 (MET)
+state_phi1_toggle3/RESET_B              1.500000    0.409998    1.090002 (MET)
+state_phi2_bit3/RESET_B                 1.500000    0.409998    1.090002 (MET)
+state_phi1_bit1/RESET_B                 1.500000    0.409996    1.090004 (MET)
+state_phi1_bit2/RESET_B                 1.500000    0.409997    1.090003 (MET)
+state_phi1_bit0/RESET_B                 1.500000    0.409996    1.090004 (MET)
+state_phi2_bit1/RESET_B                 1.500000    0.409996    1.090004 (MET)
+state_phi2_bit2/RESET_B                 1.500000    0.409996    1.090004 (MET)
+state_phi1_toggle2/RESET_B              1.500000    0.409994    1.090006 (MET)
+state_phi2_bit0/RESET_B                 1.500000    0.409995    1.090005 (MET)
+reset_release_buf1/X                    1.506103    0.409988    1.096115 (MET)
+_19_/X                                  1.494930    0.121813    1.373117 (MET)
+state_phi2_bit3/D                       1.500000    0.121813    1.378187 (MET)
+_17_/X                                  1.494930    0.114720    1.380210 (MET)
+_18_/X                                  1.494930    0.112139    1.382791 (MET)
+_11_/A1                                 1.500000    0.114720    1.385280 (MET)
+_15_/A                                  1.500000    0.112542    1.387458 (MET)
+state_phi1_bit2/D                       1.500000    0.112540    1.387460 (MET)
+state_phi2_bit2/D                       1.500000    0.112139    1.387861 (MET)
+state_phi2_bit2/Q                       1.502605    0.112540    1.390065 (MET)
+_17_/B                                  1.500000    0.101357    1.398643 (MET)
+_15_/C                                  1.500000    0.101353    1.398647 (MET)
+_12_/A0                                 1.500000    0.101350    1.398650 (MET)
+_16_/B                                  1.500000    0.101351    1.398649 (MET)
+_20_/A                                  1.500000    0.101350    1.398650 (MET)
+state_phi2_bit0/Q                       1.505861    0.101350    1.404511 (MET)
+state_phi1_bit3/D                       1.500000    0.092529    1.407471 (MET)
+_17_/A                                  1.500000    0.090559    1.409441 (MET)
+_11_/A0                                 1.500000    0.090556    1.409443 (MET)
+_15_/B                                  1.500000    0.090556    1.409443 (MET)
+_16_/A                                  1.500000    0.090556    1.409443 (MET)
+state_phi2_bit3/Q                       1.502605    0.092529    1.410076 (MET)
+state_phi2_bit1/Q                       1.505861    0.090556    1.415305 (MET)
+_19_/A                                  1.500000    0.072235    1.427765 (MET)
+_18_/A                                  1.500000    0.067077    1.432923 (MET)
+state_phi1_bit3/Q                       1.506382    0.072235    1.434147 (MET)
+_19_/B                                  1.500000    0.062130    1.437870 (MET)
+_12_/S                                  1.500000    0.061403    1.438597 (MET)
+_11_/S                                  1.500000    0.061272    1.438728 (MET)
+_16_/C                                  1.500000    0.061217    1.438783 (MET)
+bit3_enable/A                           1.500000    0.060897    1.439103 (MET)
+state_phi1_bit2/Q                       1.506382    0.067077    1.439305 (MET)
+_18_/B                                  1.500000    0.060664    1.439336 (MET)
+reset_release_buf1/A                    1.500000    0.060530    1.439470 (MET)
+clkbuf_0_clk_2/A                        1.500000    0.060227    1.439773 (MET)
+clkbuf_0_clk_1/A                        1.500000    0.060122    1.439878 (MET)
+state_phi1_toggle2/D                    1.500000    0.057249    1.442751 (MET)
+state_phi1_toggle3/Q                    1.506382    0.062130    1.444252 (MET)
+state_phi1_toggle2/Q                    1.506382    0.060664    1.445718 (MET)
+state_phi1_bit0/D                       1.500000    0.053799    1.446201 (MET)
+state_phi1_bit1/D                       1.500000    0.052895    1.447105 (MET)
+_16_/X                                  1.505339    0.057249    1.448090 (MET)
+bit3_enable/B                           1.500000    0.050222    1.449778 (MET)
+_12_/X                                  1.504232    0.053799    1.450433 (MET)
+_11_/X                                  1.504232    0.052895    1.451337 (MET)
+state_phi1_bit0/GATE                    1.500000    0.045231    1.454769 (MET)
+state_phi1_bit1/GATE                    1.500000    0.045231    1.454769 (MET)
+state_phi1_bit2/GATE                    1.500000    0.045232    1.454768 (MET)
+_15_/X                                  1.505339    0.050222    1.455117 (MET)
+clkbuf_1_0__f_clk_2/A                   1.500000    0.044503    1.455497 (MET)
+clkbuf_1_1__f_clk_2/A                   1.500000    0.044503    1.455497 (MET)
+state_phi1_bit3/GATE                    1.500000    0.044025    1.455975 (MET)
+state_phi1_toggle2/GATE                 1.500000    0.044025    1.455975 (MET)
+state_phi1_toggle3/GATE                 1.500000    0.044025    1.455975 (MET)
+state_phi2_bit0/D                       1.500000    0.042381    1.457619 (MET)
+clkbuf_1_0__f_clk_1/A                   1.500000    0.042279    1.457721 (MET)
+clkbuf_1_1__f_clk_1/A                   1.500000    0.042279    1.457721 (MET)
+state_phi2_bit1/D                       1.500000    0.041403    1.458597 (MET)
+_20_/Y                                  1.498350    0.036473    1.461877 (MET)
+state_phi2_bit2/GATE                    1.500000    0.037774    1.462225 (MET)
+state_phi2_bit3/GATE                    1.500000    0.037775    1.462225 (MET)
+clkbuf_1_0__f_clk_1/X                   1.508340    0.045231    1.463109 (MET)
+_12_/A1                                 1.500000    0.036473    1.463527 (MET)
+clkbuf_0_clk_2/X                        1.508340    0.044503    1.463838 (MET)
+state_phi1_bit0/Q                       1.506382    0.042381    1.464001 (MET)
+state_phi2_bit0/GATE                    1.500000    0.035712    1.464287 (MET)
+state_phi2_bit1/GATE                    1.500000    0.035712    1.464287 (MET)
+clkbuf_1_1__f_clk_1/X                   1.508340    0.044025    1.464316 (MET)
+state_phi1_bit1/Q                       1.506382    0.041403    1.464979 (MET)
+clkbuf_0_clk_1/X                        1.508340    0.042279    1.466061 (MET)
+state_phi1_toggle3/D                    1.500000    0.029613    1.470387 (MET)
+clkbuf_1_1__f_clk_2/X                   1.508340    0.037774    1.470566 (MET)
+clkbuf_1_0__f_clk_2/X                   1.508340    0.035712    1.472628 (MET)
+bit3_enable/X                           1.507304    0.029613    1.477691 (MET)
+
+max capacitance
+
+Pin                                        Limit         Cap       Slack
+------------------------------------------------------------------------
+_19_/X                                  0.076914    0.003390    0.073524 (MET)
+
+_17_/X                                  0.076914    0.002982    0.073932 (MET)
+
+_18_/X                                  0.076914    0.002831    0.074083 (MET)
+
+reset_release_buf1/X                    0.130015    0.034962    0.095053 (MET)
+
+state_phi1_bit3/Q                       0.157481    0.005989    0.151492 (MET)
+
+state_phi1_bit2/Q                       0.157481    0.005401    0.152080 (MET)
+
+state_phi1_toggle3/Q                    0.157481    0.004838    0.152643 (MET)
+
+state_phi1_toggle2/Q                    0.157481    0.004668    0.152813 (MET)
+
+_16_/X                                  0.157481    0.003726    0.153755 (MET)
+
+_15_/X                                  0.157481    0.002894    0.154587 (MET)
+
+state_phi1_bit0/Q                       0.157481    0.002481    0.155000 (MET)
+
+state_phi1_bit1/Q                       0.157481    0.002358    0.155123 (MET)
+
+_12_/X                                  0.173045    0.002765    0.170280 (MET)
+
+_11_/X                                  0.173045    0.002601    0.170444 (MET)
+
+_20_/Y                                  0.181284    0.002940    0.178344 (MET)
+
+state_phi2_bit2/Q                       0.285654    0.018875    0.266779 (MET)
+
+state_phi2_bit3/Q                       0.285654    0.014871    0.270784 (MET)
+
+clkbuf_1_0__f_clk_1/X                   0.517283    0.009432    0.507851 (MET)
+
+clkbuf_0_clk_2/X                        0.517283    0.009140    0.508143 (MET)
+
+clkbuf_1_1__f_clk_1/X                   0.517283    0.008959    0.508324 (MET)
+
+clkbuf_0_clk_1/X                        0.517283    0.008255    0.509028 (MET)
+
+clkbuf_1_1__f_clk_2/X                   0.517283    0.006410    0.510873 (MET)
+
+clkbuf_1_0__f_clk_2/X                   0.517283    0.005558    0.511725 (MET)
+
+state_phi2_bit0/Q                       0.545664    0.029078    0.516586 (MET)
+
+state_phi2_bit1/Q                       0.545664    0.024852    0.520812 (MET)
+
+bit3_enable/X                           0.539255    0.002095    0.537160 (MET)
+
+                                        Required      Actual
+Pin                                        Width       Width       Slack
+------------------------------------------------------------------------
+state_phi2_bit0/GATE (high)             0.235830    0.851062    0.615232 (MET)
+state_phi2_bit1/GATE (high)             0.235830    0.851062    0.615232 (MET)
+state_phi1_bit2/GATE (high)             0.228709    0.849592    0.620882 (MET)
+state_phi1_bit1/GATE (high)             0.228709    0.849592    0.620883 (MET)
+state_phi1_bit0/GATE (high)             0.228708    0.849595    0.620887 (MET)
+state_phi1_bit3/GATE (high)             0.227105    0.849781    0.622676 (MET)
+state_phi1_toggle2/GATE (high)          0.227105    0.849781    0.622676 (MET)
+state_phi1_toggle3/GATE (high)          0.227105    0.849782    0.622678 (MET)
+state_phi2_bit3/GATE (high)             0.218795    0.850724    0.631929 (MET)
+state_phi2_bit2/GATE (high)             0.218795    0.850725    0.631930 (MET)
+

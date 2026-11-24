@@ -1,0 +1,418 @@
+Startpoint: en (input port clocked by phi1)
+Endpoint: state_phi1_bit0 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.891000    0.891000   clock phi1 (fall edge)
+                                  0.000000    0.891000   clock network delay (ideal)
+                                  1.000000    1.891000 ^ input external delay
+     4    0.010156    0.060000    0.000000    1.891000 ^ en (in)
+                                                         en (net)
+                      0.060000    0.000000    1.891000 ^ _12_/S (sky130_fd_sc_hd__mux2_1)
+     1    0.001714    0.050080    0.303122    2.194122 v _12_/X (sky130_fd_sc_hd__mux2_1)
+                                                         _04_ (net)
+                      0.050080    0.000000    2.194122 v state_phi1_bit0/D (sky130_fd_sc_hd__dlrtp_1)
+                                              2.194122   data arrival time
+
+                      0.060000    1.809000    1.809000   clock phi1 (rise edge)
+                                  0.000000    1.809000   clock network delay (ideal)
+                                 -0.050000    1.759000   clock uncertainty
+                                  0.000000    1.759000   clock reconvergence pessimism
+                                              1.759000 ^ state_phi1_bit0/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.435122    2.194122   time borrowed from endpoint
+                                              2.194122   data required time
+---------------------------------------------------------------------------------------------
+                                              2.194122   data required time
+                                             -2.194122   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.000000   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 pulse width                        0.882000
+library setup time                     -0.034116
+------------------------------------------------
+max time borrow                         0.847884
+------------------------------------------------
+actual time borrow                      0.435122
+open edge uncertainty                  -0.050000
+------------------------------------------------
+time given to startpoint                0.385122
+------------------------------------------------
+
+
+Startpoint: en (input port clocked by phi1)
+Endpoint: state_phi1_bit1 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.891000    0.891000   clock phi1 (fall edge)
+                                  0.000000    0.891000   clock network delay (ideal)
+                                  1.000000    1.891000 ^ input external delay
+     4    0.010156    0.060000    0.000000    1.891000 ^ en (in)
+                                                         en (net)
+                      0.060000    0.000000    1.891000 ^ _11_/S (sky130_fd_sc_hd__mux2_1)
+     1    0.001714    0.050080    0.303122    2.194122 v _11_/X (sky130_fd_sc_hd__mux2_1)
+                                                         _03_ (net)
+                      0.050080    0.000000    2.194122 v state_phi1_bit1/D (sky130_fd_sc_hd__dlrtp_1)
+                                              2.194122   data arrival time
+
+                      0.060000    1.809000    1.809000   clock phi1 (rise edge)
+                                  0.000000    1.809000   clock network delay (ideal)
+                                 -0.050000    1.759000   clock uncertainty
+                                  0.000000    1.759000   clock reconvergence pessimism
+                                              1.759000 ^ state_phi1_bit1/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.435122    2.194122   time borrowed from endpoint
+                                              2.194122   data required time
+---------------------------------------------------------------------------------------------
+                                              2.194122   data required time
+                                             -2.194122   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.000000   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 pulse width                        0.882000
+library setup time                     -0.034116
+------------------------------------------------
+max time borrow                         0.847884
+------------------------------------------------
+actual time borrow                      0.435122
+open edge uncertainty                  -0.050000
+------------------------------------------------
+time given to startpoint                0.385122
+------------------------------------------------
+
+
+Startpoint: en (input port clocked by phi1)
+Endpoint: state_phi1_toggle2 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.891000    0.891000   clock phi1 (fall edge)
+                                  0.000000    0.891000   clock network delay (ideal)
+                                  1.000000    1.891000 v input external delay
+     4    0.009489    0.060000    0.000000    1.891000 v en (in)
+                                                         en (net)
+                      0.060000    0.000000    1.891000 v _16_/C (sky130_fd_sc_hd__and3_1)
+     1    0.001714    0.032560    0.172670    2.063670 v _16_/X (sky130_fd_sc_hd__and3_1)
+                                                         toggle2 (net)
+                      0.032560    0.000000    2.063670 v state_phi1_toggle2/D (sky130_fd_sc_hd__dlrtp_1)
+                                              2.063670   data arrival time
+
+                      0.060000    1.809000    1.809000   clock phi1 (rise edge)
+                                  0.000000    1.809000   clock network delay (ideal)
+                                 -0.050000    1.759000   clock uncertainty
+                                  0.000000    1.759000   clock reconvergence pessimism
+                                              1.759000 ^ state_phi1_toggle2/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.304670    2.063670   time borrowed from endpoint
+                                              2.063670   data required time
+---------------------------------------------------------------------------------------------
+                                              2.063670   data required time
+                                             -2.063670   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.000000   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 pulse width                        0.882000
+library setup time                     -0.028381
+------------------------------------------------
+max time borrow                         0.853619
+------------------------------------------------
+actual time borrow                      0.304670
+open edge uncertainty                  -0.050000
+------------------------------------------------
+time given to startpoint                0.254670
+------------------------------------------------
+
+
+Startpoint: en (input port clocked by phi1)
+Endpoint: state_phi1_toggle3 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.891000    0.891000   clock phi1 (fall edge)
+                                  0.000000    0.891000   clock network delay (ideal)
+                                  1.000000    1.891000 v input external delay
+     4    0.009489    0.060000    0.000000    1.891000 v en (in)
+                                                         en (net)
+                      0.060000    0.000000    1.891000 v bit3_enable/A (sky130_fd_sc_hd__and2_1)
+     1    0.001714    0.031191    0.131911    2.022911 v bit3_enable/X (sky130_fd_sc_hd__and2_1)
+                                                         toggle3 (net)
+                      0.031191    0.000000    2.022911 v state_phi1_toggle3/D (sky130_fd_sc_hd__dlrtp_1)
+                                              2.022911   data arrival time
+
+                      0.060000    1.809000    1.809000   clock phi1 (rise edge)
+                                  0.000000    1.809000   clock network delay (ideal)
+                                 -0.050000    1.759000   clock uncertainty
+                                  0.000000    1.759000   clock reconvergence pessimism
+                                              1.759000 ^ state_phi1_toggle3/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.263911    2.022911   time borrowed from endpoint
+                                              2.022911   data required time
+---------------------------------------------------------------------------------------------
+                                              2.022911   data required time
+                                             -2.022911   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.000000   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 pulse width                        0.882000
+library setup time                     -0.027933
+------------------------------------------------
+max time borrow                         0.854067
+------------------------------------------------
+actual time borrow                      0.263911
+open edge uncertainty                  -0.050000
+------------------------------------------------
+time given to startpoint                0.213911
+------------------------------------------------
+
+
+Startpoint: state_phi1_toggle2 (positive level-sensitive latch clocked by phi1)
+Endpoint: state_phi2_bit2 (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.009000    0.009000   clock phi1 (rise edge)
+                                  0.000000    0.009000   clock network delay (ideal)
+                                  0.223415    0.232415   time given to startpoint
+                      0.044577    0.000000    0.232415 ^ state_phi1_toggle2/D (sky130_fd_sc_hd__dlrtp_1)
+     1    0.004509    0.061514    0.372838    0.605253 ^ state_phi1_toggle2/Q (sky130_fd_sc_hd__dlrtp_1)
+                                                         phase_1_toggle2 (net)
+                      0.061514    0.000000    0.605253 ^ _18_/B (sky130_fd_sc_hd__xor2_1)
+     1    0.001868    0.096415    0.126974    0.732227 ^ _18_/X (sky130_fd_sc_hd__xor2_1)
+                                                         next_bit2 (net)
+                      0.096415    0.000000    0.732227 ^ state_phi2_bit2/D (sky130_fd_sc_hd__dlrtp_1)
+                                              0.732227   data arrival time
+
+                      0.060000    0.909000    0.909000   clock phi2 (rise edge)
+                                  0.000000    0.909000   clock network delay (ideal)
+                                 -0.050000    0.859000   inter-clock uncertainty
+                                  0.000000    0.859000   clock reconvergence pessimism
+                                              0.859000 ^ state_phi2_bit2/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.000000    0.859000   time borrowed from endpoint
+                                              0.859000   data required time
+---------------------------------------------------------------------------------------------
+                                              0.859000   data required time
+                                             -0.732227   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.126773   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi2 pulse width                        0.882000
+library setup time                     -0.226819
+------------------------------------------------
+max time borrow                         0.655181
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi1_toggle3 (positive level-sensitive latch clocked by phi1)
+Endpoint: state_phi2_bit3 (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.009000    0.009000   clock phi1 (rise edge)
+                                  0.000000    0.009000   clock network delay (ideal)
+                                  0.189868    0.198868   time given to startpoint
+                      0.039436    0.000000    0.198868 ^ state_phi1_toggle3/D (sky130_fd_sc_hd__dlrtp_1)
+     1    0.004509    0.061514    0.370961    0.569830 ^ state_phi1_toggle3/Q (sky130_fd_sc_hd__dlrtp_1)
+                                                         phase_1_toggle3 (net)
+                      0.061514    0.000000    0.569830 ^ _19_/B (sky130_fd_sc_hd__xor2_1)
+     1    0.001868    0.096415    0.126974    0.696804 ^ _19_/X (sky130_fd_sc_hd__xor2_1)
+                                                         next_bit3 (net)
+                      0.096415    0.000000    0.696804 ^ state_phi2_bit3/D (sky130_fd_sc_hd__dlrtp_1)
+                                              0.696804   data arrival time
+
+                      0.060000    0.909000    0.909000   clock phi2 (rise edge)
+                                  0.000000    0.909000   clock network delay (ideal)
+                                 -0.050000    0.859000   inter-clock uncertainty
+                                  0.000000    0.859000   clock reconvergence pessimism
+                                              0.859000 ^ state_phi2_bit3/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.000000    0.859000   time borrowed from endpoint
+                                              0.859000   data required time
+---------------------------------------------------------------------------------------------
+                                              0.859000   data required time
+                                             -0.696804   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.162196   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi2 pulse width                        0.882000
+library setup time                     -0.226819
+------------------------------------------------
+max time borrow                         0.655181
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi1_bit0 (positive level-sensitive latch clocked by phi1)
+Endpoint: state_phi2_bit0 (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.009000    0.009000   clock phi1 (rise edge)
+                                  0.000000    0.009000   clock network delay (ideal)
+                                  0.270606    0.279606   time given to startpoint
+                      0.040923    0.000000    0.279606 ^ state_phi1_bit0/D (sky130_fd_sc_hd__dlrtp_1)
+     1    0.001868    0.038635    0.351391    0.630997 ^ state_phi1_bit0/Q (sky130_fd_sc_hd__dlrtp_1)
+                                                         phase_1[0] (net)
+                      0.038635    0.000000    0.630997 ^ state_phi2_bit0/D (sky130_fd_sc_hd__dlrtp_1)
+                                              0.630997   data arrival time
+
+                      0.060000    0.909000    0.909000   clock phi2 (rise edge)
+                                  0.000000    0.909000   clock network delay (ideal)
+                                 -0.050000    0.859000   inter-clock uncertainty
+                                  0.000000    0.859000   clock reconvergence pessimism
+                                              0.859000 ^ state_phi2_bit0/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.000000    0.859000   time borrowed from endpoint
+                                              0.859000   data required time
+---------------------------------------------------------------------------------------------
+                                              0.859000   data required time
+                                             -0.630997   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.228003   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi2 pulse width                        0.882000
+library setup time                     -0.216960
+------------------------------------------------
+max time borrow                         0.665040
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi1_bit1 (positive level-sensitive latch clocked by phi1)
+Endpoint: state_phi2_bit1 (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.009000    0.009000   clock phi1 (rise edge)
+                                  0.000000    0.009000   clock network delay (ideal)
+                                  0.270606    0.279606   time given to startpoint
+                      0.040238    0.000000    0.279606 ^ state_phi1_bit1/D (sky130_fd_sc_hd__dlrtp_1)
+     1    0.001868    0.038635    0.351140    0.630746 ^ state_phi1_bit1/Q (sky130_fd_sc_hd__dlrtp_1)
+                                                         phase_1[1] (net)
+                      0.038635    0.000000    0.630746 ^ state_phi2_bit1/D (sky130_fd_sc_hd__dlrtp_1)
+                                              0.630746   data arrival time
+
+                      0.060000    0.909000    0.909000   clock phi2 (rise edge)
+                                  0.000000    0.909000   clock network delay (ideal)
+                                 -0.050000    0.859000   inter-clock uncertainty
+                                  0.000000    0.859000   clock reconvergence pessimism
+                                              0.859000 ^ state_phi2_bit1/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.000000    0.859000   time borrowed from endpoint
+                                              0.859000   data required time
+---------------------------------------------------------------------------------------------
+                                              0.859000   data required time
+                                             -0.630746   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.228254   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi2 pulse width                        0.882000
+library setup time                     -0.216960
+------------------------------------------------
+max time borrow                         0.665040
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi2_bit2 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_bit2 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.909000    0.909000   clock phi2 (rise edge)
+                                  0.000000    0.909000   clock network delay (ideal)
+                      0.060000    0.000000    0.909000 ^ state_phi2_bit2/GATE (sky130_fd_sc_hd__dlrtp_1)
+     3    0.013367    0.141646    0.398831    1.307831 ^ state_phi2_bit2/Q (sky130_fd_sc_hd__dlrtp_1)
+                                                         count_o[2] (net)
+                      0.141646    0.000000    1.307831 ^ state_phi1_bit2/D (sky130_fd_sc_hd__dlrtp_1)
+                                              1.307831   data arrival time
+
+                      0.060000    1.809000    1.809000   clock phi1 (rise edge)
+                                  0.000000    1.809000   clock network delay (ideal)
+                                 -0.050000    1.759000   inter-clock uncertainty
+                                  0.000000    1.759000   clock reconvergence pessimism
+                                              1.759000 ^ state_phi1_bit2/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.000000    1.759000   time borrowed from endpoint
+                                              1.759000   data required time
+---------------------------------------------------------------------------------------------
+                                              1.759000   data required time
+                                             -1.307831   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.451169   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 pulse width                        0.882000
+library setup time                     -0.234537
+------------------------------------------------
+max time borrow                         0.647463
+actual time borrow                      0.000000
+------------------------------------------------
+
+
+Startpoint: state_phi2_bit3 (positive level-sensitive latch clocked by phi2)
+Endpoint: state_phi1_bit3 (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.060000    0.909000    0.909000   clock phi2 (rise edge)
+                                  0.000000    0.909000   clock network delay (ideal)
+                      0.060000    0.000000    0.909000 ^ state_phi2_bit3/GATE (sky130_fd_sc_hd__dlrtp_1)
+     2    0.011868    0.127772    0.388859    1.297859 ^ state_phi2_bit3/Q (sky130_fd_sc_hd__dlrtp_1)
+                                                         count_o[3] (net)
+                      0.127772    0.000000    1.297859 ^ state_phi1_bit3/D (sky130_fd_sc_hd__dlrtp_1)
+                                              1.297859   data arrival time
+
+                      0.060000    1.809000    1.809000   clock phi1 (rise edge)
+                                  0.000000    1.809000   clock network delay (ideal)
+                                 -0.050000    1.759000   inter-clock uncertainty
+                                  0.000000    1.759000   clock reconvergence pessimism
+                                              1.759000 ^ state_phi1_bit3/GATE (sky130_fd_sc_hd__dlrtp_1)
+                                  0.000000    1.759000   time borrowed from endpoint
+                                              1.759000   data required time
+---------------------------------------------------------------------------------------------
+                                              1.759000   data required time
+                                             -1.297859   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.461141   slack (MET)
+
+Time Borrowing Information
+------------------------------------------------
+phi1 pulse width                        0.882000
+library setup time                     -0.232170
+------------------------------------------------
+max time borrow                         0.649830
+actual time borrow                      0.000000
+------------------------------------------------
+
+

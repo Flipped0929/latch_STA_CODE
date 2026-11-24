@@ -1,0 +1,44 @@
+[gold]
+read_verilog +/simcells.v
+read_verilog picorv32_latch/picorv32_yosys.v
+prep -top picorv32 -flatten
+opt_clean
+check -assert
+
+[gate]
+exec -expect-return 0 -- mkdir -p equivalence/checks/phase
+read_verilog -icells picorv32_latch/picorv32_latch.v
+hierarchy -check -top picorv32
+write_json equivalence/checks/phase/picorv32_latch.json
+exec -expect-return 0 -- python3 equivalence/build_phase_model.py equivalence/checks/phase/picorv32_latch.json equivalence/checks/phase/picorv32_phase.v equivalence/checks/phase/structure.json
+design -reset
+read_verilog equivalence/checks/phase/picorv32_phase.v
+prep -top picorv32 -flatten
+opt_clean
+check -assert
+
+[match picorv32]
+gold-nomatch dbg_*
+gate-nomatch dbg_*
+
+[collect picorv32]
+# Keep duplicated output aliases and their payloads in the same partitions.
+bind pcpi_rs1
+bind pcpi_rs2
+
+[strategy induction]
+use sat
+depth 4
+timeout 60
+
+[strategy smt]
+use sby
+engine smtbmc z3
+depth 10
+timeout 300
+
+[strategy pdr]
+use sby
+engine abc pdr
+option aigsmt z3
+timeout 600

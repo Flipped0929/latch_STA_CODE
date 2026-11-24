@@ -1,0 +1,33 @@
+{
+  "instance_count": 23,
+  "matched_routed_signal_connections": 72,
+  "ports": {
+    "inputs": [
+      "clk_1",
+      "clk_2",
+      "en",
+      "rst_n"
+    ],
+    "output": "count[3:0]"
+  },
+  "masters": {
+    "sky130_fd_sc_hd__and2_1": 3,
+    "sky130_fd_sc_hd__clkbuf_2": 4,
+    "sky130_fd_sc_hd__clkinv_2": 1,
+    "sky130_fd_sc_hd__dlrtp_1": 6,
+    "sky130_fd_sc_hd__dlrtp_2": 2,
+    "sky130_fd_sc_hd__dlrtp_4": 2,
+    "sky130_fd_sc_hd__dlxtp_1": 1,
+    "sky130_fd_sc_hd__inv_1": 1,
+    "sky130_fd_sc_hd__xor2_1": 3
+  },
+  "dummy_output": "clkload0/Y remains unconnected (xschem NC marker)",
+  "aliases": "count_o[i] is merged into count[i] as in the routed assign statements",
+  "power_connections": "VPWR/VPB=VDD; VGND/VNB=VSS, matching counter_power.v",
+  "sha256": {
+    "openroad/results/counter_routed.v": "5b40e31a101caa0d291cc945aff3461f996b0dd1a1071d8b8190563824f4549d",
+    "openroad/results/counter_power.v": "21f106cdf15c7290901cf4214c69e5a47a2bc7ecb369caa341f49896add2d09e",
+    "simulation/counter_routed.v": "9cd36878697a8994d12276f20b7898cbd6b4bfce8644cbd99a8301c1245d9c75",
+    "counter_routed.sch": "58e708f639bf3778a99c0d6557afa82a95eeda1d48d0ebea3f92a043d7eb3b6a"
+  }
+}

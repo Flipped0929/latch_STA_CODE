@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-11-08T04:49:53.882456+00:00",
+  "tool": "OpenSTA 3.1.0 d1e43c6f9f Copyright (c) 2026, Parallax Software, Inc.",
+  "inputs": [
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/counter_sky130_2.v",
+      "sha256": "c1ff0b5a2e3f1ffbfcfb8854c018045e4dc0c264dc4b910e9a1876146342efe3"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/counter.sdc",
+      "sha256": "6db09ea6c93037686b3c3a6a33c9289b154998658ef4bc64acea0f9693c67063"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/sky130_pdk/sky130_fd_sc_hd__tt_025C_1v80.lib",
+      "sha256": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/sta_sky130_2/run_sta.tcl",
+      "sha256": "d3c064297beffe7b8772830ceecb11ee087380ec7e63104965a8378e524f3169"
+    }
+  ],
+  "validation": {
+    "opensta_exit_code": 0,
+    "constraint_sanity_passed": true,
+    "negative_endpoint_slacks": 0,
+    "violated_report_entries": 0,
+    "endpoint_count_per_analysis": 24,
+    "endpoint_rows": 48,
+    "all_reported_wire_capacitances_zero": true
+  },
+  "assumptions": {
+    "corner": "TT / 25 C / 1.80 V",
+    "ideal_clocks": true,
+    "spef_sdf_loaded": false,
+    "wire_load_model_selected": false
+  }
+}

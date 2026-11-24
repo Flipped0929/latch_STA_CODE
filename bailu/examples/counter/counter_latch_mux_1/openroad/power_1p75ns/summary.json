@@ -1,0 +1,293 @@
+{
+  "generated_utc": "2026-11-08T08:03:17.944390+00:00",
+  "openroad": "26Q2-1164-g08f67ee5ec",
+  "corner": "SKY130 HD TT / 25 C / 1.8 V; extracted nominal RC",
+  "clock_period_ns": 1.75,
+  "clock_frequency_MHz": 571.4285714285714,
+  "clock_high_fraction": 0.49,
+  "output_load_pF_each": 0.01,
+  "measured_cycles": 4096,
+  "measurement_duration_ns": 7168,
+  "routed_cells": 26,
+  "latches": 10,
+  "clock_buffers": 6,
+  "functional_equivalence_passed": true,
+  "scenarios": {
+    "active": {
+      "power_W": {
+        "Sequential": {
+          "internal": 0.000235254236,
+          "switching": 5.311641871e-05,
+          "leakage": 7.380290129e-11,
+          "total": 0.0002883707348
+        },
+        "Combinational": {
+          "internal": 2.248065721e-05,
+          "switching": 1.179214178e-05,
+          "leakage": 4.458471439e-11,
+          "total": 3.427284173e-05
+        },
+        "Clock": {
+          "internal": 0.0001532543683,
+          "switching": 8.84136025e-05,
+          "leakage": 2.763756238e-11,
+          "total": 0.0002416679927
+        },
+        "Macro": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Pad": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Total": {
+          "internal": 0.0004109892761,
+          "switching": 0.0001533221657,
+          "leakage": 1.460251781e-10,
+          "total": 0.000564311631
+        }
+      },
+      "groups_W": {
+        "logic": {
+          "internal": 2.2480655218259926e-05,
+          "switching": 1.1792140838906562e-05,
+          "leakage": 4.3403715951212396e-11,
+          "total": 3.4272839684490464e-05
+        },
+        "clock_tree": {
+          "internal": 0.00015325435742852278,
+          "switching": 8.841360795486253e-05,
+          "leakage": 2.7637564112281687e-11,
+          "total": 0.00024166798539226875
+        },
+        "reset_buffer": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 1.1809999592854448e-12,
+          "total": 1.1809999592854448e-12
+        },
+        "phase1_latches": {
+          "internal": 0.0001307628826907603,
+          "switching": 8.606646531461593e-06,
+          "leakage": 3.990274213480638e-11,
+          "total": 0.000139369572934811
+        },
+        "phase2_latches": {
+          "internal": 0.00010449134242662694,
+          "switching": 4.450977235137543e-05,
+          "leakage": 3.390016739546198e-11,
+          "total": 0.00014900114547344856
+        }
+      },
+      "dynamic_W": 0.0005643114418000001,
+      "energy_per_cycle_pJ": 0.9875453542500001,
+      "validation": {
+        "cell_signal_pins": 84,
+        "unknown_cell_pins": 0,
+        "clock_transitions_each": 8192,
+        "clock_high_fraction": 0.49,
+        "count_transitions": [
+          4096,
+          2048,
+          1024,
+          512
+        ]
+      },
+      "window": {
+        "begin_ns": 35.000001,
+        "end_ns": 7203.000001,
+        "cycles": 4096,
+        "period_ns": 1.75
+      }
+    },
+    "mixed": {
+      "power_W": {
+        "Sequential": {
+          "internal": 0.0001950613951,
+          "switching": 2.65605704e-05,
+          "leakage": 7.117020862e-11,
+          "total": 0.0002216220455
+        },
+        "Combinational": {
+          "internal": 1.188650822e-05,
+          "switching": 6.055435733e-06,
+          "leakage": 5.039021977e-11,
+          "total": 1.794199488e-05
+        },
+        "Clock": {
+          "internal": 0.0001532543683,
+          "switching": 8.84136025e-05,
+          "leakage": 2.763756238e-11,
+          "total": 0.0002416679927
+        },
+        "Macro": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Pad": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Total": {
+          "internal": 0.0003602022771,
+          "switching": 0.000121029625,
+          "leakage": 1.491979734e-10,
+          "total": 0.0004812320403
+        }
+      },
+      "groups_W": {
+        "logic": {
+          "internal": 1.1886508332281664e-05,
+          "switching": 6.055435150642552e-06,
+          "leakage": 4.920922306791975e-11,
+          "total": 1.7941992553005548e-05
+        },
+        "clock_tree": {
+          "internal": 0.00015325435742852278,
+          "switching": 8.841360795486253e-05,
+          "leakage": 2.7637564112281687e-11,
+          "total": 0.00024166798539226875
+        },
+        "reset_buffer": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 1.1809999592854448e-12,
+          "total": 1.1809999592854448e-12
+        },
+        "phase1_latches": {
+          "internal": 0.00011206039562239312,
+          "switching": 4.305684370820018e-06,
+          "leakage": 3.848778630868854e-11,
+          "total": 0.0001163661199825583
+        },
+        "phase2_latches": {
+          "internal": 8.300100671476685e-05,
+          "switching": 2.2254886175687716e-05,
+          "leakage": 3.2682422740348827e-11,
+          "total": 0.00010525592369958758
+        }
+      },
+      "dynamic_W": 0.0004812319021,
+      "energy_per_cycle_pJ": 0.842156070525,
+      "validation": {
+        "cell_signal_pins": 84,
+        "unknown_cell_pins": 0,
+        "clock_transitions_each": 8192,
+        "clock_high_fraction": 0.49,
+        "count_transitions": [
+          2048,
+          1024,
+          512,
+          256
+        ]
+      },
+      "window": {
+        "begin_ns": 35.000001,
+        "end_ns": 7203.000001,
+        "cycles": 4096,
+        "period_ns": 1.75
+      }
+    },
+    "hold": {
+      "power_W": {
+        "Sequential": {
+          "internal": 0.0001547548891,
+          "switching": 0.0,
+          "leakage": 6.827640536e-11,
+          "total": 0.0001547549618
+        },
+        "Combinational": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 5.949729598e-11,
+          "total": 5.949729598e-11
+        },
+        "Clock": {
+          "internal": 0.0001532543683,
+          "switching": 8.84136025e-05,
+          "leakage": 2.763756238e-11,
+          "total": 0.0002416679927
+        },
+        "Macro": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Pad": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 0.0,
+          "total": 0.0
+        },
+        "Total": {
+          "internal": 0.000308009272,
+          "switching": 8.84136025e-05,
+          "leakage": 1.554112672e-10,
+          "total": 0.0003964230127
+        }
+      },
+      "groups_W": {
+        "logic": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 5.831629886561725e-11,
+          "total": 5.831629886561725e-11
+        },
+        "clock_tree": {
+          "internal": 0.00015325435742852278,
+          "switching": 8.841360795486253e-05,
+          "leakage": 2.7637564112281687e-11,
+          "total": 0.00024166798539226875
+        },
+        "reset_buffer": {
+          "internal": 0.0,
+          "switching": 0.0,
+          "leakage": 1.1809999592854448e-12,
+          "total": 1.1809999592854448e-12
+        },
+        "phase1_latches": {
+          "internal": 9.314594717579894e-05,
+          "switching": 0.0,
+          "leakage": 3.6956575820423776e-11,
+          "total": 9.31459799176082e-05
+        },
+        "phase2_latches": {
+          "internal": 6.160894190543331e-05,
+          "switching": 0.0,
+          "leakage": 3.1319826940268136e-11,
+          "total": 6.160897464724258e-05
+        }
+      },
+      "dynamic_W": 0.0003964228745,
+      "energy_per_cycle_pJ": 0.693740272225,
+      "validation": {
+        "cell_signal_pins": 84,
+        "unknown_cell_pins": 0,
+        "clock_transitions_each": 8192,
+        "clock_high_fraction": 0.49,
+        "count_transitions": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "window": {
+        "begin_ns": 35.000001,
+        "end_ns": 7203.000001,
+        "cycles": 4096,
+        "period_ns": 1.75
+      }
+    }
+  }
+}

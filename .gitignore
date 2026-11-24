@@ -1,0 +1,68 @@
+# Build products and generated artefacts excluded from this snapshot.
+# Mirrors the filter rules in MERGE_NOTES.md section 3.
+
+# Vivado / OpenROAD / simulator output
+*.dcp
+*.bit
+*.ltx
+*.wdb
+*.jou
+*.log
+*.str
+*.pb
+*.sdb
+*.reloc
+*.xpr
+*.hdf
+*.qdb
+*.qpg
+*.qtl
+*.qor
+.runs/
+.cache/
+.Xil/
+.gen/
+.ip_user_files/
+.sim/
+.hw/
+xsim.dir/
+work/
+
+# ASIC flow databases and databases
+*.odb
+*.def
+*.spef
+*.gds
+*.cdb
+*.ddc
+*.rslt
+*.lib.db
+
+# Waveforms and raw measurement dumps
+*.vcd
+*.fst
+*.saif
+*.raw
+*.tsv
+
+# Objects, archives, caches
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.pyc
+*.zip
+*.tar
+*.gz
+__pycache__/
+node_modules/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.codegraph/
+.ipynb_checkpoints/
+
+# Very large data (2 MB and above are also dropped by the merge filter)

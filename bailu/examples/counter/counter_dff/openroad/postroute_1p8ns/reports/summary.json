@@ -1,0 +1,50 @@
+{
+  "period_ns": 1.8,
+  "waveform_ns": [
+    0.0,
+    0.9
+  ],
+  "corner": "SKY130 HD TT / 25 C / 1.80 V",
+  "metrics_ns": {
+    "worst_slack_max": 0.034991,
+    "worst_slack_min": 0.055961,
+    "tns_max": 0.0,
+    "tns_min": 0.0
+  },
+  "path_slacks_ns": {
+    "data_setup": 0.362305,
+    "data_hold": 0.055961,
+    "output_setup": 0.034991,
+    "output_hold": 0.566126,
+    "rst_n_setup": 0.821372,
+    "rst_n_hold": 0.473234
+  },
+  "violation_counts": {
+    "setup": 0,
+    "hold": 0
+  },
+  "standalone_sta_matches": true,
+  "constraint_coverage_passed": true,
+  "timing_passed": true,
+  "power": {
+    "method": "VCD from zero-delay gate-level simulation of routed netlist",
+    "workload": "Continuous counting; en=1; rst_n=1; reset and warm-up excluded",
+    "recorded_cycles": 256,
+    "recorded_duration_ns": 460.8,
+    "frequency_mhz": 555.5555555555555,
+    "output_load_pf_per_bit": 0.01,
+    "units": "W",
+    "components": {
+      "internal": 0.0002075221419,
+      "switching": 9.0156027e-05,
+      "leakage": 9.758248376e-11,
+      "total": 0.0002976782562
+    },
+    "dynamic_w": 0.0002976781689,
+    "vcd_annotated_pins": 64,
+    "unannotated_pins": 0,
+    "simulation_counting_checks_passed": 272,
+    "standalone_sta_matches": true,
+    "limitations": "TT single corner; no SDF glitch timing; tap/filler excluded from functional netlist"
+  }
+}

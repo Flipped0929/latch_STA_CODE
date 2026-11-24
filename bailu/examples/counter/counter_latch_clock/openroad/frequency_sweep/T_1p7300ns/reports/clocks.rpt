@@ -1,0 +1,53 @@
+Clock                   Period          Waveform
+----------------------------------------------------
+phi1                      1.73        0.01      0.86
+phi2                      1.73        0.87      1.72
+Clock phi1
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.253012         network latency state_phi1_carry_bit3/GATE
+        0.820475 network latency state_phi2_bit3/GATE
+---------------
+0.253012 0.820475 latency
+        0.567463 skew
+
+rise -> fall
+    min     max
+0.000000 0.000000 source latency
+0.800234         network latency state_phi2_bit0/GATE
+        0.800942 network latency state_phi2_bit3/GATE
+---------------
+0.800234 0.800942 latency
+        0.000707 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.248053         network latency state_phi1_carry_bit3/GATE
+        0.248206 network latency state_phi1_bit1/GATE
+---------------
+0.248053 0.248206 latency
+        0.000153 skew
+
+
+Clock phi2
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.250518         network latency state_phi2_bit0/GATE
+        0.250706 network latency state_phi2_bit3/GATE
+---------------
+0.250518 0.250706 latency
+        0.000188 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.263721         network latency state_phi2_bit0/GATE
+        0.264428 network latency state_phi2_bit3/GATE
+---------------
+0.263721 0.264428 latency
+        0.000707 skew
+
+

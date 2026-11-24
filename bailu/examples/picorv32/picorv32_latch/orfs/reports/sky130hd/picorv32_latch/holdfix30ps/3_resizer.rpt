@@ -1,0 +1,702 @@
+
+==========================================================================
+resizer report_tns
+--------------------------------------------------------------------------
+tns max 0.00
+
+==========================================================================
+resizer report_wns
+--------------------------------------------------------------------------
+wns max 0.00
+
+==========================================================================
+resizer report_worst_slack
+--------------------------------------------------------------------------
+worst slack max 0.00
+
+==========================================================================
+resizer report_clock_min_period
+--------------------------------------------------------------------------
+phi1 period_min = 3.01 fmax = 332.19
+phi2 period_min = 0.00 fmax = inf
+
+==========================================================================
+resizer report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: dup_enable_1808 (positive level-sensitive latch clocked by phi1)
+Endpoint: gate_phi2_3337 (rising clock gating-check end-point clocked by phi2)
+Path Group: gated clock
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10   10.00   10.00   clock phi1 (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                  0.10    0.00   10.00 ^ dup_enable_1808/GATE (sky130_fd_sc_hd__dlxtp_1)
+     1    0.00    0.02    0.28   10.28 v dup_enable_1808/Q (sky130_fd_sc_hd__dlxtp_1)
+                                         dup_en1_1807 (net)
+                  0.02    0.00   10.28 v gate_phi2_3337/B (sky130_fd_sc_hd__and2_1)
+                                 10.28   data arrival time
+
+                  0.10    9.90    9.90   clock phi2 (fall edge)
+                          0.00    9.90   clock network delay (ideal)
+                          0.05    9.95   inter-clock uncertainty
+                          0.00    9.95   clock reconvergence pessimism
+                                  9.95 v gate_phi2_3337/A (sky130_fd_sc_hd__and2_1)
+                          0.05   10.00   clock gating hold time
+                                 10.00   data required time
+-----------------------------------------------------------------------------
+                                 10.00   data required time
+                                -10.28   data arrival time
+-----------------------------------------------------------------------------
+                                  0.28   slack (MET)
+
+
+Startpoint: mem_rdata_q_reg[21] (positive level-sensitive latch clocked by phi2)
+Endpoint: _10934_ (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10    5.00    5.00   clock phi2 (rise edge)
+                          0.00    5.00   clock network delay (ideal)
+                  0.10    0.00    5.00 ^ mem_rdata_q_reg[21]/GATE (sky130_fd_sc_hd__dlxtp_1)
+     1    0.00    0.02    0.28    5.28 v mem_rdata_q_reg[21]/Q (sky130_fd_sc_hd__dlxtp_1)
+                                         mem_rdata_q[21] (net)
+                  0.02    0.00    5.28 v _10934_/D (sky130_fd_sc_hd__dlxtp_1)
+                                  5.28   data arrival time
+
+                  0.10    4.90    4.90   clock phi1 (fall edge)
+                          0.00    4.90   clock network delay (ideal)
+                          0.05    4.95   inter-clock uncertainty
+                          0.00    4.95   clock reconvergence pessimism
+                                  4.95 v _10934_/GATE (sky130_fd_sc_hd__dlxtp_1)
+                          0.00    4.95   library hold time
+                                  4.95   data required time
+-----------------------------------------------------------------------------
+                                  4.95   data required time
+                                 -5.28   data arrival time
+-----------------------------------------------------------------------------
+                                  0.33   slack (MET)
+
+
+Startpoint: dup_q1_3102_reg (positive level-sensitive latch clocked by phi1)
+Endpoint: reg_op2_reg[16] (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10   10.00   10.00   clock phi1 (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                  0.10    0.00   10.00 ^ dup_q1_3102_reg/GATE (sky130_fd_sc_hd__dlxtp_1)
+     1    0.00    0.02    0.28   10.28 v dup_q1_3102_reg/Q (sky130_fd_sc_hd__dlxtp_1)
+                                         dup_q1_3102 (net)
+                  0.02    0.00   10.28 v reg_op2_reg[16]/D (sky130_fd_sc_hd__dlxtp_1)
+                                 10.28   data arrival time
+
+                  0.10    9.90    9.90   clock phi2 (fall edge)
+                          0.00    9.90   clock network delay (ideal)
+                          0.05    9.95   inter-clock uncertainty
+                          0.00    9.95   clock reconvergence pessimism
+                                  9.95 v reg_op2_reg[16]/GATE (sky130_fd_sc_hd__dlxtp_1)
+                          0.00    9.95   library hold time
+                                  9.95   data required time
+-----------------------------------------------------------------------------
+                                  9.95   data required time
+                                -10.28   data arrival time
+-----------------------------------------------------------------------------
+                                  0.33   slack (MET)
+
+
+
+==========================================================================
+resizer report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: dup_enable_752 (positive level-sensitive latch clocked by phi1)
+Endpoint: gate_phi2_3305 (rising clock gating-check end-point clocked by phi2)
+Path Group: gated clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.71    2.71   time given to startpoint
+                  0.10    0.00    2.71 ^ dup_enable_752/D (sky130_fd_sc_hd__dlxtp_1)
+     1    0.00    0.04    0.33    3.04 ^ dup_enable_752/Q (sky130_fd_sc_hd__dlxtp_1)
+                                         dup_en1_751 (net)
+                  0.04    0.00    3.04 ^ gate_phi2_3305/B (sky130_fd_sc_hd__and2_1)
+                                  3.04   data arrival time
+
+                  0.10    5.00    5.00   clock phi2 (rise edge)
+                          0.00    5.00   clock network delay (ideal)
+                         -0.05    4.95   inter-clock uncertainty
+                          0.00    4.95   clock reconvergence pessimism
+                                  4.95 ^ gate_phi2_3305/A (sky130_fd_sc_hd__and2_1)
+                         -0.05    4.90   clock gating setup time
+                                  4.90   data required time
+-----------------------------------------------------------------------------
+                                  4.90   data required time
+                                 -3.04   data arrival time
+-----------------------------------------------------------------------------
+                                  1.86   slack (MET)
+
+
+Startpoint: mem_rdata[23] (input port clocked by phi1)
+Endpoint: dup_q1_3184_reg (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.00    1.00 v input external delay
+     1    0.01    0.10    0.00    1.00 v mem_rdata[23] (in)
+                                         mem_rdata[23] (net)
+                  0.10    0.00    1.00 v input123/A (sky130_fd_sc_hd__buf_1)
+     4    0.02    0.13    0.19    1.19 v input123/X (sky130_fd_sc_hd__buf_1)
+                                         net123 (net)
+                  0.13    0.00    1.19 v _16070_/A1 (sky130_fd_sc_hd__mux2_1)
+     1    0.00    0.05    0.31    1.51 v _16070_/X (sky130_fd_sc_hd__mux2_1)
+                                         _12274_ (net)
+                  0.05    0.00    1.51 v _16072_/A2 (sky130_fd_sc_hd__a22oi_1)
+     1    0.00    0.16    0.19    1.70 ^ _16072_/Y (sky130_fd_sc_hd__a22oi_1)
+                                         _12276_ (net)
+                  0.16    0.00    1.70 ^ _16073_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.08    0.11    1.81 v _16073_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _12277_ (net)
+                  0.08    0.00    1.81 v place782/A (sky130_fd_sc_hd__buf_4)
+     2    0.01    0.03    0.16    1.96 v place782/X (sky130_fd_sc_hd__buf_4)
+                                         net774 (net)
+                  0.03    0.00    1.96 v _16074_/B (sky130_fd_sc_hd__and2_0)
+     2    0.01    0.08    0.18    2.14 v _16074_/X (sky130_fd_sc_hd__and2_0)
+                                         _12278_ (net)
+                  0.08    0.00    2.14 v _16075_/B1 (sky130_fd_sc_hd__a21oi_1)
+     5    0.01    0.29    0.26    2.41 ^ _16075_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _12279_ (net)
+                  0.29    0.00    2.41 ^ place754/A (sky130_fd_sc_hd__buf_4)
+     2    0.01    0.04    0.17    2.58 ^ place754/X (sky130_fd_sc_hd__buf_4)
+                                         net746 (net)
+                  0.04    0.00    2.58 ^ _18682_/A1 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.11    0.06    2.64 v _18682_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _14430_ (net)
+                  0.11    0.00    2.64 v _18686_/C1 (sky130_fd_sc_hd__a221oi_1)
+     1    0.00    0.27    0.26    2.89 ^ _18686_/Y (sky130_fd_sc_hd__a221oi_1)
+                                         _14434_ (net)
+                  0.27    0.00    2.89 ^ place722/A (sky130_fd_sc_hd__buf_4)
+     1    0.03    0.08    0.21    3.10 ^ place722/X (sky130_fd_sc_hd__buf_4)
+                                         net714 (net)
+                  0.08    0.00    3.10 ^ _18687_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.07    0.09    3.19 v _18687_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _03730_ (net)
+                  0.07    0.00    3.19 v dup_q1_3184_reg/D (sky130_fd_sc_hd__dlxtp_1)
+                                  3.19   data arrival time
+
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         -0.05   -0.05   inter-clock uncertainty
+                          0.00   -0.05   clock reconvergence pessimism
+                                 -0.05 ^ dup_q1_3184_reg/GATE (sky130_fd_sc_hd__dlxtp_1)
+                          3.24    3.19   time borrowed from endpoint
+                                  3.19   data required time
+-----------------------------------------------------------------------------
+                                  3.19   data required time
+                                 -3.19   data arrival time
+-----------------------------------------------------------------------------
+                                  0.00   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+phi1 pulse width                        4.90
+library setup time                     -0.03
+--------------------------------------------
+max time borrow                         4.87
+--------------------------------------------
+actual time borrow                      3.24
+open edge uncertainty                  -0.05
+--------------------------------------------
+time given to startpoint                3.19
+--------------------------------------------
+
+
+Startpoint: _11163_ (positive level-sensitive latch clocked by phi1)
+Endpoint: reg_out_reg[28] (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          3.17    3.17   time given to startpoint
+                  0.04    0.00    3.17 v _11163_/D (sky130_fd_sc_hd__dlxtp_1)
+     1    0.00    0.02    0.22    3.39 v _11163_/Q (sky130_fd_sc_hd__dlxtp_1)
+                                         _03180_ (net)
+                  0.02    0.00    3.39 v _15196_/B (sky130_fd_sc_hd__or2_0)
+     1    0.02    0.14    0.28    3.67 v _15196_/X (sky130_fd_sc_hd__or2_0)
+                                         dup_q1_3192 (net)
+                  0.14    0.00    3.67 v reg_out_reg[28]/D (sky130_fd_sc_hd__dlxtp_1)
+                                  3.67   data arrival time
+
+                  0.10    5.00    5.00   clock phi2 (rise edge)
+                          0.00    5.00   clock network delay (ideal)
+                         -0.05    4.95   inter-clock uncertainty
+                          0.00    4.95   clock reconvergence pessimism
+                                  4.95 ^ reg_out_reg[28]/GATE (sky130_fd_sc_hd__dlxtp_1)
+                          0.00    4.95   time borrowed from endpoint
+                                  4.95   data required time
+-----------------------------------------------------------------------------
+                                  4.95   data required time
+                                 -3.67   data arrival time
+-----------------------------------------------------------------------------
+                                  1.28   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+phi2 pulse width                        4.90
+library setup time                     -0.05
+--------------------------------------------
+max time borrow                         4.85
+actual time borrow                      0.00
+--------------------------------------------
+
+
+
+==========================================================================
+resizer report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: dup_enable_752 (positive level-sensitive latch clocked by phi1)
+Endpoint: gate_phi2_3305 (rising clock gating-check end-point clocked by phi2)
+Path Group: gated clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.71    2.71   time given to startpoint
+                  0.10    0.00    2.71 ^ dup_enable_752/D (sky130_fd_sc_hd__dlxtp_1)
+     1    0.00    0.04    0.33    3.04 ^ dup_enable_752/Q (sky130_fd_sc_hd__dlxtp_1)
+                                         dup_en1_751 (net)
+                  0.04    0.00    3.04 ^ gate_phi2_3305/B (sky130_fd_sc_hd__and2_1)
+                                  3.04   data arrival time
+
+                  0.10    5.00    5.00   clock phi2 (rise edge)
+                          0.00    5.00   clock network delay (ideal)
+                         -0.05    4.95   inter-clock uncertainty
+                          0.00    4.95   clock reconvergence pessimism
+                                  4.95 ^ gate_phi2_3305/A (sky130_fd_sc_hd__and2_1)
+                         -0.05    4.90   clock gating setup time
+                                  4.90   data required time
+-----------------------------------------------------------------------------
+                                  4.90   data required time
+                                 -3.04   data arrival time
+-----------------------------------------------------------------------------
+                                  1.86   slack (MET)
+
+
+Startpoint: mem_rdata[23] (input port clocked by phi1)
+Endpoint: dup_q1_3184_reg (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.00    1.00 v input external delay
+     1    0.01    0.10    0.00    1.00 v mem_rdata[23] (in)
+                                         mem_rdata[23] (net)
+                  0.10    0.00    1.00 v input123/A (sky130_fd_sc_hd__buf_1)
+     4    0.02    0.13    0.19    1.19 v input123/X (sky130_fd_sc_hd__buf_1)
+                                         net123 (net)
+                  0.13    0.00    1.19 v _16070_/A1 (sky130_fd_sc_hd__mux2_1)
+     1    0.00    0.05    0.31    1.51 v _16070_/X (sky130_fd_sc_hd__mux2_1)
+                                         _12274_ (net)
+                  0.05    0.00    1.51 v _16072_/A2 (sky130_fd_sc_hd__a22oi_1)
+     1    0.00    0.16    0.19    1.70 ^ _16072_/Y (sky130_fd_sc_hd__a22oi_1)
+                                         _12276_ (net)
+                  0.16    0.00    1.70 ^ _16073_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.08    0.11    1.81 v _16073_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _12277_ (net)
+                  0.08    0.00    1.81 v place782/A (sky130_fd_sc_hd__buf_4)
+     2    0.01    0.03    0.16    1.96 v place782/X (sky130_fd_sc_hd__buf_4)
+                                         net774 (net)
+                  0.03    0.00    1.96 v _16074_/B (sky130_fd_sc_hd__and2_0)
+     2    0.01    0.08    0.18    2.14 v _16074_/X (sky130_fd_sc_hd__and2_0)
+                                         _12278_ (net)
+                  0.08    0.00    2.14 v _16075_/B1 (sky130_fd_sc_hd__a21oi_1)
+     5    0.01    0.29    0.26    2.41 ^ _16075_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _12279_ (net)
+                  0.29    0.00    2.41 ^ place754/A (sky130_fd_sc_hd__buf_4)
+     2    0.01    0.04    0.17    2.58 ^ place754/X (sky130_fd_sc_hd__buf_4)
+                                         net746 (net)
+                  0.04    0.00    2.58 ^ _18682_/A1 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.11    0.06    2.64 v _18682_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _14430_ (net)
+                  0.11    0.00    2.64 v _18686_/C1 (sky130_fd_sc_hd__a221oi_1)
+     1    0.00    0.27    0.26    2.89 ^ _18686_/Y (sky130_fd_sc_hd__a221oi_1)
+                                         _14434_ (net)
+                  0.27    0.00    2.89 ^ place722/A (sky130_fd_sc_hd__buf_4)
+     1    0.03    0.08    0.21    3.10 ^ place722/X (sky130_fd_sc_hd__buf_4)
+                                         net714 (net)
+                  0.08    0.00    3.10 ^ _18687_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.07    0.09    3.19 v _18687_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _03730_ (net)
+                  0.07    0.00    3.19 v dup_q1_3184_reg/D (sky130_fd_sc_hd__dlxtp_1)
+                                  3.19   data arrival time
+
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         -0.05   -0.05   inter-clock uncertainty
+                          0.00   -0.05   clock reconvergence pessimism
+                                 -0.05 ^ dup_q1_3184_reg/GATE (sky130_fd_sc_hd__dlxtp_1)
+                          3.24    3.19   time borrowed from endpoint
+                                  3.19   data required time
+-----------------------------------------------------------------------------
+                                  3.19   data required time
+                                 -3.19   data arrival time
+-----------------------------------------------------------------------------
+                                  0.00   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+phi1 pulse width                        4.90
+library setup time                     -0.03
+--------------------------------------------
+max time borrow                         4.87
+--------------------------------------------
+actual time borrow                      3.24
+open edge uncertainty                  -0.05
+--------------------------------------------
+time given to startpoint                3.19
+--------------------------------------------
+
+
+Startpoint: _11163_ (positive level-sensitive latch clocked by phi1)
+Endpoint: reg_out_reg[28] (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.10    0.00    0.00   clock phi1 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          3.17    3.17   time given to startpoint
+                  0.04    0.00    3.17 v _11163_/D (sky130_fd_sc_hd__dlxtp_1)
+     1    0.00    0.02    0.22    3.39 v _11163_/Q (sky130_fd_sc_hd__dlxtp_1)
+                                         _03180_ (net)
+                  0.02    0.00    3.39 v _15196_/B (sky130_fd_sc_hd__or2_0)
+     1    0.02    0.14    0.28    3.67 v _15196_/X (sky130_fd_sc_hd__or2_0)
+                                         dup_q1_3192 (net)
+                  0.14    0.00    3.67 v reg_out_reg[28]/D (sky130_fd_sc_hd__dlxtp_1)
+                                  3.67   data arrival time
+
+                  0.10    5.00    5.00   clock phi2 (rise edge)
+                          0.00    5.00   clock network delay (ideal)
+                         -0.05    4.95   inter-clock uncertainty
+                          0.00    4.95   clock reconvergence pessimism
+                                  4.95 ^ reg_out_reg[28]/GATE (sky130_fd_sc_hd__dlxtp_1)
+                          0.00    4.95   time borrowed from endpoint
+                                  4.95   data required time
+-----------------------------------------------------------------------------
+                                  4.95   data required time
+                                 -3.67   data arrival time
+-----------------------------------------------------------------------------
+                                  1.28   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+phi2 pulse width                        4.90
+library setup time                     -0.05
+--------------------------------------------
+max time borrow                         4.85
+actual time borrow                      0.00
+--------------------------------------------
+
+
+
+==========================================================================
+resizer report_check_types -max_slew -max_cap -max_fanout -violators
+--------------------------------------------------------------------------
+
+==========================================================================
+resizer max_slew_check_slack
+--------------------------------------------------------------------------
+0.345293253660202
+
+==========================================================================
+resizer max_slew_check_limit
+--------------------------------------------------------------------------
+1.48431396484375
+
+==========================================================================
+resizer max_slew_check_slack_limit
+--------------------------------------------------------------------------
+0.2326
+
+==========================================================================
+resizer max_fanout_check_slack
+--------------------------------------------------------------------------
+1.0000000150474662e+30
+
+==========================================================================
+resizer max_fanout_check_limit
+--------------------------------------------------------------------------
+1.0000000150474662e+30
+
+==========================================================================
+resizer max_capacitance_check_slack
+--------------------------------------------------------------------------
+0.009975876659154892
+
+==========================================================================
+resizer max_capacitance_check_limit
+--------------------------------------------------------------------------
+0.03388400003314018
+
+==========================================================================
+resizer max_capacitance_check_slack_limit
+--------------------------------------------------------------------------
+0.2944
+
+==========================================================================
+resizer max_slew_violation_count
+--------------------------------------------------------------------------
+max slew violation count 0
+
+==========================================================================
+resizer max_fanout_violation_count
+--------------------------------------------------------------------------
+max fanout violation count 0
+
+==========================================================================
+resizer max_cap_violation_count
+--------------------------------------------------------------------------
+max cap violation count 0
+
+==========================================================================
+resizer setup_violation_count
+--------------------------------------------------------------------------
+setup violation count 0
+
+==========================================================================
+resizer hold_violation_count
+--------------------------------------------------------------------------
+hold violation count 0
+
+==========================================================================
+resizer report_checks -path_delay max reg to reg
+--------------------------------------------------------------------------
+Startpoint: reg_pc_reg[2] (positive level-sensitive latch clocked by phi2)
+Endpoint: _11242_ (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   5.00    5.00   clock phi2 (rise edge)
+   0.00    5.00   clock network delay (ideal)
+   0.00    5.00 ^ reg_pc_reg[2]/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.41    5.41 ^ reg_pc_reg[2]/Q (sky130_fd_sc_hd__dlxtp_1)
+   0.16    5.56 ^ _15739_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.15    5.71 v _15740_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.42    6.13 v _15742_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    6.52 v _15744_/X (sky130_fd_sc_hd__maj3_1)
+   0.40    6.92 v _15747_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    7.31 v _15748_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    7.70 v _15750_/X (sky130_fd_sc_hd__maj3_1)
+   0.42    8.12 v _15753_/X (sky130_fd_sc_hd__maj3_1)
+   0.42    8.54 v _15756_/X (sky130_fd_sc_hd__maj3_1)
+   0.36    8.90 ^ _15759_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.34    9.24 v _15762_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.46    9.70 ^ _15765_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.17    9.88 v _15767_/Y (sky130_fd_sc_hd__o31ai_1)
+   0.41   10.29 v _15769_/X (sky130_fd_sc_hd__maj3_1)
+   0.26   10.55 ^ _15771_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.15   10.70 ^ place687/X (sky130_fd_sc_hd__buf_4)
+   0.16   10.87 v _15774_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.44   11.30 ^ _15777_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.26   11.56 v _15780_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.43   11.99 ^ _15783_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.20   12.19 v _15785_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.25   12.43 v _15786_/X (sky130_fd_sc_hd__and3_1)
+   0.19   12.62 ^ _15788_/Y (sky130_fd_sc_hd__nor3_1)
+   0.00   12.63 ^ _11242_/D (sky130_fd_sc_hd__dlxtp_1)
+          12.63   data arrival time
+
+  10.00   10.00   clock phi1 (rise edge)
+   0.00   10.00   clock network delay (ideal)
+  -0.05    9.95   inter-clock uncertainty
+   0.00    9.95   clock reconvergence pessimism
+           9.95 ^ _11242_/GATE (sky130_fd_sc_hd__dlxtp_1)
+   2.68   12.63   time borrowed from endpoint
+          12.63   data required time
+---------------------------------------------------------
+          12.63   data required time
+         -12.63   data arrival time
+---------------------------------------------------------
+           0.00   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+phi1 pulse width                        4.90
+library setup time                     -0.21
+--------------------------------------------
+max time borrow                         4.69
+--------------------------------------------
+actual time borrow                      2.68
+open edge uncertainty                  -0.05
+--------------------------------------------
+time given to startpoint                2.63
+--------------------------------------------
+
+
+Startpoint: _11163_ (positive level-sensitive latch clocked by phi1)
+Endpoint: reg_out_reg[28] (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock phi1 (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   3.17    3.17   time given to startpoint
+   0.00    3.17 v _11163_/D (sky130_fd_sc_hd__dlxtp_1)
+   0.22    3.39 v _11163_/Q (sky130_fd_sc_hd__dlxtp_1)
+   0.28    3.67 v _15196_/X (sky130_fd_sc_hd__or2_0)
+   0.00    3.67 v reg_out_reg[28]/D (sky130_fd_sc_hd__dlxtp_1)
+           3.67   data arrival time
+
+   5.00    5.00   clock phi2 (rise edge)
+   0.00    5.00   clock network delay (ideal)
+  -0.05    4.95   inter-clock uncertainty
+   0.00    4.95   clock reconvergence pessimism
+           4.95 ^ reg_out_reg[28]/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.00    4.95   time borrowed from endpoint
+           4.95   data required time
+---------------------------------------------------------
+           4.95   data required time
+          -3.67   data arrival time
+---------------------------------------------------------
+           1.28   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+phi2 pulse width                        4.90
+library setup time                     -0.05
+--------------------------------------------
+max time borrow                         4.85
+actual time borrow                      0.00
+--------------------------------------------
+
+
+
+==========================================================================
+resizer report_checks -path_delay min reg to reg
+--------------------------------------------------------------------------
+Startpoint: mem_rdata_q_reg[21] (positive level-sensitive latch clocked by phi2)
+Endpoint: _10934_ (positive level-sensitive latch clocked by phi1)
+Path Group: phi1
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   5.00    5.00   clock phi2 (rise edge)
+   0.00    5.00   clock network delay (ideal)
+   0.00    5.00 ^ mem_rdata_q_reg[21]/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.28    5.28 v mem_rdata_q_reg[21]/Q (sky130_fd_sc_hd__dlxtp_1)
+   0.00    5.28 v _10934_/D (sky130_fd_sc_hd__dlxtp_1)
+           5.28   data arrival time
+
+   4.90    4.90   clock phi1 (fall edge)
+   0.00    4.90   clock network delay (ideal)
+   0.05    4.95   inter-clock uncertainty
+   0.00    4.95   clock reconvergence pessimism
+           4.95 v _10934_/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.00    4.95   library hold time
+           4.95   data required time
+---------------------------------------------------------
+           4.95   data required time
+          -5.28   data arrival time
+---------------------------------------------------------
+           0.33   slack (MET)
+
+
+Startpoint: dup_q1_3102_reg (positive level-sensitive latch clocked by phi1)
+Endpoint: reg_op2_reg[16] (positive level-sensitive latch clocked by phi2)
+Path Group: phi2
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+  10.00   10.00   clock phi1 (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00 ^ dup_q1_3102_reg/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.28   10.28 v dup_q1_3102_reg/Q (sky130_fd_sc_hd__dlxtp_1)
+   0.00   10.28 v reg_op2_reg[16]/D (sky130_fd_sc_hd__dlxtp_1)
+          10.28   data arrival time
+
+   9.90    9.90   clock phi2 (fall edge)
+   0.00    9.90   clock network delay (ideal)
+   0.05    9.95   inter-clock uncertainty
+   0.00    9.95   clock reconvergence pessimism
+           9.95 v reg_op2_reg[16]/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.00    9.95   library hold time
+           9.95   data required time
+---------------------------------------------------------
+           9.95   data required time
+         -10.28   data arrival time
+---------------------------------------------------------
+           0.33   slack (MET)
+
+
+
+==========================================================================
+resizer critical path target clock latency max path
+--------------------------------------------------------------------------
+0.0000
+
+==========================================================================
+resizer critical path target clock latency min path
+--------------------------------------------------------------------------
+0.0000
+
+==========================================================================
+resizer critical path source clock latency min path
+--------------------------------------------------------------------------
+0.0000
+
+==========================================================================
+resizer critical path delay
+--------------------------------------------------------------------------
+3.1886
+
+==========================================================================
+resizer critical path slack
+--------------------------------------------------------------------------
+0.0000
+
+==========================================================================
+resizer slack div critical path delay
+--------------------------------------------------------------------------
+0.000000
+
+==========================================================================
+resizer report_power
+--------------------------------------------------------------------------
+[WARNING STA-2402] power activity propagation through registers did not converge after 50 passes.
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.21e-03   4.08e-05   1.80e-08   3.25e-03  92.5%
+Combinational          8.66e-05   1.54e-04   1.34e-08   2.41e-04   6.9%
+Clock                  1.28e-05   1.06e-05   1.44e-10   2.33e-05   0.7%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  3.31e-03   2.06e-04   3.15e-08   3.51e-03 100.0%
+                          94.1%       5.9%       0.0%

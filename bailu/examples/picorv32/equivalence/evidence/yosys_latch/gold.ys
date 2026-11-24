@@ -1,0 +1,9 @@
+read_verilog +/simcells.v
+read_verilog picorv32_latch/picorv32_yosys.v
+prep -top picorv32 -flatten
+opt_clean
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil equivalence/yosys_latch_2/gold.il

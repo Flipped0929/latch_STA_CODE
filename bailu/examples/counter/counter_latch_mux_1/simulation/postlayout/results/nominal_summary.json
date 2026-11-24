@@ -1,0 +1,228 @@
+{
+  "scenario": "nominal",
+  "period_ns": 1.75,
+  "temperature_C": 25,
+  "supply_V": 1.8,
+  "cycles_checked": 66,
+  "cycles_passed": 66,
+  "failures": [],
+  "reset_checks": [
+    {
+      "test": "initial",
+      "pin": "state_phi1_bit0/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.676577718498722e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi1_bit1/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.6765779156074833e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi1_bit2/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.676577790759384e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi1_bit3/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.676577677395669e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi1_toggle2/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.6765778512953624e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi1_toggle3/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.67657787762516e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi2_bit0/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.676577562322046e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi2_bit1/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.676577653282309e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi2_bit2/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.676577674179473e-09,
+      "passed": true
+    },
+    {
+      "test": "initial",
+      "pin": "state_phi2_bit3/Q",
+      "time_ns": 2.0,
+      "voltage_V": 2.6765777632267656e-09,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi1_bit0/Q",
+      "time_ns": 89.5,
+      "voltage_V": 1.0937193839610832e-07,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi1_bit1/Q",
+      "time_ns": 89.5,
+      "voltage_V": 1.3173348110137519e-08,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi1_bit2/Q",
+      "time_ns": 89.5,
+      "voltage_V": 5.411107485197321e-06,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi1_bit3/Q",
+      "time_ns": 89.5,
+      "voltage_V": 7.589794422427191e-07,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi1_toggle2/Q",
+      "time_ns": 89.5,
+      "voltage_V": 5.3822246801488775e-06,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi1_toggle3/Q",
+      "time_ns": 89.5,
+      "voltage_V": 7.84160683011776e-07,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi2_bit0/Q",
+      "time_ns": 89.5,
+      "voltage_V": 1.1822718687817503e-06,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi2_bit1/Q",
+      "time_ns": 89.5,
+      "voltage_V": 2.7567912360101673e-06,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi2_bit2/Q",
+      "time_ns": 89.5,
+      "voltage_V": 1.2511192397924673e-06,
+      "passed": true
+    },
+    {
+      "test": "asynchronous",
+      "pin": "state_phi2_bit3/Q",
+      "time_ns": 89.5,
+      "voltage_V": 1.3255108270724632e-08,
+      "passed": true
+    }
+  ],
+  "hold_checks": [
+    {
+      "bit": 0,
+      "expected": 0,
+      "min_V": -0.0039718993705296505,
+      "max_V": 0.004112325159985245,
+      "passed": true
+    },
+    {
+      "bit": 1,
+      "expected": 0,
+      "min_V": -0.002228200887093794,
+      "max_V": 0.00236493807606318,
+      "passed": true
+    },
+    {
+      "bit": 2,
+      "expected": 0,
+      "min_V": -0.003939582722788392,
+      "max_V": 0.004197778721909503,
+      "passed": true
+    },
+    {
+      "bit": 3,
+      "expected": 1,
+      "min_V": 1.7984793036862028,
+      "max_V": 1.8015163455435284,
+      "passed": true
+    }
+  ],
+  "all_functional_checks_passed": true,
+  "power": {
+    "active": {
+      "begin_ns": 11.0,
+      "end_ns": 39.0,
+      "average_W": 0.0004136986406288414,
+      "average_uW": 413.6986406288414,
+      "energy_per_cycle_pJ": 0.7239726211004726
+    },
+    "hold": {
+      "begin_ns": 47.75,
+      "end_ns": 58.25,
+      "average_W": 0.00027723351675747594,
+      "average_uW": 277.23351675747597,
+      "energy_per_cycle_pJ": 0.48515865432558286
+    }
+  },
+  "clock_gaps_ps": {
+    "phi1_to_phi2_ps": {
+      "min": -21.10205417989164,
+      "max": -21.05769311268091
+    },
+    "phi2_to_next_phi1_ps": {
+      "min": -14.50849594894521,
+      "max": -14.455719071520434
+    }
+  },
+  "source_phi2_to_output_delay_ps": {
+    "0": {
+      "min": 426.7383331895118,
+      "max": 487.0730329298976
+    },
+    "1": {
+      "min": 424.44972283412596,
+      "max": 482.66983940967555
+    },
+    "2": {
+      "min": 400.8000208959004,
+      "max": 476.7745893638082
+    },
+    "3": {
+      "min": 395.5475449451171,
+      "max": 461.1584928856978
+    }
+  },
+  "raw_points": 25313,
+  "vdd_current_peak_mA": 1.1716323273677718
+}

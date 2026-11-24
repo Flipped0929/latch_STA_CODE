@@ -1,0 +1,22 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {type=primitive
+verilog_format="yosys_mux @name ( .A( @@A ), .B( @@B ), .S( @@S ), .Y( @@Y ) );"
+template="name=U1"}
+V {}
+S {}
+E {}
+P 4 5 -40 -55 40 -35 40 35 -40 55 -40 -55 {}
+L 4 -70 -30 -40 -30 {}
+L 4 -70 30 -40 30 {}
+L 4 40 0 70 0 {}
+L 4 0 45 0 80 {}
+T {0} -28 -42 0 0 0.25 0.25 {}
+T {1} -28 19 0 0 0.25 0.25 {}
+T {S} 8 47 0 0 0.25 0.25 {}
+B 5 -72.5 -32.5 -67.5 -27.5 {name=A dir=in}
+B 5 -72.5 27.5 -67.5 32.5 {name=B dir=in}
+B 5 -2.5 77.5 2.5 82.5 {name=S dir=in}
+B 5 67.5 -2.5 72.5 2.5 {name=Y dir=out}
+T {@name} -45 -85 0 0 0.25 0.25 {}
+T {MUX / $_MUX_} -45 -65 0 0 0.22 0.22 {}

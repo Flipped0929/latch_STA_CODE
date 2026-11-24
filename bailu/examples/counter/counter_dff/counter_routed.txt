@@ -1,0 +1,43 @@
+counter_routed：布线后门级原理图
+
+源网表：counter_dff/openroad/results/counter_routed.v
+源网表 SHA256：0195d27162861547f83a092eb2f0b69f55dfe21d2f32dcee333af60cba32c901
+
+文件：
+  counter_routed.sch：可编辑的 xschem 原理图，所有符号均已内嵌。
+  counter_routed.svg：矢量预览。
+  counter_routed.png：2500 × 2750 像素预览。
+  counter_routed.txt：本说明和验证结果。
+
+打开方法：在 counter_dff 目录运行 xschem counter_routed.sch。
+无需安装额外的标准单元符号库即可查看和编辑本图。
+
+结构：
+  4 个 sky130_fd_sc_hd__dfrtp_1，保持上升沿触发、低有效异步清零。
+  4 个 sky130_fd_sc_hd__mux2_1。
+  2 个 sky130_fd_sc_hd__and2_1。
+  3 个 sky130_fd_sc_hd__xor2_1。
+  1 个 sky130_fd_sc_hd__inv_1。
+  3 个 sky130_fd_sc_hd__clkbuf_4，完整保留布线后时钟树及两个叶时钟网络。
+  第一叶时钟驱动 bit 0、1；第二叶时钟驱动 bit 2、3。
+  保留 clk、en、rst_n、count[3:0]、VDD、VSS 六个顶层端口。
+
+图中使用原网表中的实例名、内部网络名及四条 count 输出赋值。
+相同标签的网络在 xschem 中电气相连；Q 到对应 MUX 的保持反馈以导线明确画出。
+符号标题省略公共 sky130_fd_sc_hd__ 前缀，但导出网表中的模型名称使用完整名称。
+
+验证：
+  已由本机 xschem 成功加载该 .sch 并导出 Verilog。
+  与源网表逐项比较：17 个单元类型和实例、55 个引脚连接、6 个顶层端口、
+  4 条输出赋值全部一致。
+  xschem 将 count_o_reg[n] 在导出 Verilog 时规范化为 count_o_reg_n；
+  核对时还原此名称映射，图面仍保留原来的 count_o_reg[n] 名称。
+  导出 Verilog 已通过 Icarus Verilog 语法检查（忽略未提供的标准单元模型）。
+  已检查 SVG/PNG：所有四个位片、时钟树、输出赋值和说明均在画面范围内。
+  原始 Verilog 文件未修改。
+
+范围：
+  本图是基于布线后 Verilog 重建的标准单元级逻辑连接原理图。
+  源 .v 文件没有金属走线几何、布线寄生 RC 或单元电源引脚连接；
+  因而原理图不包含这些数据。VDD/VSS 按源网表保留为顶层 inout 端口。
+  内嵌符号用于门级绘图和 Verilog 导出，不提供晶体管级 SPICE 仿真模型。

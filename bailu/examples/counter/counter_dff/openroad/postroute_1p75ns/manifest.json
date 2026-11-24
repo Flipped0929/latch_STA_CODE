@@ -1,0 +1,322 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-08T05:00:34.335715+00:00",
+  "work_directory": "/tmp/counter_dff_sta_1p75ns_d_f0_uva",
+  "period_ns": 1.75,
+  "waveform_ns": [
+    0.0,
+    0.875
+  ],
+  "physical_implementation": "Existing 2 ns routing reused without modification",
+  "sources": [
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_dff/counter.sdc",
+      "sha256": "464c2a3b443fd358f928b4fcc482b84ff220ed7e81c30596a172f97326dee4a7"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_dff/openroad/results/counter_routed.v",
+      "sha256": "0195d27162861547f83a092eb2f0b69f55dfe21d2f32dcee333af60cba32c901"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_dff/openroad/results/counter.spef",
+      "sha256": "4944e62c7d493c9192804d3cc17d4665126583fb657c516ba310b48fcb834eaa"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_dff/openroad/scripts/common.tcl",
+      "sha256": "1f1802ae52a31270e75504facbba97a71aac22c967fd8b215956968552ef453f"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_dff/openroad/scripts/sta.tcl",
+      "sha256": "17b0becdf905d282bf6b8aece935951f3935c1e5c546f88c0d53be6babdebc5e"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_dff/openroad/run_postroute_1p75ns.py",
+      "sha256": "ec7df24fc8f84b31c4d81a778913060b300036e2c077538efc55ee8eae6043ab"
+    },
+    {
+      "path": "/home/bailufrost/eda/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib",
+      "sha256": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9"
+    }
+  ],
+  "openroad_version": "26Q2-1164-g08f67ee5ec",
+  "sta_version": "3.1.0",
+  "timing_passed": false,
+  "artifacts": [
+    {
+      "path": "inputs/counter.sdc",
+      "sha256": "464c2a3b443fd358f928b4fcc482b84ff220ed7e81c30596a172f97326dee4a7"
+    },
+    {
+      "path": "logs/openroad.log",
+      "sha256": "58ed87959791140265144178b9a2eeb91fccd54f090e778481f4f45835dce1a3"
+    },
+    {
+      "path": "logs/sta.log",
+      "sha256": "9969be9e845500ab8997bac470b1d71da9aaf1165d42d9c593908627ad497095"
+    },
+    {
+      "path": "reports/postroute/check_setup.rpt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/postroute/checks.rpt",
+      "sha256": "01f71193f38f1050df03ca49ed6503e2cba0ae8a160e8a0adeeebaa689628215"
+    },
+    {
+      "path": "reports/postroute/clock_latency.rpt",
+      "sha256": "0c743fb27bac0e963a5d87c6ca37859f1ddaad95e7b1717d1cedee0abddf47f8"
+    },
+    {
+      "path": "reports/postroute/clock_skew_hold.rpt",
+      "sha256": "a532961ecca27766f6ac2a1b01c2cc7cfb906a55462220c65c509e48db82ddf5"
+    },
+    {
+      "path": "reports/postroute/clock_skew_setup.rpt",
+      "sha256": "4b0e2fe9059d46a4d9f80200e06c2a50b5c3df93b67dd7fa626c77038fb95fd4"
+    },
+    {
+      "path": "reports/postroute/clocks.rpt",
+      "sha256": "5a5dd7e0475608d24cdc2cda9a1886d248eb3ea3baecf6a62e010f8b178d7852"
+    },
+    {
+      "path": "reports/postroute/data_hold.rpt",
+      "sha256": "dbee22e5f50653482cfc4b4af6874de87318975b6229a7af1a3e0b1bbe967994"
+    },
+    {
+      "path": "reports/postroute/data_setup.rpt",
+      "sha256": "c2113d7101157146de2a7f5cb32052a3eb750e5010d2408055fc97d5be6d8e49"
+    },
+    {
+      "path": "reports/postroute/effective.sdc",
+      "sha256": "9e5379fcc84b4455318661ce521b78e96deb2793adfb0114ff5fe7be6a90f910"
+    },
+    {
+      "path": "reports/postroute/en_hold.rpt",
+      "sha256": "fcd311b1ffb8c734ae0dc55b0080ac7135878356619187e321d1909d81ea239e"
+    },
+    {
+      "path": "reports/postroute/en_setup.rpt",
+      "sha256": "b7963ed9abc9d67a538b05e97bfba7a2c68d0a04576dddd778db367b227b304b"
+    },
+    {
+      "path": "reports/postroute/hold.rpt",
+      "sha256": "9f95a7d962ffa49de5e135093669caea4b1f54c9814cdd3ea328e06497077465"
+    },
+    {
+      "path": "reports/postroute/hold_violations.rpt",
+      "sha256": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d"
+    },
+    {
+      "path": "reports/postroute/max_capacitance.rpt",
+      "sha256": "5993c12b78c106e660fb7c72b1b5580ff2a2de6a28422ba00e58d3edf8e03e90"
+    },
+    {
+      "path": "reports/postroute/max_fanout.rpt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/postroute/max_slew.rpt",
+      "sha256": "928dc64617b309c27269aca6be35fbc1688754ce247d9ca16f638b8734f51c83"
+    },
+    {
+      "path": "reports/postroute/min_period.rpt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/postroute/output_hold.rpt",
+      "sha256": "afc5717deb12d956e29e8dcff71facec93ea09c9b570346c909264cf0301b444"
+    },
+    {
+      "path": "reports/postroute/output_setup.rpt",
+      "sha256": "e9dc92da9fa8e64ce935df7637e086deabefdab5a7b68f705c20c2975c7a0206"
+    },
+    {
+      "path": "reports/postroute/parasitic_annotation.rpt",
+      "sha256": "b3b0b270ec3f1c8de2200b92ac0bdd68a265cfa018c2d8a09b9ceb61589e09c3"
+    },
+    {
+      "path": "reports/postroute/pulse_width.rpt",
+      "sha256": "b6a255d499d7290543eb28f206071786a93a1ffadd12bb4bc4d3eb8167948782"
+    },
+    {
+      "path": "reports/postroute/recovery.rpt",
+      "sha256": "be921ec616af3052fd29d958057b4d0a8814b0cc89e45f9fb4f5bbb8d1d62fb0"
+    },
+    {
+      "path": "reports/postroute/removal.rpt",
+      "sha256": "c55dbbd54c4e6eac8c91df7a8a131716a2a93693eb9fecb8b92ce24df88fff4c"
+    },
+    {
+      "path": "reports/postroute/rst_n_hold.rpt",
+      "sha256": "0a0ad5c6ce70e340f94e0f2fa159da1139c6b8ecaaa22da7cdcc3f4ecebdcfe4"
+    },
+    {
+      "path": "reports/postroute/rst_n_setup.rpt",
+      "sha256": "1d9dc585141962f4cd4521d1bcf063c835e53109dbbe094555ed4dcb4a4dcee3"
+    },
+    {
+      "path": "reports/postroute/setup.rpt",
+      "sha256": "7f6308a6b233b42cffba4e5023638e774a5c148eed4a17aa233af478682be426"
+    },
+    {
+      "path": "reports/postroute/setup_violations.rpt",
+      "sha256": "a9814fd30e15ac480f353bc1e3f4b13d94e8a65a6a645bd644e8565cde2d6752"
+    },
+    {
+      "path": "reports/postroute/summary.rpt",
+      "sha256": "035b5c7763445605c8a38867de15d4b74130cb676d46833a1cb7e2a21043365b"
+    },
+    {
+      "path": "reports/postroute/units.rpt",
+      "sha256": "68cd79d3bdd9d6a6042a83c2b041185a6b47ba9d1791cea4c42d270cd6381bf1"
+    },
+    {
+      "path": "reports/postroute/violations.rpt",
+      "sha256": "233f0d231490848638960dd4be4599d4c415e1431b5cc3da4d2bd819a525cacf"
+    },
+    {
+      "path": "reports/standalone_sta/check_setup.rpt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/standalone_sta/checks.rpt",
+      "sha256": "01f71193f38f1050df03ca49ed6503e2cba0ae8a160e8a0adeeebaa689628215"
+    },
+    {
+      "path": "reports/standalone_sta/clock_latency.rpt",
+      "sha256": "0c743fb27bac0e963a5d87c6ca37859f1ddaad95e7b1717d1cedee0abddf47f8"
+    },
+    {
+      "path": "reports/standalone_sta/clock_skew_hold.rpt",
+      "sha256": "a532961ecca27766f6ac2a1b01c2cc7cfb906a55462220c65c509e48db82ddf5"
+    },
+    {
+      "path": "reports/standalone_sta/clock_skew_setup.rpt",
+      "sha256": "4b0e2fe9059d46a4d9f80200e06c2a50b5c3df93b67dd7fa626c77038fb95fd4"
+    },
+    {
+      "path": "reports/standalone_sta/clocks.rpt",
+      "sha256": "5a5dd7e0475608d24cdc2cda9a1886d248eb3ea3baecf6a62e010f8b178d7852"
+    },
+    {
+      "path": "reports/standalone_sta/data_hold.rpt",
+      "sha256": "dbee22e5f50653482cfc4b4af6874de87318975b6229a7af1a3e0b1bbe967994"
+    },
+    {
+      "path": "reports/standalone_sta/data_setup.rpt",
+      "sha256": "c2113d7101157146de2a7f5cb32052a3eb750e5010d2408055fc97d5be6d8e49"
+    },
+    {
+      "path": "reports/standalone_sta/effective.sdc",
+      "sha256": "9e5379fcc84b4455318661ce521b78e96deb2793adfb0114ff5fe7be6a90f910"
+    },
+    {
+      "path": "reports/standalone_sta/en_hold.rpt",
+      "sha256": "fcd311b1ffb8c734ae0dc55b0080ac7135878356619187e321d1909d81ea239e"
+    },
+    {
+      "path": "reports/standalone_sta/en_setup.rpt",
+      "sha256": "b7963ed9abc9d67a538b05e97bfba7a2c68d0a04576dddd778db367b227b304b"
+    },
+    {
+      "path": "reports/standalone_sta/hold.rpt",
+      "sha256": "9f95a7d962ffa49de5e135093669caea4b1f54c9814cdd3ea328e06497077465"
+    },
+    {
+      "path": "reports/standalone_sta/hold_violations.rpt",
+      "sha256": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d"
+    },
+    {
+      "path": "reports/standalone_sta/max_capacitance.rpt",
+      "sha256": "5993c12b78c106e660fb7c72b1b5580ff2a2de6a28422ba00e58d3edf8e03e90"
+    },
+    {
+      "path": "reports/standalone_sta/max_fanout.rpt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/standalone_sta/max_slew.rpt",
+      "sha256": "928dc64617b309c27269aca6be35fbc1688754ce247d9ca16f638b8734f51c83"
+    },
+    {
+      "path": "reports/standalone_sta/min_period.rpt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/standalone_sta/output_hold.rpt",
+      "sha256": "afc5717deb12d956e29e8dcff71facec93ea09c9b570346c909264cf0301b444"
+    },
+    {
+      "path": "reports/standalone_sta/output_setup.rpt",
+      "sha256": "e9dc92da9fa8e64ce935df7637e086deabefdab5a7b68f705c20c2975c7a0206"
+    },
+    {
+      "path": "reports/standalone_sta/parasitic_annotation.rpt",
+      "sha256": "b3b0b270ec3f1c8de2200b92ac0bdd68a265cfa018c2d8a09b9ceb61589e09c3"
+    },
+    {
+      "path": "reports/standalone_sta/pulse_width.rpt",
+      "sha256": "b6a255d499d7290543eb28f206071786a93a1ffadd12bb4bc4d3eb8167948782"
+    },
+    {
+      "path": "reports/standalone_sta/recovery.rpt",
+      "sha256": "be921ec616af3052fd29d958057b4d0a8814b0cc89e45f9fb4f5bbb8d1d62fb0"
+    },
+    {
+      "path": "reports/standalone_sta/removal.rpt",
+      "sha256": "c55dbbd54c4e6eac8c91df7a8a131716a2a93693eb9fecb8b92ce24df88fff4c"
+    },
+    {
+      "path": "reports/standalone_sta/rst_n_hold.rpt",
+      "sha256": "0a0ad5c6ce70e340f94e0f2fa159da1139c6b8ecaaa22da7cdcc3f4ecebdcfe4"
+    },
+    {
+      "path": "reports/standalone_sta/rst_n_setup.rpt",
+      "sha256": "1d9dc585141962f4cd4521d1bcf063c835e53109dbbe094555ed4dcb4a4dcee3"
+    },
+    {
+      "path": "reports/standalone_sta/setup.rpt",
+      "sha256": "7f6308a6b233b42cffba4e5023638e774a5c148eed4a17aa233af478682be426"
+    },
+    {
+      "path": "reports/standalone_sta/setup_violations.rpt",
+      "sha256": "a9814fd30e15ac480f353bc1e3f4b13d94e8a65a6a645bd644e8565cde2d6752"
+    },
+    {
+      "path": "reports/standalone_sta/summary.rpt",
+      "sha256": "035b5c7763445605c8a38867de15d4b74130cb676d46833a1cb7e2a21043365b"
+    },
+    {
+      "path": "reports/standalone_sta/units.rpt",
+      "sha256": "68cd79d3bdd9d6a6042a83c2b041185a6b47ba9d1791cea4c42d270cd6381bf1"
+    },
+    {
+      "path": "reports/standalone_sta/violations.rpt",
+      "sha256": "233f0d231490848638960dd4be4599d4c415e1431b5cc3da4d2bd819a525cacf"
+    },
+    {
+      "path": "reports/summary.json",
+      "sha256": "5f4155370bac248bcbe84d20fc70a1b7fae5dd82df68b5f4d5d1d4392c6cd2fa"
+    },
+    {
+      "path": "results/counter.sdf",
+      "sha256": "7835f9d83735365ca75f25bf614fb1aebd131b43abee12cbeadb4dbb62e4ecd1"
+    },
+    {
+      "path": "results/counter.spef",
+      "sha256": "4944e62c7d493c9192804d3cc17d4665126583fb657c516ba310b48fcb834eaa"
+    },
+    {
+      "path": "results/counter_routed.v",
+      "sha256": "0195d27162861547f83a092eb2f0b69f55dfe21d2f32dcee333af60cba32c901"
+    },
+    {
+      "path": "scripts/common.tcl",
+      "sha256": "1f1802ae52a31270e75504facbba97a71aac22c967fd8b215956968552ef453f"
+    },
+    {
+      "path": "scripts/sta.tcl",
+      "sha256": "17b0becdf905d282bf6b8aece935951f3935c1e5c546f88c0d53be6babdebc5e"
+    }
+  ]
+}

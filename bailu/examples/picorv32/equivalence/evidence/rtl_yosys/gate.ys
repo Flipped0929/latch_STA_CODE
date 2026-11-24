@@ -1,0 +1,8 @@
+read_verilog +/simcells.v
+read_verilog picorv32_latch/picorv32_yosys.v
+prep -top picorv32 -flatten
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil equivalence/rtl_yosys_10/gate.il

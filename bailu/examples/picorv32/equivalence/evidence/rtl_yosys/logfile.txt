@@ -1,0 +1,489 @@
+EQY 15:58:31 [equivalence/rtl_yosys_10] read_gold: starting process "yosys -ql equivalence/rtl_yosys_10/gold.log equivalence/rtl_yosys_10/gold.ys"
+EQY 15:58:32 [equivalence/rtl_yosys_10] read_gate: starting process "yosys -ql equivalence/rtl_yosys_10/gate.log equivalence/rtl_yosys_10/gate.ys"
+EQY 15:58:32 [equivalence/rtl_yosys_10] read_gold: finished (returncode=0)
+EQY 15:58:32 [equivalence/rtl_yosys_10] read_gate: /home/bailufrost/.local/bin/../share/yosys/simcells.v:476: Warning: Yosys has only limited support for tri-state logic at the moment.
+EQY 15:58:35 [equivalence/rtl_yosys_10] read_gate: finished (returncode=0)
+EQY 15:58:35 [equivalence/rtl_yosys_10] combine: starting process "yosys -ql equivalence/rtl_yosys_10/combine.log equivalence/rtl_yosys_10/combine.ys"
+EQY 15:58:37 [equivalence/rtl_yosys_10] combine: finished (returncode=0)
+EQY 15:58:38 [equivalence/rtl_yosys_10] partition: starting process "cd equivalence/rtl_yosys_10; yosys -ql partition.log partition.ys"
+EQY 15:58:45 [equivalence/rtl_yosys_10] partition: finished (returncode=0)
+EQY 15:58:45 [equivalence/rtl_yosys_10] Warning: Partition picorv32.trace_data contains 1 unused gate inputs.
+EQY 15:58:45 [equivalence/rtl_yosys_10] Warning: Partition picorv32.trace_valid contains 1 unused gate inputs.
+EQY 15:58:45 [equivalence/rtl_yosys_10] Warning: Partition picorv32.pcpi_valid contains 2 unused gate inputs.
+EQY 15:58:45 [equivalence/rtl_yosys_10] Warning: Partition picorv32.pcpi_insn contains 3 unused gate inputs.
+EQY 15:58:45 [equivalence/rtl_yosys_10] Warning: Partition picorv32.eoi contains 2 unused gate inputs.
+EQY 15:58:48 [equivalence/rtl_yosys_10] run: starting process "make -C equivalence/rtl_yosys_10 -f strategies.mk"
+EQY 15:58:48 [equivalence/rtl_yosys_10] run: make: 进入目录“/mnt/hgfs/LatchSTA_Code/code/examples/picorv32/equivalence/rtl_yosys_10”
+EQY 15:58:48 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.alu_out_q'..
+EQY 15:58:49 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.alu_out_q' using strategy 'induction'
+EQY 15:58:49 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.count_cycle'..
+EQY 15:58:49 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.count_cycle' using strategy 'induction'
+EQY 15:58:49 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.0'..
+EQY 15:58:50 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.0' using strategy 'induction'
+EQY 15:58:50 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.1'..
+EQY 15:58:50 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.1' using strategy 'induction'
+EQY 15:58:50 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.10'..
+EQY 15:58:50 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.10' using strategy 'induction'
+EQY 15:58:50 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.11'..
+EQY 15:58:50 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.11' using strategy 'induction'
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.12'..
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.12' using strategy 'induction'
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.13'..
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.13' using strategy 'induction'
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.14'..
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.14' using strategy 'induction'
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.15'..
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.15' using strategy 'induction'
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.16'..
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.16' using strategy 'induction'
+EQY 15:58:51 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.17'..
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.17' using strategy 'induction'
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.18'..
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.18' using strategy 'induction'
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.19'..
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.19' using strategy 'induction'
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.2'..
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.2' using strategy 'induction'
+EQY 15:58:52 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.20'..
+EQY 15:58:53 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.20' using strategy 'induction'
+EQY 15:58:53 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.21'..
+EQY 15:58:53 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.21' using strategy 'induction'
+EQY 15:58:53 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.22'..
+EQY 15:58:53 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.22' using strategy 'induction'
+EQY 15:58:53 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.23'..
+EQY 15:58:54 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.23' using strategy 'induction'
+EQY 15:58:54 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.24'..
+EQY 15:58:54 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.24' using strategy 'induction'
+EQY 15:58:54 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.25'..
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.25' using strategy 'induction'
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.26'..
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.26' using strategy 'induction'
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.27'..
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.27' using strategy 'induction'
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.28'..
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.28' using strategy 'induction'
+EQY 15:58:55 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.29'..
+EQY 15:58:56 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.29' using strategy 'induction'
+EQY 15:58:56 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.3'..
+EQY 15:58:56 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.3' using strategy 'induction'
+EQY 15:58:56 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.30'..
+EQY 15:58:56 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.30' using strategy 'induction'
+EQY 15:58:56 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.31'..
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.31' using strategy 'induction'
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.4'..
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.4' using strategy 'induction'
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.5'..
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.5' using strategy 'induction'
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.6'..
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.6' using strategy 'induction'
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.7'..
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.7' using strategy 'induction'
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.8'..
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.8' using strategy 'induction'
+EQY 15:58:57 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs.9'..
+EQY 15:58:58 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs.9' using strategy 'induction'
+EQY 15:58:58 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.cpuregs_wrdata'..
+EQY 16:04:29 [equivalence/rtl_yosys_10] run: Could not prove equivalence of partition 'picorv32.cpuregs_wrdata' using strategy 'induction': equivalence unknown
+EQY 16:04:29 [equivalence/rtl_yosys_10] run: Running strategy 'pdr' on 'picorv32.cpuregs_wrdata'..
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.cpuregs_wrdata' using strategy 'pdr'
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.dbg_mem_instr'..
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.dbg_mem_instr' using strategy 'induction'
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.decoded_rs.0'..
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.decoded_rs.0' using strategy 'induction'
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.decoded_rs.1'..
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.decoded_rs.1' using strategy 'induction'
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.decoded_rs.2'..
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.decoded_rs.2' using strategy 'induction'
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.decoded_rs.3'..
+EQY 16:21:40 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.decoded_rs.3' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.decoded_rs.4'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.decoded_rs.4' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.eoi'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.eoi' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.mem_la_firstword'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.mem_la_firstword' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.mem_la_firstword_xfer'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.mem_la_firstword_xfer' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.mem_la_use_prefetched_high_word'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.mem_la_use_prefetched_high_word' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.0'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.0' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.1'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.1' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.10'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.10' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.11'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.11' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.12'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.12' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.13'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.13' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.14'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.14' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.15'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.15' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.16'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.16' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.17'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.17' using strategy 'induction'
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.18'..
+EQY 16:21:41 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.18' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.19'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.19' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.2'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.2' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.20'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.20' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.21'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.21' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.22'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.22' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.23'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.23' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.24'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.24' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.25'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.25' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.26'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.26' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.27'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.27' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.28'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.28' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.29'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.29' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.3'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.3' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.30'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.30' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.31'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.31' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.4'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.4' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.5'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.5' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.6'..
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.6' using strategy 'induction'
+EQY 16:21:42 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.7'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.7' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.8'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.8' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_rd.9'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_rd.9' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_ready'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_ready' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_wait'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_wait' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_div_wr'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_div_wr' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_insn'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_insn' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.0'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.0' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.1'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.1' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.10'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.10' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.11'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.11' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.12'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.12' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.13'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.13' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.14'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.14' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.15'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.15' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.16'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.16' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.17'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.17' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.18'..
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.18' using strategy 'induction'
+EQY 16:21:43 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.19'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.19' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.2'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.2' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.20'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.20' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.21'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.21' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.22'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.22' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.23'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.23' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.24'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.24' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.25'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.25' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.26'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.26' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.27'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.27' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.28'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.28' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.29'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.29' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.3'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.3' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.30'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.30' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.31'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.31' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.4'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.4' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.5'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.5' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.6'..
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.6' using strategy 'induction'
+EQY 16:21:44 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.7'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.7' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.8'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.8' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_rd.9'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_rd.9' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_ready'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_ready' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_wait'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_wait' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_int_wr'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_int_wr' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.0'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.0' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.1'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.1' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.10'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.10' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.11'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.11' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.12'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.12' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.13'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.13' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.14'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.14' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.15'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.15' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.16'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.16' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.17'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.17' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.18'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.18' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.19'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.19' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.2'..
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.2' using strategy 'induction'
+EQY 16:21:45 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.20'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.20' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.21'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.21' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.22'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.22' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.23'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.23' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.24'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.24' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.25'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.25' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.26'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.26' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.27'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.27' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.28'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.28' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.29'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.29' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.3'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.3' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.30'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.30' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.31'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.31' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.4'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.4' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.5'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.5' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.6'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.6' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.7'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.7' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.8'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.8' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_rd.9'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_rd.9' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_ready'..
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_ready' using strategy 'induction'
+EQY 16:21:46 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_wait'..
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_wait' using strategy 'induction'
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_mul_wr'..
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_mul_wr' using strategy 'induction'
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.pcpi_valid'..
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.pcpi_valid' using strategy 'induction'
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.trace_data'..
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.trace_data' using strategy 'induction'
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Running strategy 'induction' on 'picorv32.trace_valid'..
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: Proved equivalence of partition 'picorv32.trace_valid' using strategy 'induction'
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: make -f strategies.mk summary
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: make[1]: 进入目录“/mnt/hgfs/LatchSTA_Code/code/examples/picorv32/equivalence/rtl_yosys_10”
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: make[1]: 离开目录“/mnt/hgfs/LatchSTA_Code/code/examples/picorv32/equivalence/rtl_yosys_10”
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: make: 离开目录“/mnt/hgfs/LatchSTA_Code/code/examples/picorv32/equivalence/rtl_yosys_10”
+EQY 16:21:47 [equivalence/rtl_yosys_10] run: finished (returncode=0)
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.trace_data
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.trace_valid
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_valid
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_wr
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_wait
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_ready
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.31
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.30
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.29
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.28
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.27
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.26
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.25
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.24
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.23
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.22
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.21
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.20
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.19
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.18
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.17
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.16
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.15
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.14
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.13
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.12
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.11
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.10
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.9
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.8
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.7
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.6
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.5
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.4
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.3
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.2
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.1
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_mul_rd.0
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_wr
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_wait
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_ready
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.31
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.30
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.29
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.28
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.27
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.26
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.25
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.24
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.23
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.22
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.21
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.20
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.19
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.18
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.17
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.16
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.15
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.14
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.13
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.12
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.11
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.10
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.9
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.8
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.7
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.6
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.5
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.4
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.3
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.2
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.1
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_int_rd.0
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_insn
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_wr
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_wait
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_ready
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.31
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.30
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.29
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.28
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.27
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.26
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.25
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.24
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.23
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.22
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.21
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.20
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.19
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.18
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.17
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.16
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.15
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.14
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.13
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.12
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.11
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.10
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.9
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.8
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.7
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.6
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.5
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.4
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.3
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.2
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.1
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.pcpi_div_rd.0
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.eoi
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.9
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.8
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.7
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.6
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.5
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.4
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.3
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.31
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.30
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.2
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.29
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.28
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.27
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.26
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.25
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.24
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.23
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.22
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.21
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.20
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.1
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.19
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.18
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.17
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.16
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.15
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.14
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.13
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.12
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.11
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.10
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs.0
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.count_cycle
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.alu_out_q
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.dbg_mem_instr
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.mem_la_firstword
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.mem_la_firstword_xfer
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.mem_la_use_prefetched_high_word
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.decoded_rs.0
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.decoded_rs.1
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.decoded_rs.2
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.decoded_rs.3
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.decoded_rs.4
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved equivalence of partition picorv32.cpuregs_wrdata
+EQY 16:21:47 [equivalence/rtl_yosys_10] Successfully proved designs equivalent
+EQY 16:21:47 [equivalence/rtl_yosys_10] summary: Elapsed clock time [H:MM:SS (secs)]: 0:23:16 (1396)
+EQY 16:21:47 [equivalence/rtl_yosys_10] summary: Elapsed process time [H:MM:SS (secs)]: 0:22:26 (1346)
+EQY 16:21:47 [equivalence/rtl_yosys_10] DONE (PASS, rc=0)

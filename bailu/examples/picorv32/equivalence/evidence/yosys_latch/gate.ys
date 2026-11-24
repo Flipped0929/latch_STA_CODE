@@ -1,0 +1,14 @@
+exec -expect-return 0 -- mkdir -p equivalence/checks/phase
+read_verilog -icells picorv32_latch/picorv32_latch.v
+hierarchy -check -top picorv32
+write_json equivalence/checks/phase/picorv32_latch.json
+exec -expect-return 0 -- python3 equivalence/build_phase_model.py equivalence/checks/phase/picorv32_latch.json equivalence/checks/phase/picorv32_phase.v equivalence/checks/phase/structure.json
+design -reset
+read_verilog equivalence/checks/phase/picorv32_phase.v
+prep -top picorv32 -flatten
+opt_clean
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil equivalence/yosys_latch_2/gate.il

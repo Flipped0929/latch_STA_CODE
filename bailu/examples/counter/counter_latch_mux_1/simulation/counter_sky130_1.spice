@@ -1,0 +1,23 @@
+** sch_path: /mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_retiming_latch_mux_1/counter_sky130_1.sch
+.subckt counter_sky130_1 clk_1 clk_2 rst_n en VPWR VGND count[3] count[2] count[1] count[0]
+*.PININFO clk_1:I clk_2:I rst_n:I en:I VPWR:I VGND:I count[3:0]:O
+x_20_ count[0] VGND VGND VPWR VPWR _01_[0] sky130_fd_sc_hd__inv_1
+x_12_ count[0] _01_[0] en VGND VGND VPWR VPWR _04_ sky130_fd_sc_hd__mux2_1
+xstate_phi1_bit0 _04_ clk_1 rst_n VGND VGND VPWR VPWR phase_1[0] sky130_fd_sc_hd__dlrtp_1
+xstate_phi2_bit0 phase_1[0] clk_2 rst_n VGND VGND VPWR VPWR count[0] sky130_fd_sc_hd__dlrtp_1
+x_17_ count[1] count[0] VGND VGND VPWR VPWR _02_[1] sky130_fd_sc_hd__xor2_1
+x_11_ count[1] _02_[1] en VGND VGND VPWR VPWR _03_ sky130_fd_sc_hd__mux2_1
+xstate_phi1_bit1 _03_ clk_1 rst_n VGND VGND VPWR VPWR phase_1[1] sky130_fd_sc_hd__dlrtp_1
+xstate_phi2_bit1 phase_1[1] clk_2 rst_n VGND VGND VPWR VPWR count[1] sky130_fd_sc_hd__dlrtp_1
+x_18_ count[2] _00_[1] VGND VGND VPWR VPWR _02_[2] sky130_fd_sc_hd__xor2_1
+x_13_ count[2] _02_[2] en VGND VGND VPWR VPWR _05_ sky130_fd_sc_hd__mux2_1
+xstate_phi1_bit2 _05_ clk_1 rst_n VGND VGND VPWR VPWR phase_1[2] sky130_fd_sc_hd__dlrtp_1
+xstate_phi2_bit2 phase_1[2] clk_2 rst_n VGND VGND VPWR VPWR count[2] sky130_fd_sc_hd__dlrtp_1
+x_16_ count[1] count[0] VGND VGND VPWR VPWR _00_[1] sky130_fd_sc_hd__and2_1
+xstate_phi1_bit3 count[3] clk_1 rst_n VGND VGND VPWR VPWR phase_1[3] sky130_fd_sc_hd__dlrtp_1
+x_19_ phase_1[3] phase_1_toggle3 VGND VGND VPWR VPWR next_bit3 sky130_fd_sc_hd__xor2_1
+xstate_phi2_bit3 next_bit3 clk_2 rst_n VGND VGND VPWR VPWR count[3] sky130_fd_sc_hd__dlrtp_1
+x_15_ count[2] count[1] count[0] VGND VGND VPWR VPWR carry3 sky130_fd_sc_hd__and3_1
+xbit3_enable en carry3 VGND VGND VPWR VPWR toggle3 sky130_fd_sc_hd__and2_1
+xstate_phi1_toggle3 toggle3 clk_1 rst_n VGND VGND VPWR VPWR phase_1_toggle3 sky130_fd_sc_hd__dlrtp_1
+.ends

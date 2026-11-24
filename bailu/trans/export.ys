@@ -1,0 +1,6 @@
+synth -flatten -noabc
+dffunmap -srst-only
+dfflegalize -cell $_DFF_P_ 01 -cell $_DFFE_PP_ 01
+delete t:$scopeinfo
+check -assert
+select -assert-none c:* t:$_* %d p:*

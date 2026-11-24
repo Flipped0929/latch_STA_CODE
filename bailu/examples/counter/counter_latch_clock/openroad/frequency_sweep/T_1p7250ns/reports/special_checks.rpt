@@ -1,0 +1,344 @@
+Startpoint: rst_n (input port clocked by phi2)
+Endpoint: state_phi2_bit2 (removal check against falling-edge clock phi2)
+Path Group: asynchronous
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.000000    1.716375   clock network delay (propagated)
+   0.200000    1.916375 ^ input external delay
+   0.000000    1.916375 ^ rst_n (in)
+   0.001511    1.917885 ^ state_phi2_bit2/RESET_B (sky130_fd_sc_hd__dlrtp_2)
+               1.917885   data arrival time
+
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.264381    1.980756   clock network delay (propagated)
+   0.050000    2.030756   clock uncertainty
+   0.000000    2.030756   clock reconvergence pessimism
+               2.030756 v state_phi2_bit2/GATE (sky130_fd_sc_hd__dlrtp_2)
+   0.052157    2.082913   library removal time
+               2.082913   data required time
+-----------------------------------------------------------------
+               2.082913   data required time
+              -1.917885   data arrival time
+-----------------------------------------------------------------
+              -0.165028   slack (VIOLATED)
+
+
+Startpoint: enable_phi1 (positive level-sensitive latch clocked by phi1)
+Endpoint: gate_phi2 (rising clock gating-check end-point clocked by phi2)
+Path Group: gated clock
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   1.733625    1.733625   clock phi1 (rise edge)
+   0.253863    1.987488   clock network delay (propagated)
+   0.000000    1.987488 ^ enable_phi1/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.278266    2.265754 v enable_phi1/Q (sky130_fd_sc_hd__dlxtp_1)
+   0.000094    2.265848 v gate_phi2/B (sky130_fd_sc_hd__and2_1)
+               2.265848   data arrival time
+
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.000062    1.716437   clock network delay (propagated)
+   0.050000    1.766437   inter-clock uncertainty
+   0.000000    1.766437   clock reconvergence pessimism
+               1.766437 v gate_phi2/A (sky130_fd_sc_hd__and2_1)
+   0.000000    1.766437   clock gating hold time
+               1.766437   data required time
+-----------------------------------------------------------------
+               1.766437   data required time
+              -2.265848   data arrival time
+-----------------------------------------------------------------
+               0.499411   slack (MET)
+
+
+Startpoint: rst_n (input port clocked by phi2)
+Endpoint: state_phi1_bit3 (recovery check against falling-edge clock phi1)
+Path Group: asynchronous
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.000000    1.716375   clock network delay (propagated)
+   0.500000    2.216375 ^ input external delay
+   0.000000    2.216375 ^ rst_n (in)
+   0.001644    2.218019 ^ state_phi1_bit3/RESET_B (sky130_fd_sc_hd__dlrtp_1)
+               2.218019   data arrival time
+
+   2.578875    2.578875   clock phi1 (fall edge)
+   0.248185    2.827060   clock network delay (propagated)
+  -0.050000    2.777060   inter-clock uncertainty
+   0.000000    2.777060   clock reconvergence pessimism
+               2.777060 v state_phi1_bit3/GATE (sky130_fd_sc_hd__dlrtp_1)
+   0.046511    2.823571   library recovery time
+               2.823571   data required time
+-----------------------------------------------------------------
+               2.823571   data required time
+              -2.218019   data arrival time
+-----------------------------------------------------------------
+               0.605552   slack (MET)
+
+
+Startpoint: enable_phi1 (positive level-sensitive latch clocked by phi1)
+Endpoint: gate_phi2 (rising clock gating-check end-point clocked by phi2)
+Path Group: gated clock
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253863    0.262488   clock network delay (propagated)
+   0.000000    0.262488 ^ enable_phi1/GATE (sky130_fd_sc_hd__dlxtp_1)
+   0.316345    0.578832 ^ enable_phi1/Q (sky130_fd_sc_hd__dlxtp_1)
+   0.000100    0.578932 ^ gate_phi2/B (sky130_fd_sc_hd__and2_1)
+               0.578932   data arrival time
+
+   0.871125    0.871125   clock phi2 (rise edge)
+   0.000063    0.871188   clock network delay (propagated)
+  -0.050000    0.821188   inter-clock uncertainty
+   0.000000    0.821188   clock reconvergence pessimism
+               0.821188 ^ gate_phi2/A (sky130_fd_sc_hd__and2_1)
+   0.000000    0.821188   clock gating setup time
+               0.821188   data required time
+-----------------------------------------------------------------
+               0.821188   data required time
+              -0.578932   data arrival time
+-----------------------------------------------------------------
+               0.242257   slack (MET)
+
+
+Pin: state_phi1_bit1/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253898    0.262523   clock network delay (propagated)
+   0.000000    0.262523   state_phi1_bit1/GATE
+               0.262523   open edge arrival time
+
+   0.853875    0.853875   clock phi1 (fall edge)
+   0.248206    1.102081   clock network delay (propagated)
+   0.000000    1.102081   state_phi1_bit1/GATE
+   0.000000    1.102081   clock reconvergence pessimism
+               1.102081   close edge arrival time
+-----------------------------------------------------------------
+               0.266280   required pulse width (high)
+               0.839558   actual pulse width
+-----------------------------------------------------------------
+               0.573278   slack (MET)
+
+Pin: state_phi1_bit0/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253146    0.261771   clock network delay (propagated)
+   0.000000    0.261771   state_phi1_bit0/GATE
+               0.261771   open edge arrival time
+
+   0.853875    0.853875   clock phi1 (fall edge)
+   0.248178    1.102053   clock network delay (propagated)
+   0.000000    1.102053   state_phi1_bit0/GATE
+   0.000000    1.102053   clock reconvergence pessimism
+               1.102053   close edge arrival time
+-----------------------------------------------------------------
+               0.264819   required pulse width (high)
+               0.840282   actual pulse width
+-----------------------------------------------------------------
+               0.575463   slack (MET)
+
+Pin: state_phi1_bit2/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253144    0.261769   clock network delay (propagated)
+   0.000000    0.261769   state_phi1_bit2/GATE
+               0.261769   open edge arrival time
+
+   0.853875    0.853875   clock phi1 (fall edge)
+   0.248176    1.102051   clock network delay (propagated)
+   0.000000    1.102051   state_phi1_bit2/GATE
+   0.000000    1.102051   clock reconvergence pessimism
+               1.102051   close edge arrival time
+-----------------------------------------------------------------
+               0.264819   required pulse width (high)
+               0.840282   actual pulse width
+-----------------------------------------------------------------
+               0.575463   slack (MET)
+
+Pin: state_phi1_bit3/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253154    0.261779   clock network delay (propagated)
+   0.000000    0.261779   state_phi1_bit3/GATE
+               0.261779   open edge arrival time
+
+   0.853875    0.853875   clock phi1 (fall edge)
+   0.248185    1.102060   clock network delay (propagated)
+   0.000000    1.102060   state_phi1_bit3/GATE
+   0.000000    1.102060   clock reconvergence pessimism
+               1.102060   close edge arrival time
+-----------------------------------------------------------------
+               0.264819   required pulse width (high)
+               0.840281   actual pulse width
+-----------------------------------------------------------------
+               0.575462   slack (MET)
+
+Pin: state_phi1_carry_bit2/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253124    0.261749   clock network delay (propagated)
+   0.000000    0.261749   state_phi1_carry_bit2/GATE
+               0.261749   open edge arrival time
+
+   0.853875    0.853875   clock phi1 (fall edge)
+   0.248157    1.102032   clock network delay (propagated)
+   0.000000    1.102032   state_phi1_carry_bit2/GATE
+   0.000000    1.102032   clock reconvergence pessimism
+               1.102032   close edge arrival time
+-----------------------------------------------------------------
+               0.264819   required pulse width (high)
+               0.840283   actual pulse width
+-----------------------------------------------------------------
+               0.575464   slack (MET)
+
+Pin: state_phi1_carry_bit3/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253012    0.261637   clock network delay (propagated)
+   0.000000    0.261637   state_phi1_carry_bit3/GATE
+               0.261637   open edge arrival time
+
+   0.853875    0.853875   clock phi1 (fall edge)
+   0.248053    1.101928   clock network delay (propagated)
+   0.000000    1.101928   state_phi1_carry_bit3/GATE
+   0.000000    1.101928   clock reconvergence pessimism
+               1.101928   close edge arrival time
+-----------------------------------------------------------------
+               0.264819   required pulse width (high)
+               0.840291   actual pulse width
+-----------------------------------------------------------------
+               0.575471   slack (MET)
+
+Pin: state_phi2_bit0/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.871125    0.871125   clock phi2 (rise edge)
+   0.250560    1.121685   clock network delay (propagated)
+   0.000000    1.121685   state_phi2_bit0/GATE
+               1.121685   open edge arrival time
+
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.263721    1.980096   clock network delay (propagated)
+   0.000000    1.980096   state_phi2_bit0/GATE
+   0.000042    1.980138   clock reconvergence pessimism
+               1.980138   close edge arrival time
+-----------------------------------------------------------------
+               0.282633   required pulse width (high)
+               0.858453   actual pulse width
+-----------------------------------------------------------------
+               0.575820   slack (MET)
+
+Pin: state_phi2_bit1/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.871125    0.871125   clock phi2 (rise edge)
+   0.250576    1.121701   clock network delay (propagated)
+   0.000000    1.121701   state_phi2_bit1/GATE
+               1.121701   open edge arrival time
+
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.263737    1.980112   clock network delay (propagated)
+   0.000000    1.980112   state_phi2_bit1/GATE
+   0.000042    1.980154   clock reconvergence pessimism
+               1.980154   close edge arrival time
+-----------------------------------------------------------------
+               0.282633   required pulse width (high)
+               0.858452   actual pulse width
+-----------------------------------------------------------------
+               0.575819   slack (MET)
+
+Pin: enable_phi1/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.008625    0.008625   clock phi1 (rise edge)
+   0.253863    0.262488   clock network delay (propagated)
+   0.000000    0.262488   enable_phi1/GATE
+               0.262488   open edge arrival time
+
+   0.853875    0.853875   clock phi1 (fall edge)
+   0.248171    1.102046   clock network delay (propagated)
+   0.000000    1.102046   enable_phi1/GATE
+   0.000000    1.102046   clock reconvergence pessimism
+               1.102046   close edge arrival time
+-----------------------------------------------------------------
+               0.262455   required pulse width (high)
+               0.839558   actual pulse width
+-----------------------------------------------------------------
+               0.577103   slack (MET)
+
+Pin: state_phi2_bit3/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.871125    0.871125   clock phi2 (rise edge)
+   0.250706    1.121831   clock network delay (propagated)
+   0.000000    1.121831   state_phi2_bit3/GATE
+               1.121831   open edge arrival time
+
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.263860    1.980235   clock network delay (propagated)
+   0.000000    1.980235   state_phi2_bit3/GATE
+   0.000042    1.980277   clock reconvergence pessimism
+               1.980277   close edge arrival time
+-----------------------------------------------------------------
+               0.264407   required pulse width (high)
+               0.858446   actual pulse width
+-----------------------------------------------------------------
+               0.594039   slack (MET)
+
+Pin: state_phi2_bit2/GATE
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.871125    0.871125   clock phi2 (rise edge)
+   0.250657    1.121782   clock network delay (propagated)
+   0.000000    1.121782   state_phi2_bit2/GATE
+               1.121782   open edge arrival time
+
+   1.716375    1.716375   clock phi2 (fall edge)
+   0.263813    1.980188   clock network delay (propagated)
+   0.000000    1.980188   state_phi2_bit2/GATE
+   0.000042    1.980230   clock reconvergence pessimism
+               1.980230   close edge arrival time
+-----------------------------------------------------------------
+               0.264407   required pulse width (high)
+               0.858448   actual pulse width
+-----------------------------------------------------------------
+               0.594042   slack (MET)
+
+

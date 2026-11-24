@@ -1,0 +1,31 @@
+# Run from the project directory.
+read_liberty -ignore_miss_func -ignore_miss_dir -ignore_miss_data_latch -ignore_buses /mnt/hgfs/LatchSTA_Code/code/sky130_pdk/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_mux_1/counter_sky130.v
+hierarchy -top counter
+proc
+flatten
+opt
+clk2fflogic
+opt
+rename counter gold
+design -stash gold
+read_liberty -ignore_miss_func -ignore_miss_dir -ignore_miss_data_latch -ignore_buses /mnt/hgfs/LatchSTA_Code/code/sky130_pdk/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_latch_mux_1/openroad/results/counter_routed.v
+hierarchy -top counter
+proc
+flatten
+opt
+clk2fflogic
+opt
+# The supply terminals in this signal netlist have no logic fanout.
+delete counter/VDD counter/VSS
+rename counter gate
+design -stash gate
+design -copy-from gold -as gold gold
+design -copy-from gate -as gate gate
+equiv_make gold gate equiv
+hierarchy -top equiv
+equiv_struct
+equiv_simple -seq 5
+equiv_induct -seq 5
+equiv_status -assert

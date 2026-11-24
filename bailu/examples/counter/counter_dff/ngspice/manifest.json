@@ -1,0 +1,854 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-08T08:16:47.365972+00:00",
+  "work_directory": "/tmp/counter_dff_ngspice_3y9wcses",
+  "sources": [
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/openroad/results/counter_routed.v",
+      "sha256": "0195d27162861547f83a092eb2f0b69f55dfe21d2f32dcee333af60cba32c901"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/openroad/results/counter.spef",
+      "sha256": "4944e62c7d493c9192804d3cc17d4665126583fb657c516ba310b48fcb834eaa"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/counter.sdc",
+      "sha256": "0b13b47cbe69570abded611d89ae8b63b5dc333148223b0deb832baf73a83217"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/run_postlayout.py",
+      "sha256": "3841c2f3deef9687b5b7a7feb68bcc5f6bc059ebae2caac261e78c8272d9ec24"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/scripts/analyze.py",
+      "sha256": "7da996c2405ff8a2e2852159374d468b16c4b3ac37712c48c2d01604f200d71c"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/scripts/build_netlist.py",
+      "sha256": "1133ed984284fbc750863715cecb3d50003f16c3322d640a1d820fc748477036"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/models/sky130_fd_sc_hd__and2_1.spice",
+      "sha256": "c5e376f026990d9c0c7c5d353d3145669dd73cdf111b8a23865babaa6e3306a5"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/models/sky130_fd_sc_hd__clkbuf_4.spice",
+      "sha256": "2a40c03d2bfec621a6f5499bb27f7ba206a851bc45e50a29104518905a20d52a"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/models/sky130_fd_sc_hd__dfrtp_1.spice",
+      "sha256": "624808d817faf1b89a4299580acb8873fc0b6e9898cc3cfab8493bff836f1101"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/models/sky130_fd_sc_hd__inv_1.spice",
+      "sha256": "1099e3641c46d241852db47974540b3ad161e20e01b74f2fd5cc152627011909"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/models/sky130_fd_sc_hd__mux2_1.spice",
+      "sha256": "dc4b217a91a494168cbcdc4e948c29171905017a2b5f928596a7039352c426b9"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/models/sky130_fd_sc_hd__xor2_1.spice",
+      "sha256": "51aad892e3bd16850b5d8718df4ef97e576766e13af717d5c0b034c77fe84c28"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/models/SOURCES.json",
+      "sha256": "d20feda7e54be1a51cf11e3ca3df8c96acabcd4029754ae8c3688288a4613f4f"
+    },
+    {
+      "path": "/mnt/hgfs/LatchSTA_Code/code/examples/counter/counter_dff/ngspice/requirements.txt",
+      "sha256": "af9c9ea6a882ecdb9816a50416e4e777ff38447e9caf3b8e4c630ce2f227d324"
+    }
+  ],
+  "device_model_dependencies": [
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_mim_m3_1.model.spice",
+      "sha256": "5cb086313d55341351305d30500ca39571d689b692d2be525c4b3b8b4db86e6f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_mim_m3_2.model.spice",
+      "sha256": "a2e9ed5568b23debce5ac002f15df8c675010bac34d05b0c4e8a8dcca916260f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_var_hvt.model.spice",
+      "sha256": "450b49b213811b230d3f3b2e066fd37291f8d76588ecfb9d0d181e016e6e5132"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_var_lvt.model.spice",
+      "sha256": "ef07259bd556443e004118ffbfab8f8844f225ecfffb29252e3d1550afeee0d1"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_02p7x06p1_m1m2m3m4_shieldl1_fingercap.model.spice",
+      "sha256": "1d1e7826d37b70c0d713f8c143c622d29ca5339b7393d4f9e7527942323dd00f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_02p7x11p1_m1m2m3m4_shieldl1_fingercap.model.spice",
+      "sha256": "574e2bbfa7cd17a8896ef3b5368d83a5be9d5745beecfaad1c6749065945b26e"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_02p7x21p1_m1m2m3m4_shieldl1_fingercap.model.spice",
+      "sha256": "a33318e0ef6424e31d4bdc84bfd3b9b1b7b70666948e7049047f7f9aa1d1a71f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_02p7x41p1_m1m2m3m4_shieldl1_fingercap.model.spice",
+      "sha256": "d5bbcea2c2037ebc2a18fff481eabf558131c20b0f2ff5412801cf4b4e422af6"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_02p9x06p1_m1m2m3m4_shieldl1_fingercap2.model.spice",
+      "sha256": "426e06d06ae9f9622fd78b2d4541498dda35331458a04a68b2f3161d5e979a78"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield_o1nhv.model.spice",
+      "sha256": "6f58199124ce1837e16d31732dea4cc4d1ce0f90901e4c9af71eaad0ec540dd8"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield_o1phv.model.spice",
+      "sha256": "35e9d616992a0daa28f585db8c62c46ddcdf903d36d4bba021f81562055cd1c5"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2m3_shieldl1.model.spice",
+      "sha256": "843c72841b193f533d3b9202ef5ed8394600e7a1ae76c9e79f668012a7e57c7b"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_04p4x04p6_m1m2m3_shieldl1m5_floatm4.model.spice",
+      "sha256": "cf72fe1a83b78d6ea4c1e6642ebbeeed4cce2f1576ebacd1877345169338b4a9"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_05p9x05p9_m1m2m3m4_shieldl1_wafflecap.model.spice",
+      "sha256": "3ba9ebf584a8d918da8c2e2cd3367d7a4126e987f0b211ce031bcc6315ddd6d4"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4.model.spice",
+      "sha256": "1ddbf337f0181395931ae806c62e41f146c3546d4fdbf9f696ad513cdc43964d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_06p8x06p1_m1m2m3_shieldl1m4.model.spice",
+      "sha256": "bac04f2476f5f59ce3d2635012b45e769d30bf9f7e37184670d7880470ba094c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_08p6x07p8_l1m1m2_noshield_o1.model.spice",
+      "sha256": "7f0bf5a9d06a65f5b5a8ccffef993314d67f1446a88ef1d28de7da07516b7a85"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_08p6x07p8_m1m2m3_shieldl1.model.spice",
+      "sha256": "af59c5d1cdbee04d8d6b0288222b8a728feb7059c38eb958449ba78cef57b8bf"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4.model.spice",
+      "sha256": "da793ff90e4a0f4c6e391c9df38c4cab8f55fc696caeac53e374299062bc94f8"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p3x11p3_m1m2m3m4_shieldl1_wafflecap.model.spice",
+      "sha256": "3f097889845cac35adee04665a5294bfa76d3913481012ce5281b50bca070e24"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5_nhv.model.spice",
+      "sha256": "2bb6db3a27902e6e3f95c4184f28347650bfdca806fe0a3e5b4f3d658243c060"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5_nhv__base.model.spice",
+      "sha256": "70941ff54f00d092d781acac4f3e9b1b37b9f69cd47206af585edb816e9b8aa2"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3_shieldm4.model.spice",
+      "sha256": "d061413a098abd3200c8f793cc3d49c0684b694ac92c2a234f9782722d27aa96"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3_shieldpom4.model.spice",
+      "sha256": "f89f5926560580da9b4032a7e7b25b287830c8dc5535dd7f6a70f4922fd344e4"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5.model.spice",
+      "sha256": "4298c99e69fc2d2002c60c0c8cdf2433473523b881756bb3ec6caf2f242eca15"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5.model.spice",
+      "sha256": "709267ddbf511a083935671e3342abe2b0882eb54408a5f48214a396c067d535"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5_x.model.spice",
+      "sha256": "2c1c793a7a735a73cb660217bfacd2d99488f9783ad7b655bed43085fd940fb4"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3_shieldl1.model.spice",
+      "sha256": "470feafc452b3cc8c021b81616db38c4644ce8b2fd8458e59f86fe4693034b67"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4.model.spice",
+      "sha256": "3f66908aeba3f7623e41b53c9a7447b84761b64a7404cdc37fc008fd68711748"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5.model.spice",
+      "sha256": "70921b5bac4f58b95e6c1fb435b61f0df848006772c6ededf2fcf445fda56206"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldm5.model.spice",
+      "sha256": "b8e5ab03db75a9f7094e5afc50cff7bbf7db5d8ae6902d6ece51332ceee3b66d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_11p5x11p7_m1m4_noshield.model.spice",
+      "sha256": "0535b752338e25aaee54a60c9e470c81083ffe5ccbde921c82da69f6414c62fa"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__cap_vpp_44p7x23p1_pol1m1m2m3m4m5_noshield.model.spice",
+      "sha256": "9c51ae7a30dc108b6bfe05847199fb94d4e38d8f8ba3bdaad0bca47d4cf30c69"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pd2nw_05v5.model.spice",
+      "sha256": "991227f64be92e63a1751f423e5cc13e92171191e76de9b3a4f195724492028d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pd2nw_05v5_hvt.model.spice",
+      "sha256": "9f3b9a028e7e4dd5d2d87a26d949de52daee032603ca75c90891dde864dc01a5"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pd2nw_05v5_lvt.model.spice",
+      "sha256": "02c4cf2e034e5f0bbcfac4edb7a32c417233295e48fb60d9ea5a3357d9d689f8"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pd2nw_11v0.model.spice",
+      "sha256": "3134e9ffc310d89e29ce5356b7b55d71f3a47ae4b7517ec5f66d0ca606ccdf18"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_05v5.model.spice",
+      "sha256": "ca6cc52ed9449e0e57a2d212aa94582083f4c67f94689d3c384a029919d4aded"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_05v5__extended_drain.model.spice",
+      "sha256": "bc57f6aa5bc7d45816b2053d8f9e4d245c5fc1c15f04edf6fa1daa66b0acb82b"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_05v5_lvt.model.spice",
+      "sha256": "b303be24a4a7897e3f23425e0069cc4636ca5e62afbe6bdebed9748a4678b95d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_05v5_nvt.model.spice",
+      "sha256": "f6e4452b10e6d3897d34df709824c89063dfc5d68c32391ccd346cb40d0f3129"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_11v0.model.spice",
+      "sha256": "47c33e82bd01f8a5419bc08d7de023c220d836f48c47c82be60d95fb8c84487f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8.pm3.spice",
+      "sha256": "b00978da581468871971827a5d635440c7df9b7648ee52ba3dd8b8f26da64d80"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_01v8__tt.corner.spice",
+      "sha256": "2fe2461e85a325fc5856da7b47cfd98333af4c7a8c1efa036c7af414e568d77d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5.pm3.spice",
+      "sha256": "167d3a824f9402a1c75ce96b2e393d7e044578a488fcd5e5155b59ddeabace04"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_nfet_g5v0d10v5__tt.corner.spice",
+      "sha256": "61500e742b5dd0eb4eda5721dba5f1567f36c940b950484e50ce7078d73fa315"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_pfet_g5v0d10v5.pm3.spice",
+      "sha256": "a1dfbac415cd5b8f0a69f0de4a9bf53b8920e264d3a07783b8d9dd2bf511072f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__esd_pfet_g5v0d10v5__tt.corner.spice",
+      "sha256": "ceed8cc24d9ec0291dbdd74adad28178b2e5c1730021ae6757354b71d1f70683"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__mismatch.corner.spice",
+      "sha256": "24a3b29d7d7f26f99098811c31eb5497950a3aed520ab83768a96f35467fe818"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice",
+      "sha256": "459eca963a134574cf7c842ad6d3814e7e0752bfb5de8e581c2f483534b5ad06"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice",
+      "sha256": "1855038a2ad2fe3989b64a17128d47daaa3dbc15d0f4db2c4526988923daa311"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice",
+      "sha256": "716b48c11275bb1edbb228807f1b8849453884adf498ac7c57a31b9295335f2b"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8_lvt__tt.pm3.spice",
+      "sha256": "7e946eed0e30b40fd1f1788510a2e8ab128ea0fa93865cf9f9204004276d20bc"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt.pm3.spice",
+      "sha256": "b4bd56719dbce94a0a9134d4224a226cdf586238a9ff142c0ea7654065a55a8c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice",
+      "sha256": "fd3813731a14eb0c987b0ce58a3ed26c0a76a8a4eb152ecd7260ba15d34936c2"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_03v3_nvt__tt.corner.spice",
+      "sha256": "6ac550dbda38845d879cb665dbbf3a2acc874e833fa53abf1e2d3b8bb7d331b4"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt.pm3.spice",
+      "sha256": "03c6de985d6ad50aada78ac92fded0912a552ebc3fbdf65d667f842e437c480e"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__mismatch.corner.spice",
+      "sha256": "4c1ce4d79656afd5087dc73417740c506c8465bb361ece5db8835ad3d9b362df"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_05v0_nvt__tt.corner.spice",
+      "sha256": "ad6f98b01ba312f9817a9154d12bb73bcf1e323c2a8a599fd26bafda54397b28"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__subcircuit.pm3.spice",
+      "sha256": "64b63a8bd76ca1a5f7f14849d80399e99dd85ed39534c452ae65c4a3fa19e270"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0__tt_discrete.corner.spice",
+      "sha256": "437039ebf2762d9f1124f05c68743a9dde63c58e541666913ce0931faf900a24"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_iso__subcircuit.pm3.spice",
+      "sha256": "0ba6101d75c9ca9271c9e0254901804a33f2981d6a7b60e35d3a71e311e9fc56"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__parasitic__diode_ps2dn.model.spice",
+      "sha256": "af1de0925ac35d8cbc2f7fc04d636d15e76bc199d00045b860fc169194998e22"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__subcircuit.pm3.spice",
+      "sha256": "1b3c68a09794e92515d24ff596f92e087b527f68eb696df63dfadb3a78cb9c04"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_nvt__tt_discrete.corner.spice",
+      "sha256": "8a4e88bcbce811f316a21c21842fe87afdd2d7abf82a26449082652a536adfaf"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_reverse_iso__subcircuit.pm3.spice",
+      "sha256": "062eab05dff385bd35c8505351b7a15c38e47cbdb723aa7a056018bc0834c742"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__parasitic__diode_ps2dn__extended_drain.model.spice",
+      "sha256": "bcd6c8cc696074cbdd06c670286b7756bf9ec76a827e4851ecbbdb9f518a5013"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__subcircuit.pm3.spice",
+      "sha256": "a2173e3b3d601fc070e8c2babad25c01f6d0c61df8b3432d25245c800d51389d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_20v0_zvt__tt_discrete.corner.spice",
+      "sha256": "c7d5cfef6e9cd1e742e9e97da0e823ee81f2fa087a1ba8d1e9517f70335167f5"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice",
+      "sha256": "e4124d91feee11f97c53b40752c711bb4293d94cd22c2778291a163c8abf3e9c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice",
+      "sha256": "c6220fd1b3ed009078cc3bfe66f6fabccddd5b33653c8efd8c9c4b344253cd25"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice",
+      "sha256": "9a848a7f7d1e6d1cbf1992662b8f3b8123f4ba4eb60892784add24b7869fd966"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0.pm3.spice",
+      "sha256": "95d37f7f07b7bd93fdcbcbae43ab23478360348394dced4f467a69d15a17d0d5"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__subcircuit.pm3.spice",
+      "sha256": "8da026795a287790d5ad324f90ceae2130eaf2fe38ce4f70648c984141fa5f63"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_g5v0d16v0__tt_discrete.corner.spice",
+      "sha256": "4345c8cad35b7e1b703d73db2d727a5c490ca60c9082546224a304f7cfd6a646"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__npn_05v5_W1p00L1p00.model.spice",
+      "sha256": "02f9057ac1ba5dc1ac8dadb15c6308a5f899b6e63e9dc68ccf85216e10bc8b6c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__npn_05v5_W1p00L2p00.model.spice",
+      "sha256": "e37da16e95b991202fbafe559bda34b9e5d4c67eb30de64c5d2c2fecdf8b6b7a"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__npn_05v5__t.corner.spice",
+      "sha256": "625e1d8028c8d3e569ef6ab62c56c7e5225e5053cd5b63591c7f02e79a67a29b"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__npn_11v0_W1p00L1p00.model.spice",
+      "sha256": "1ce8a924194dbdbb198b714aae82692687246130d3f8011a25aec5b83eb0260a"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__mismatch.corner.spice",
+      "sha256": "f4d560668712678ea60641de923fce7691e64acda951949f840986837c31741a"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.corner.spice",
+      "sha256": "641d251a08bf9ddcfc67ba4bd4698ae1978d09447eb6ebf90055fdf3d21917ab"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice",
+      "sha256": "c943246ce012ea3db2777e3f4633ddccdfee7c8f1bf4dca79af9f7ff17b3d51f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__mismatch.corner.spice",
+      "sha256": "05e258ab6724c8276cc058f6dba732e8024c5f0bb79ff3131ca219143491d631"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_hvt__tt.pm3.spice",
+      "sha256": "3a1be2e1c50d710bdb951d414ecca711113a8c3fe8bcc1be65fb16c6fe004e83"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice",
+      "sha256": "6fa9be51a32f2f66d8d0858159e1db7b72e37adca31020af8b1a0c2df6e72cb9"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice",
+      "sha256": "ddb3ddcd4ccb85c1f68c51e41fd1d999d04de5d2836b43217841efd79912888a"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_lvt__tt.pm3.spice",
+      "sha256": "57d99ed36c675cf756a33916a462c3b7235cbc2364e2c871133551c77ffb564f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8_mvt.pm3.spice",
+      "sha256": "0ce88958b752e4311cee9119a34d606a2883022134d35f99e679b92d7603d5b1"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__parasitic__diode_pw2dn.model.spice",
+      "sha256": "cd6817a3318398c8a373583e9455a2f07fa12500c7df5cddc5738c6fe74a1c57"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__subcircuit.pm3.spice",
+      "sha256": "5ac0449e927e098e43b89b7ad84c506e59aca864fd8d1dae8e1f15b1dece9660"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_20v0__tt_discrete.corner.spice",
+      "sha256": "3027fce9091c0cdd8f097dabe70a7bad076e991054ad746de49831ae7cc798eb"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice",
+      "sha256": "7564bd6e8ba2e7a19d594970b1db2b37202a8117cb49fc22861d2579d77d0339"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice",
+      "sha256": "52707b93246551402e9467132ce3d9cb4939d810cd910aa9968dbd534e3f7907"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d10v5__tt.pm3.spice",
+      "sha256": "d3d1497098047ad3de2e778c5eb72f6e535a3d09900fa93c2e27d2452173e549"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0.pm3.spice",
+      "sha256": "f61567098b8dcc89adae232b90321c46e1e92cb24fede2cf1973732cba6c6400"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0__parasitic__diode_pw2dn.model.spice",
+      "sha256": "becc765e76e24279783b114eedbd29f3d14b74e87ea71d81374a8b7f003c7400"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0__subcircuit.pm3.spice",
+      "sha256": "1e0c19100db1bb3f78b2faf59d8e5a12d890fba53866da570302f7cc4605c9f5"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_g5v0d16v0__tt.corner.spice",
+      "sha256": "a4d9c6839b8668a058a325a8c6f510d8c041396a8500295dd1febbcd61bc99c0"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pnp_05v5_W0p68L0p68.model.spice",
+      "sha256": "512f1b81a1b09382552dda04acbbecc3dad95fa7e73d7e1d6bb740e5657a2637"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pnp_05v5_W3p40L3p40.model.spice",
+      "sha256": "c77f3564d71b285d2a17520ebdf21ccb553151f0931436ed7bba06aaa5bfd3c8"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_generic_nd.model.spice",
+      "sha256": "69ac9426c1e2dd1abb3cdefb77b7a813fd6c23272b7bcf5e77a730f533a8e692"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_generic_pd.model.spice",
+      "sha256": "c953cb9b1158ceb37684bfa4a587692e4f884fa8a4fcfcf89f6584898d6c8ada"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_high_po.model.spice",
+      "sha256": "dfe6e94934301aab023df90baeed14b0ee0e43689e2ad3475bf5963b59cdad4c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_high_po_0p35.model.spice",
+      "sha256": "5012e5c17781fda2201468075affa44e833ee67479fef18d745ca52a6ae237e4"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_high_po_0p69.model.spice",
+      "sha256": "ebdc054a2461258c5120a3d7c085d3beb6b75ae99778adc9c4a4fb91d6f0eb76"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_high_po_1p41.model.spice",
+      "sha256": "125257861ec797b4abc7160c13b6a06f6ebaacbb43e1f32df0fe832c14a4cc77"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_high_po_2p85.model.spice",
+      "sha256": "7cf177af04ad913db53ce388d9a2140b27a355670e9964510dddf8d9765a8eab"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_high_po_5p73.model.spice",
+      "sha256": "6f255b1ba5a50a8ba84d90518bd4cfc382ec566aa432c01572b701cf888684e8"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_iso_pw.model.spice",
+      "sha256": "9cce1db3f8aba6fbe02f237430143799314130cf0949d8429f1384ce159f2a27"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po.model.spice",
+      "sha256": "cc1ded14e18d11570d32f9106a862ebd777cd198e848a219df7eaec58c4bc1d9"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po_0p35.model.spice",
+      "sha256": "940ed59e4935e9f8bda6fe493bf0e5a33f7d7a6961f73fdb15e666637fa50f83"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po_0p69.model.spice",
+      "sha256": "d35a4b6371a9bd678f7fa1dabfbcfdbd3f29059ab5073516b4e55b6f92cb6b32"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po_1p41.model.spice",
+      "sha256": "c5993a674226d7878ac8a7400db00a26bfd25db3bd35c7b9a9da29db8ca11c14"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po_2p85.model.spice",
+      "sha256": "ecce036dde19fe4f0404652375a0ef549df115f393696f4c55639fde33cd9a47"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po_5p73.model.spice",
+      "sha256": "d4e13ad468f778656baf3438a3a2e7c5a6f64644678995f6ab6ec7e2e1636e3b"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po__base.model.spice",
+      "sha256": "dfd4555cbf283e9140650b6bd8b6f4a26651589f71c68c7ac982015cf457c96f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8.pm3.spice",
+      "sha256": "dd1d04c190d31692e149c9a59f0901a6e9ea2666e43f842178d329ec840ccb8d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8__mismatch.corner.spice",
+      "sha256": "ca52edda038b4cf56f39c9a6335d91bccabb4a3b12b6f98895060c4b37d68a98"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b.pm3.spice",
+      "sha256": "b3eca56bef28f3478720070144fd6d9a96dfeba2f8929033958f6debb54d31d2"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_b__tt.corner.spice",
+      "sha256": "0cdef6b84f4779b97623b2dab53f5a51b97128e46906bb088fcc1960bfbc5ac2"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt.pm3.spice",
+      "sha256": "0bb1e7a3df76f120ba9b3afaaf125eab8c7c112d9fe0f62e0759ac0cd0c4626f"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt__mismatch.corner.spice",
+      "sha256": "f199d4f4e906ba3939aebe2a06752fd24bc749b61332fcdc5f69d7954b5372b4"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b.pm3.spice",
+      "sha256": "188171b49208b7c63a8f265d97cc96c73398735610ef05ee9f6d322cbd45a1c7"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_01v8_lvt_b__tt.corner.spice",
+      "sha256": "d48d5b1be4fe96b97e80115b25e38d1a5d324cb5b817faceabe2f364df9e4b77"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5.pm3.spice",
+      "sha256": "cc1cd3b324345059e5d21abf48c731ba740ad1d5b7ac073ec015ba2817b8ae1c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5__mismatch.corner.spice",
+      "sha256": "29cf2ce6e1910f3c58dd74300ff330ea918053384a29652db134367c110584bb"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b.pm3.spice",
+      "sha256": "31414444562c296ec69fa20e871e18f09a796417d6fa268027f7196c12ac64ef"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_nfet_g5v0d10v5_b__tt.corner.spice",
+      "sha256": "120c2c096ff8702947b7f8593a0591cb66cd2a7228f97d97068e68c9ded393d3"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8.pm3.spice",
+      "sha256": "089d6c9a4cc5fc7aa4cc2da6ed62fe843cdc4e387faa92efb59f7681c5d785b7"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8__mismatch.corner.spice",
+      "sha256": "329b992466fa736b42ee32d5f15fc163410f7745bc57a9aa57a77bb732dfaaab"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b.pm3.spice",
+      "sha256": "e5ed14af71ad71967109753d727cf47125a8d5f3b049f130cf9201aac8625e3c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_b__tt.corner.spice",
+      "sha256": "06457396b67c95ffa49b13984171e9d4c3ac58b0f31a329d5f936a9f4a6052ee"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_mvt.pm3.spice",
+      "sha256": "c1994983307665666126446655157fc4cf458a5e43b464bd74e1a12e6e9b790c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_mvt__mismatch.corner.spice",
+      "sha256": "4be07e841b5c0e6534c25b823133aaa1b9f9689afdd780b66305e82a4460f636"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__rf_pfet_01v8_mvt__tt_discrete.corner.spice",
+      "sha256": "cf21900fade43a2e9040d15c69d07a2e5705a87b5909894ff3f9673c5dc99bf5"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_latch.pm3.spice",
+      "sha256": "634af21934ab8f0838888ca695fea99b73b23136b5dc998a68c8bd40cf837f11"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_latch__mismatch.corner.spice",
+      "sha256": "2fa340dc33350ac2aefedccc380019570a23ac0ad03d269817f8c8ac21cf9749"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass.pm3.spice",
+      "sha256": "065c3a36cd891edc4cba6f8c6fe5d1318a103e90cb4c3a0c02d20b06abfe3256"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass__mismatch.corner.spice",
+      "sha256": "6211325195acde110081a7ebe0485df31921a5185a9d2147f5e616e1985aec55"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_flash.pm3.spice",
+      "sha256": "484f90f58677ce58e6cf0a46513275618ec61369aef7b684bd7b12c8ef56a2c0"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_flash__mismatch.corner.spice",
+      "sha256": "3e1ac9dc32bad9a21b4ca34bc3c9d3d3f63f0458feed4b74a3ee30126c5faebc"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt.pm3.spice",
+      "sha256": "a19185ab805a9bb542c911fc9e3184406b8b173c8f49caa52beaa09a83ba466b"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_nfet_pass_lvt__tt.corner.spice",
+      "sha256": "9f736cd439c64f0a1b49348e54fb6f023ecaab4708d97f8475c8a0e74cd4672e"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_latch.pm3.spice",
+      "sha256": "a71d8e707ff90f4ee23cfe84c1c660f6c50609ce320c3602573bb646ac510978"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__special_pfet_latch__mismatch.corner.spice",
+      "sha256": "8538ce99191b69de8bf38dc87eab0366245322ade8501908c21fb74496219430"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/all.spice",
+      "sha256": "ada86dba53017af314dfa04dac253c8424e0941158cf476a7ca191c55aea3bbb"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/capacitors/sky130_fd_pr__model__cap_mim.model.spice",
+      "sha256": "7e4802d7047f0f116a3e4c7e49118962cfe248dc9cbb6d626d49196d30cb273a"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/capacitors/sky130_fd_pr__model__cap_vpp_only_mos.model.spice",
+      "sha256": "7daca9f9743d93a489160eaba60c56bae4bd943a11f2cb08126459cdaea42972"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/capacitors/sky130_fd_pr__model__cap_vpp_only_p.model.spice",
+      "sha256": "80cf9e98c6d05ff23f90312be6cd93c0ad3f83035ec685949ff70d0ad008f371"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/capacitors/sky130_fd_pr__model__cap_vpp_only_pq.model.spice",
+      "sha256": "ec9f9f3796d17696cff4867e62b9d83c2be6564b94f2a62ca4cece1684949cef"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/corners/tt.spice",
+      "sha256": "961b2e4f381bb8a6306a16840afacd8772b400b42cd4dee6c284d58e03983d9d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/corners/tt/nonfet.spice",
+      "sha256": "9e442b3828f29c8cf0a4d030c37b913fae11a23b00b58a4622d8bdf6909b56dd"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/corners/tt/rf.spice",
+      "sha256": "9bba9a4521426fb265d6f403e8c2ac8afd0673ffbcbde66003d19679f3f589e0"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice",
+      "sha256": "658f71e2e534f48984ca055aa3c73982dedc3e52abdaf16b324576dc0fdb62ac"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/head.spice",
+      "sha256": "0c2499173f578cf0084df58a03872072e76f34c25a085cfbd24cca8c23bcb1ef"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parameters/lod.spice",
+      "sha256": "6200b50c14eebb68d8009ca68e452d4c045e2d25d7438ee417c155883527fd7c"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parameters/typical.spice",
+      "sha256": "315e71e2896bfbfad4f2ed0d86ff28cc1e44f56eb12eaf2371fb672de1507c6d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parasitics/sky130_fd_pr__model__parasitic__diode_ps2dn.model.spice",
+      "sha256": "47f9c12a2ff58b5602906873474b9a305e42bee36b09154cb7bf36b9002f5792"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parasitics/sky130_fd_pr__model__parasitic__diode_ps2dn__extended_drain.model.spice",
+      "sha256": "a76a5546b7e36e8ae4aed3b493887a027b8f9cfc34f2265c4a2f0bff283f3b09"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parasitics/sky130_fd_pr__model__parasitic__diode_ps2nw.model.spice",
+      "sha256": "3576794a3db5dd40f05745c98b4fcf8832888222bd983c2f1d8d051157470ad1"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parasitics/sky130_fd_pr__model__parasitic__diode_pw2dn.model.spice",
+      "sha256": "cfad4923ff030d973362bf7c51e4d6314c02b3972ecac39ebfae54993f2b4cc0"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parasitics/sky130_fd_pr__model__parasitic__diode_pw2dn__extended_drain.model.spice",
+      "sha256": "c47d1d62f82ec0d907b737f1a4cc94d4b77e12d869843617993ea75e35d7cbf1"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/parasitics/sky130_fd_pr__model__parasitic__res_po.model.spice",
+      "sha256": "5e65d93416a1bdf22ac2b876d43c03de9ced5f0f7bd7686afeb132cc78e429e4"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice",
+      "sha256": "7c29723076a22fe5b080d245adb97451de5ad0812f0344f6bfe31c9697b71f0d"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice",
+      "sha256": "4deedaa4be27f2e1f083567a945cbaed02027e018fcd09431e57a02c08a117b1"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/sky130.lib.spice",
+      "sha256": "17c208a699228f5acb87bf59c09c22a4c4d3937b6766b4957737d34e8e075f64"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/sky130_fd_pr__model__linear.model.spice",
+      "sha256": "881a81256ed63b136e126ccf25fa1aeb5829ed4f5de50835fed2315c7ab55da7"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/sky130_fd_pr__model__r+c.model.spice",
+      "sha256": "07bda041aa46bd832057d6886d40f327e0749e7b1e66222c214c57bde5341dbb"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/sonos_e/begin_of_life/mm.spice",
+      "sha256": "8a4c2d8b90947a09aa671c7336345c3d26f72d668991ef9034e7c003a34d8873"
+    },
+    {
+      "path": "/home/bailufrost/eda/pdk/ciel/sky130/versions/792ef67037d74c8c51811eab3ce23cf793491296/sky130A/libs.tech/ngspice/sonos_p/begin_of_life/mm.spice",
+      "sha256": "051c18598854776f43ec7194503d4d8046e768ac78d3a0012c6ef697e6de0a8b"
+    }
+  ],
+  "ngspice_version": "******\n** ngspice-45.2 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2025, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Fri Sep 12 11:58:13 UTC 2025\n******",
+  "ngspice_elapsed_seconds": 386.2704122739997,
+  "functional_passed": true,
+  "artifacts": [
+    {
+      "path": "inputs/counter.sdc",
+      "sha256": "0b13b47cbe69570abded611d89ae8b63b5dc333148223b0deb832baf73a83217"
+    },
+    {
+      "path": "inputs/counter.spef",
+      "sha256": "4944e62c7d493c9192804d3cc17d4665126583fb657c516ba310b48fcb834eaa"
+    },
+    {
+      "path": "inputs/counter_postlayout.spice",
+      "sha256": "aeea5e70d483620d623900cdcd737f0670b41e6fefbe012b971e865b36985f45"
+    },
+    {
+      "path": "inputs/counter_routed.v",
+      "sha256": "0195d27162861547f83a092eb2f0b69f55dfe21d2f32dcee333af60cba32c901"
+    },
+    {
+      "path": "inputs/counter_tb.spice",
+      "sha256": "39d08162cfc7aee9e40af5290146fb6d7e3c713bed59da32e3abca163d5b152d"
+    },
+    {
+      "path": "inputs/counter_tb_2ps.spice",
+      "sha256": "b5526a31d3b332dc944810f6b96ded7ea603110c6f9be089d51f8bd6a8f19048"
+    },
+    {
+      "path": "inputs/ngspice.spiceinit",
+      "sha256": "ceb0f22c2f12fc545406534ab6801716f61caed2cf3fed03d7f5c7fb193a4bb1"
+    },
+    {
+      "path": "inputs/stimulus.json",
+      "sha256": "c399915ffee21d3ca0f9e57942c0cbb8372496f36f1864106addcef4eb54d4ef"
+    },
+    {
+      "path": "results/counting_zoom.png",
+      "sha256": "52977b96d720079c87aabd2c2239c934df05e525bedc7466b0d9b17766bb23a5"
+    },
+    {
+      "path": "results/counting_zoom.svg",
+      "sha256": "b73b966f78d74807d3fab5cbd1d4f6256228fc73c95978fbfb3c736dd9b0a14c"
+    },
+    {
+      "path": "results/timing_zoom.png",
+      "sha256": "fef59c572015d7e28b60a61a408ee322f3fa052471e779b4795814660fe608af"
+    },
+    {
+      "path": "results/timing_zoom.svg",
+      "sha256": "0fa461f60f507ae1afe658b2ebfe84541368cd659a3fa90478cffe3d7bd0151e"
+    },
+    {
+      "path": "results/transient.raw",
+      "sha256": "d6587ae133ef960e27ebe2d2a4cd29d969a2eb6a6dd1bb827653082d349d892a"
+    },
+    {
+      "path": "results/transient.tsv",
+      "sha256": "27b3647a1038d1fd393ff2152f6e38ee6a60b03680e07c9eac609b1ec4faecdf"
+    },
+    {
+      "path": "results/waveforms.png",
+      "sha256": "97acad2d396a7f95ef96830273a62118ec902124574a49d798f86c15cc520b50"
+    },
+    {
+      "path": "results/waveforms.svg",
+      "sha256": "0dde9e16c5db28e93d2a04c238793d6244b97c69acb0eca2a9441cf88976d16a"
+    },
+    {
+      "path": "reports/cell_model_geometry_check.json",
+      "sha256": "fbc8725390b7eea995f153223bba66b6f4328c3d5c84e6330f31caedce2ced10"
+    },
+    {
+      "path": "reports/functional_checks.csv",
+      "sha256": "db4ce78df37caa96bf05cd591b9094aeed03c6aaa8ce7bfb57e4a95c296964c4"
+    },
+    {
+      "path": "reports/netlist_audit.json",
+      "sha256": "b71118afe6e2bf338e3eb33d67f64d785472e972303ef8327160a27d11e176fc"
+    },
+    {
+      "path": "reports/node_map.tsv",
+      "sha256": "c1fd7355998b9fbdfd1838ad7782c864c9fca4d60fbf5ca3c78849f0b9a47ca9"
+    },
+    {
+      "path": "reports/summary.json",
+      "sha256": "d5909f1e00e1b73f5228c9622e439854c7ca2fd83465eb89d78386e92434b3c3"
+    },
+    {
+      "path": "reports/timestep_2ps_reference.json",
+      "sha256": "63d0f7f04617c5054262a297bc209ce2f60df27d471e9401da33b17380ccef32"
+    },
+    {
+      "path": "reports/timing_measurements.csv",
+      "sha256": "0c4abf0e0c0bd2a90bdd9dc2cd7cf8473357b75bf7a1fb139dda194e2042dc67"
+    },
+    {
+      "path": "logs/launcher.log",
+      "sha256": "945291100ad54da53880c19a2a17b18a7acb72902eac01a40e1e3be7bbb9381f"
+    },
+    {
+      "path": "logs/ngspice.log",
+      "sha256": "892804f46eb33d09c0341d7ce9319af65941d31d52c95c0fb8ab697e7ed8618e"
+    },
+    {
+      "path": "logs/ngspice_2ps.log",
+      "sha256": "9588af5f57369bf176ec417bfb1682d2456d3f9473dd5c36d793750b90fcd27a"
+    }
+  ]
+}

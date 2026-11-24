@@ -1,0 +1,12 @@
+# Project-local generic Yosys cell library; no PDK required.
+set project_dir [file dirname [file normalize [info script]]]
+set XSCHEM_LIBRARY_PATH "$project_dir:${XSCHEM_SHAREDIR}/xschem_library:${XSCHEM_SHAREDIR}/xschem_library/devices"
+set XSCHEM_START_WINDOW {}
+set netlist_type verilog
+set simulator verilog
+set local_netlist_dir 0
+set netlist_dir "$project_dir/verification"
+set netlist_show 0
+set dark_colorscheme 0
+set draw_grid 0
+set color_ps 1

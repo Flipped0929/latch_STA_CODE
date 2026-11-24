@@ -1,0 +1,853 @@
+#Timing report of worst 14 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: n_n859.Q[0] (.latch at (11,6) clocked by clock)
+Endpoint  : out:s298_out_5_.outpad[0] (.output at (1,0) clocked by clock)
+Path Type : hold
+
+Point                                                               Incr      Path
+----------------------------------------------------------------------------------
+clock clock (rise edge)                                            0.000     0.000
+clock source latency                                               0.000     0.000
+clock.inpad[0] (.input at (17,18))                                 0.000     0.000
+| (intra 'io' routing)                                             0.000     0.000
+| (inter-block routing)                                            0.000     0.000
+| (intra 'clb' routing)                                            0.000     0.000
+n_n859.clk[0] (.latch at (11,6))                                   0.000     0.000
+| (primitive '.latch' Tcq_min)                                     0.124     0.124
+n_n859.Q[0] (.latch at (11,6)) [clock-to-output]                   0.000     0.124
+| (intra 'clb' routing)                                            0.000     0.124
+| (inter-block routing)                                            0.361     0.485
+| (intra 'clb' routing)                                            0.000     0.485
+[624].in[0] (.names at (7,5))                                      0.000     0.485
+| (primitive '.names' combinational delay)                         0.235     0.720
+[624].out[0] (.names at (7,5))                                     0.000     0.720
+| (intra 'clb' routing)                                            0.000     0.720
+s298_out_5_.in[0] (.names at (7,5))                                0.000     0.720
+| (primitive '.names' combinational delay)                         0.235     0.955
+s298_out_5_.out[0] (.names at (7,5))                               0.000     0.955
+| (intra 'clb' routing)                                            0.000     0.955
+| (inter-block routing)                                            0.597     1.552
+| (intra 'io' routing)                                             0.000     1.552
+out:s298_out_5_.outpad[0] (.output at (1,0))                       0.000     1.552
+data arrival time                                                            1.552
+
+clock clock (rise edge)                                            0.000     0.000
+clock source latency                                               0.000     0.000
+clock uncertainty                                                  0.000     0.000
+output external delay                                              0.000     0.000
+data required time                                                           0.000
+----------------------------------------------------------------------------------
+data required time                                                          -0.000
+data arrival time                                                            1.552
+----------------------------------------------------------------------------------
+slack (MET)                                                                  1.552
+
+
+#Path 2
+Startpoint: n_n856.Q[0] (.latch at (8,5) clocked by clock)
+Endpoint  : out:s298_out_3_.outpad[0] (.output at (15,0) clocked by clock)
+Path Type : hold
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock clock (rise edge)                                             0.000     0.000
+clock source latency                                                0.000     0.000
+clock.inpad[0] (.input at (17,18))                                  0.000     0.000
+| (intra 'io' routing)                                              0.000     0.000
+| (inter-block routing)                                             0.000     0.000
+| (intra 'clb' routing)                                             0.000     0.000
+n_n856.clk[0] (.latch at (8,5))                                     0.000     0.000
+| (primitive '.latch' Tcq_min)                                      0.124     0.124
+n_n856.Q[0] (.latch at (8,5)) [clock-to-output]                     0.000     0.124
+| (intra 'clb' routing)                                             0.000     0.124
+| (inter-block routing)                                             0.218     0.342
+| (intra 'clb' routing)                                             0.000     0.342
+[5521].in[1] (.names at (8,7))                                      0.000     0.342
+| (primitive '.names' combinational delay)                          0.235     0.577
+[5521].out[0] (.names at (8,7))                                     0.000     0.577
+| (intra 'clb' routing)                                             0.000     0.577
+s298_out_3_.in[0] (.names at (8,7))                                 0.000     0.577
+| (primitive '.names' combinational delay)                          0.235     0.812
+s298_out_3_.out[0] (.names at (8,7))                                0.000     0.812
+| (intra 'clb' routing)                                             0.000     0.812
+| (inter-block routing)                                             0.784     1.596
+| (intra 'io' routing)                                              0.000     1.596
+out:s298_out_3_.outpad[0] (.output at (15,0))                       0.000     1.596
+data arrival time                                                             1.596
+
+clock clock (rise edge)                                             0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                           -0.000
+data arrival time                                                             1.596
+-----------------------------------------------------------------------------------
+slack (MET)                                                                   1.596
+
+
+#Path 3
+Startpoint: n_n858.Q[0] (.latch at (13,5) clocked by clock)
+Endpoint  : out:s298_out_2_.outpad[0] (.output at (0,6) clocked by clock)
+Path Type : hold
+
+Point                                                               Incr      Path
+----------------------------------------------------------------------------------
+clock clock (rise edge)                                            0.000     0.000
+clock source latency                                               0.000     0.000
+clock.inpad[0] (.input at (17,18))                                 0.000     0.000
+| (intra 'io' routing)                                             0.000     0.000
+| (inter-block routing)                                            0.000     0.000
+| (intra 'clb' routing)                                            0.000     0.000
+n_n858.clk[0] (.latch at (13,5))                                   0.000     0.000
+| (primitive '.latch' Tcq_min)                                     0.124     0.124
+n_n858.Q[0] (.latch at (13,5)) [clock-to-output]                   0.000     0.124
+| (intra 'clb' routing)                                            0.000     0.124
+| (inter-block routing)                                            0.358     0.482
+| (intra 'clb' routing)                                            0.000     0.482
+[619].in[1] (.names at (9,6))                                      0.000     0.482
+| (primitive '.names' combinational delay)                         0.235     0.717
+[619].out[0] (.names at (9,6))                                     0.000     0.717
+| (intra 'clb' routing)                                            0.000     0.717
+s298_out_2_.in[1] (.names at (9,6))                                0.000     0.717
+| (primitive '.names' combinational delay)                         0.235     0.952
+s298_out_2_.out[0] (.names at (9,6))                               0.000     0.952
+| (intra 'clb' routing)                                            0.000     0.952
+| (inter-block routing)                                            0.653     1.605
+| (intra 'io' routing)                                             0.000     1.605
+out:s298_out_2_.outpad[0] (.output at (0,6))                       0.000     1.605
+data arrival time                                                            1.605
+
+clock clock (rise edge)                                            0.000     0.000
+clock source latency                                               0.000     0.000
+clock uncertainty                                                  0.000     0.000
+output external delay                                              0.000     0.000
+data required time                                                           0.000
+----------------------------------------------------------------------------------
+data required time                                                          -0.000
+data arrival time                                                            1.605
+----------------------------------------------------------------------------------
+slack (MET)                                                                  1.605
+
+
+#Path 4
+Startpoint: n_n859.Q[0] (.latch at (11,6) clocked by clock)
+Endpoint  : out:s298_out_4_.outpad[0] (.output at (1,18) clocked by clock)
+Path Type : hold
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock clock (rise edge)                                             0.000     0.000
+clock source latency                                                0.000     0.000
+clock.inpad[0] (.input at (17,18))                                  0.000     0.000
+| (intra 'io' routing)                                              0.000     0.000
+| (inter-block routing)                                             0.000     0.000
+| (intra 'clb' routing)                                             0.000     0.000
+n_n859.clk[0] (.latch at (11,6))                                    0.000     0.000
+| (primitive '.latch' Tcq_min)                                      0.124     0.124
+n_n859.Q[0] (.latch at (11,6)) [clock-to-output]                    0.000     0.124
+| (intra 'clb' routing)                                             0.000     0.124
+| (inter-block routing)                                             0.357     0.481
+| (intra 'clb' routing)                                             0.000     0.481
+[622].in[1] (.names at (7,6))                                       0.000     0.481
+| (primitive '.names' combinational delay)                          0.235     0.716
+[622].out[0] (.names at (7,6))                                      0.000     0.716
+| (intra 'clb' routing)                                             0.000     0.716
+s298_out_4_.in[1] (.names at (7,6))                                 0.000     0.716
+| (primitive '.names' combinational delay)                          0.235     0.951
+s298_out_4_.out[0] (.names at (7,6))                                0.000     0.951
+| (intra 'clb' routing)                                             0.000     0.951
+| (inter-block routing)                                             0.802     1.753
+| (intra 'io' routing)                                              0.000     1.753
+out:s298_out_4_.outpad[0] (.output at (1,18))                       0.000     1.753
+data arrival time                                                             1.753
+
+clock clock (rise edge)                                             0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                           -0.000
+data arrival time                                                             1.753
+-----------------------------------------------------------------------------------
+slack (MET)                                                                   1.753
+
+
+#Path 5
+Startpoint: n_n856.Q[0] (.latch at (8,5) clocked by clock)
+Endpoint  : out:s298_out_1_.outpad[0] (.output at (0,13) clocked by clock)
+Path Type : hold
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock clock (rise edge)                                             0.000     0.000
+clock source latency                                                0.000     0.000
+clock.inpad[0] (.input at (17,18))                                  0.000     0.000
+| (intra 'io' routing)                                              0.000     0.000
+| (inter-block routing)                                             0.000     0.000
+| (intra 'clb' routing)                                             0.000     0.000
+n_n856.clk[0] (.latch at (8,5))                                     0.000     0.000
+| (primitive '.latch' Tcq_min)                                      0.124     0.124
+n_n856.Q[0] (.latch at (8,5)) [clock-to-output]                     0.000     0.124
+| (intra 'clb' routing)                                             0.000     0.124
+| (inter-block routing)                                             0.218     0.342
+| (intra 'clb' routing)                                             0.000     0.342
+[5526].in[1] (.names at (8,7))                                      0.000     0.342
+| (primitive '.names' combinational delay)                          0.235     0.577
+[5526].out[0] (.names at (8,7))                                     0.000     0.577
+| (intra 'clb' routing)                                             0.000     0.577
+[582].in[1] (.names at (8,7))                                       0.000     0.577
+| (primitive '.names' combinational delay)                          0.235     0.812
+[582].out[0] (.names at (8,7))                                      0.000     0.812
+| (intra 'clb' routing)                                             0.000     0.812
+s298_out_1_.in[0] (.names at (8,7))                                 0.000     0.812
+| (primitive '.names' combinational delay)                          0.235     1.047
+s298_out_1_.out[0] (.names at (8,7))                                0.000     1.047
+| (intra 'clb' routing)                                             0.000     1.047
+| (inter-block routing)                                             0.745     1.792
+| (intra 'io' routing)                                              0.000     1.792
+out:s298_out_1_.outpad[0] (.output at (0,13))                       0.000     1.792
+data arrival time                                                             1.792
+
+clock clock (rise edge)                                             0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                           -0.000
+data arrival time                                                             1.792
+-----------------------------------------------------------------------------------
+slack (MET)                                                                   1.792
+
+
+#Path 6
+Startpoint: n_n859.Q[0] (.latch at (11,6) clocked by clock)
+Endpoint  : out:s298_out_0_.outpad[0] (.output at (16,18) clocked by clock)
+Path Type : hold
+
+Point                                                                 Incr      Path
+------------------------------------------------------------------------------------
+clock clock (rise edge)                                              0.000     0.000
+clock source latency                                                 0.000     0.000
+clock.inpad[0] (.input at (17,18))                                   0.000     0.000
+| (intra 'io' routing)                                               0.000     0.000
+| (inter-block routing)                                              0.000     0.000
+| (intra 'clb' routing)                                              0.000     0.000
+n_n859.clk[0] (.latch at (11,6))                                     0.000     0.000
+| (primitive '.latch' Tcq_min)                                       0.124     0.124
+n_n859.Q[0] (.latch at (11,6)) [clock-to-output]                     0.000     0.124
+| (intra 'clb' routing)                                              0.000     0.124
+| (inter-block routing)                                              0.502     0.626
+| (intra 'clb' routing)                                              0.000     0.626
+[579].in[1] (.names at (8,8))                                        0.000     0.626
+| (primitive '.names' combinational delay)                           0.235     0.861
+[579].out[0] (.names at (8,8))                                       0.000     0.861
+| (intra 'clb' routing)                                              0.000     0.861
+s298_out_0_.in[1] (.names at (8,8))                                  0.000     0.861
+| (primitive '.names' combinational delay)                           0.235     1.096
+s298_out_0_.out[0] (.names at (8,8))                                 0.000     1.096
+| (intra 'clb' routing)                                              0.000     1.096
+| (inter-block routing)                                              1.054     2.150
+| (intra 'io' routing)                                               0.000     2.150
+out:s298_out_0_.outpad[0] (.output at (16,18))                       0.000     2.150
+data arrival time                                                              2.150
+
+clock clock (rise edge)                                              0.000     0.000
+clock source latency                                                 0.000     0.000
+clock uncertainty                                                    0.000     0.000
+output external delay                                                0.000     0.000
+data required time                                                             0.000
+------------------------------------------------------------------------------------
+data required time                                                            -0.000
+data arrival time                                                              2.150
+------------------------------------------------------------------------------------
+slack (MET)                                                                    2.150
+
+
+#Path 7
+Startpoint: n_n858.Q[0] (.latch at (13,5) clocked by clock)
+Endpoint  : n_n859.D[0] (.latch at (11,6) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n858.clk[0] (.latch at (13,5))                                 0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n858.Q[0] (.latch at (13,5)) [clock-to-output]                 0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.358     0.482
+| (intra 'clb' routing)                                          0.000     0.482
+[5734].in[1] (.names at (9,8))                                   0.000     0.482
+| (primitive '.names' combinational delay)                       0.235     0.717
+[5734].out[0] (.names at (9,8))                                  0.000     0.717
+| (intra 'clb' routing)                                          0.000     0.717
+| (inter-block routing)                                          0.218     0.935
+| (intra 'clb' routing)                                          0.000     0.935
+[559].in[1] (.names at (9,7))                                    0.000     0.935
+| (primitive '.names' combinational delay)                       0.235     1.170
+[559].out[0] (.names at (9,7))                                   0.000     1.170
+| (intra 'clb' routing)                                          0.000     1.170
+[5780].in[0] (.names at (9,7))                                   0.000     1.170
+| (primitive '.names' combinational delay)                       0.235     1.405
+[5780].out[0] (.names at (9,7))                                  0.000     1.405
+| (intra 'clb' routing)                                          0.000     1.405
+[5787].in[0] (.names at (9,7))                                   0.000     1.405
+| (primitive '.names' combinational delay)                       0.235     1.640
+[5787].out[0] (.names at (9,7))                                  0.000     1.640
+| (intra 'clb' routing)                                          0.000     1.640
+[5791].in[1] (.names at (9,7))                                   0.000     1.640
+| (primitive '.names' combinational delay)                       0.235     1.875
+[5791].out[0] (.names at (9,7))                                  0.000     1.875
+| (intra 'clb' routing)                                          0.000     1.875
+n_n52.in[0] (.names at (9,7))                                    0.000     1.875
+| (primitive '.names' combinational delay)                       0.235     2.110
+n_n52.out[0] (.names at (9,7))                                   0.000     2.110
+| (intra 'clb' routing)                                          0.000     2.110
+| (inter-block routing)                                          0.216     2.326
+| (intra 'clb' routing)                                          0.000     2.326
+n_n859.D[0] (.latch at (11,6))                                   0.000     2.326
+data arrival time                                                          2.326
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n859.clk[0] (.latch at (11,6))                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.326
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.260
+
+
+#Path 8
+Startpoint: n_n858.Q[0] (.latch at (13,5) clocked by clock)
+Endpoint  : n_n855.D[0] (.latch at (12,7) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n858.clk[0] (.latch at (13,5))                                 0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n858.Q[0] (.latch at (13,5)) [clock-to-output]                 0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.353     0.477
+| (intra 'clb' routing)                                          0.000     0.477
+[9092].in[1] (.names at (15,7))                                  0.000     0.477
+| (primitive '.names' combinational delay)                       0.235     0.712
+[9092].out[0] (.names at (15,7))                                 0.000     0.712
+| (intra 'clb' routing)                                          0.000     0.712
+| (inter-block routing)                                          0.357     1.069
+| (intra 'clb' routing)                                          0.000     1.069
+[93].in[1] (.names at (12,7))                                    0.000     1.069
+| (primitive '.names' combinational delay)                       0.235     1.304
+[93].out[0] (.names at (12,7))                                   0.000     1.304
+| (intra 'clb' routing)                                          0.000     1.304
+[9146].in[0] (.names at (12,7))                                  0.000     1.304
+| (primitive '.names' combinational delay)                       0.235     1.539
+[9146].out[0] (.names at (12,7))                                 0.000     1.539
+| (intra 'clb' routing)                                          0.000     1.539
+[9155].in[1] (.names at (12,7))                                  0.000     1.539
+| (primitive '.names' combinational delay)                       0.235     1.774
+[9155].out[0] (.names at (12,7))                                 0.000     1.774
+| (intra 'clb' routing)                                          0.000     1.774
+[9159].in[0] (.names at (12,7))                                  0.000     1.774
+| (primitive '.names' combinational delay)                       0.235     2.009
+[9159].out[0] (.names at (12,7))                                 0.000     2.009
+| (intra 'clb' routing)                                          0.000     2.009
+[9161].in[0] (.names at (12,7))                                  0.000     2.009
+| (primitive '.names' combinational delay)                       0.235     2.244
+[9161].out[0] (.names at (12,7))                                 0.000     2.244
+| (intra 'clb' routing)                                          0.000     2.244
+n_n48.in[1] (.names at (12,7))                                   0.000     2.244
+| (primitive '.names' combinational delay)                       0.235     2.479
+n_n48.out[0] (.names at (12,7))                                  0.000     2.479
+| (intra 'clb' routing)                                          0.000     2.479
+n_n855.D[0] (.latch at (12,7))                                   0.000     2.479
+data arrival time                                                          2.479
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n855.clk[0] (.latch at (12,7))                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.479
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.413
+
+
+#Path 9
+Startpoint: n_n859.Q[0] (.latch at (11,6) clocked by clock)
+Endpoint  : n_n858.D[0] (.latch at (13,5) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n859.clk[0] (.latch at (11,6))                                 0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n859.Q[0] (.latch at (11,6)) [clock-to-output]                 0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.212     0.336
+| (intra 'clb' routing)                                          0.000     0.336
+[5652].in[1] (.names at (11,7))                                  0.000     0.336
+| (primitive '.names' combinational delay)                       0.235     0.571
+[5652].out[0] (.names at (11,7))                                 0.000     0.571
+| (intra 'clb' routing)                                          0.000     0.571
+[608].in[1] (.names at (11,7))                                   0.000     0.571
+| (primitive '.names' combinational delay)                       0.235     0.806
+[608].out[0] (.names at (11,7))                                  0.000     0.806
+| (intra 'clb' routing)                                          0.000     0.806
+[5688].in[0] (.names at (11,7))                                  0.000     0.806
+| (primitive '.names' combinational delay)                       0.235     1.041
+[5688].out[0] (.names at (11,7))                                 0.000     1.041
+| (intra 'clb' routing)                                          0.000     1.041
+[5698].in[1] (.names at (11,7))                                  0.000     1.041
+| (primitive '.names' combinational delay)                       0.235     1.276
+[5698].out[0] (.names at (11,7))                                 0.000     1.276
+| (intra 'clb' routing)                                          0.000     1.276
+[5703].in[1] (.names at (11,7))                                  0.000     1.276
+| (primitive '.names' combinational delay)                       0.235     1.511
+[5703].out[0] (.names at (11,7))                                 0.000     1.511
+| (intra 'clb' routing)                                          0.000     1.511
+[5705].in[0] (.names at (11,7))                                  0.000     1.511
+| (primitive '.names' combinational delay)                       0.235     1.746
+[5705].out[0] (.names at (11,7))                                 0.000     1.746
+| (intra 'clb' routing)                                          0.000     1.746
+| (inter-block routing)                                          0.355     2.101
+| (intra 'clb' routing)                                          0.000     2.101
+n_n51.in[1] (.names at (9,6))                                    0.000     2.101
+| (primitive '.names' combinational delay)                       0.235     2.336
+n_n51.out[0] (.names at (9,6))                                   0.000     2.336
+| (intra 'clb' routing)                                          0.000     2.336
+| (inter-block routing)                                          0.358     2.694
+| (intra 'clb' routing)                                          0.000     2.694
+n_n858.D[0] (.latch at (13,5))                                   0.000     2.694
+data arrival time                                                          2.694
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n858.clk[0] (.latch at (13,5))                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.694
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.628
+
+
+#Path 10
+Startpoint: n_n858.Q[0] (.latch at (13,5) clocked by clock)
+Endpoint  : n_n852.D[0] (.latch at (12,5) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n858.clk[0] (.latch at (13,5))                                 0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n858.Q[0] (.latch at (13,5)) [clock-to-output]                 0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.492     0.616
+| (intra 'clb' routing)                                          0.000     0.616
+[7099].in[1] (.names at (12,4))                                  0.000     0.616
+| (primitive '.names' combinational delay)                       0.235     0.851
+[7099].out[0] (.names at (12,4))                                 0.000     0.851
+| (intra 'clb' routing)                                          0.000     0.851
+[7100].in[0] (.names at (12,4))                                  0.000     0.851
+| (primitive '.names' combinational delay)                       0.235     1.086
+[7100].out[0] (.names at (12,4))                                 0.000     1.086
+| (intra 'clb' routing)                                          0.000     1.086
+[441].in[1] (.names at (12,4))                                   0.000     1.086
+| (primitive '.names' combinational delay)                       0.235     1.321
+[441].out[0] (.names at (12,4))                                  0.000     1.321
+| (intra 'clb' routing)                                          0.000     1.321
+| (inter-block routing)                                          0.220     1.542
+| (intra 'clb' routing)                                          0.000     1.542
+[7219].in[1] (.names at (12,5))                                  0.000     1.542
+| (primitive '.names' combinational delay)                       0.235     1.777
+[7219].out[0] (.names at (12,5))                                 0.000     1.777
+| (intra 'clb' routing)                                          0.000     1.777
+[7228].in[0] (.names at (12,5))                                  0.000     1.777
+| (primitive '.names' combinational delay)                       0.235     2.012
+[7228].out[0] (.names at (12,5))                                 0.000     2.012
+| (intra 'clb' routing)                                          0.000     2.012
+[7233].in[1] (.names at (12,5))                                  0.000     2.012
+| (primitive '.names' combinational delay)                       0.235     2.247
+[7233].out[0] (.names at (12,5))                                 0.000     2.247
+| (intra 'clb' routing)                                          0.000     2.247
+[7235].in[0] (.names at (12,5))                                  0.000     2.247
+| (primitive '.names' combinational delay)                       0.235     2.482
+[7235].out[0] (.names at (12,5))                                 0.000     2.482
+| (intra 'clb' routing)                                          0.000     2.482
+n_n45.in[1] (.names at (12,5))                                   0.000     2.482
+| (primitive '.names' combinational delay)                       0.235     2.717
+n_n45.out[0] (.names at (12,5))                                  0.000     2.717
+| (intra 'clb' routing)                                          0.000     2.717
+n_n852.D[0] (.latch at (12,5))                                   0.000     2.717
+data arrival time                                                          2.717
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n852.clk[0] (.latch at (12,5))                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.717
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.651
+
+
+#Path 11
+Startpoint: n_n853.Q[0] (.latch at (8,9) clocked by clock)
+Endpoint  : n_n853.D[0] (.latch at (8,9) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n853.clk[0] (.latch at (8,9))                                  0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n853.Q[0] (.latch at (8,9)) [clock-to-output]                  0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.220     0.344
+| (intra 'clb' routing)                                          0.000     0.344
+[7875].in[0] (.names at (7,12))                                  0.000     0.344
+| (primitive '.names' combinational delay)                       0.235     0.579
+[7875].out[0] (.names at (7,12))                                 0.000     0.579
+| (intra 'clb' routing)                                          0.000     0.579
+[7877].in[1] (.names at (7,12))                                  0.000     0.579
+| (primitive '.names' combinational delay)                       0.235     0.814
+[7877].out[0] (.names at (7,12))                                 0.000     0.814
+| (intra 'clb' routing)                                          0.000     0.814
+[317].in[1] (.names at (7,12))                                   0.000     0.814
+| (primitive '.names' combinational delay)                       0.235     1.049
+[317].out[0] (.names at (7,12))                                  0.000     1.049
+| (intra 'clb' routing)                                          0.000     1.049
+[7987].in[1] (.names at (7,12))                                  0.000     1.049
+| (primitive '.names' combinational delay)                       0.235     1.284
+[7987].out[0] (.names at (7,12))                                 0.000     1.284
+| (intra 'clb' routing)                                          0.000     1.284
+| (inter-block routing)                                          0.219     1.503
+| (intra 'clb' routing)                                          0.000     1.503
+[7998].in[0] (.names at (7,11))                                  0.000     1.503
+| (primitive '.names' combinational delay)                       0.235     1.738
+[7998].out[0] (.names at (7,11))                                 0.000     1.738
+| (intra 'clb' routing)                                          0.000     1.738
+| (inter-block routing)                                          0.350     2.088
+| (intra 'clb' routing)                                          0.000     2.088
+[8004].in[1] (.names at (8,9))                                   0.000     2.088
+| (primitive '.names' combinational delay)                       0.235     2.323
+[8004].out[0] (.names at (8,9))                                  0.000     2.323
+| (intra 'clb' routing)                                          0.000     2.323
+[8007].in[1] (.names at (8,9))                                   0.000     2.323
+| (primitive '.names' combinational delay)                       0.235     2.558
+[8007].out[0] (.names at (8,9))                                  0.000     2.558
+| (intra 'clb' routing)                                          0.000     2.558
+n_n46.in[1] (.names at (8,9))                                    0.000     2.558
+| (primitive '.names' combinational delay)                       0.235     2.793
+n_n46.out[0] (.names at (8,9))                                   0.000     2.793
+| (intra 'clb' routing)                                          0.000     2.793
+n_n853.D[0] (.latch at (8,9))                                    0.000     2.793
+data arrival time                                                          2.793
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n853.clk[0] (.latch at (8,9))                                  0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.793
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.727
+
+
+#Path 12
+Startpoint: n_n854.Q[0] (.latch at (12,9) clocked by clock)
+Endpoint  : n_n854.D[0] (.latch at (12,9) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n854.clk[0] (.latch at (12,9))                                 0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n854.Q[0] (.latch at (12,9)) [clock-to-output]                 0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.220     0.344
+| (intra 'clb' routing)                                          0.000     0.344
+[8191].in[1] (.names at (11,12))                                 0.000     0.344
+| (primitive '.names' combinational delay)                       0.235     0.579
+[8191].out[0] (.names at (11,12))                                0.000     0.579
+| (intra 'clb' routing)                                          0.000     0.579
+[8193].in[1] (.names at (11,12))                                 0.000     0.579
+| (primitive '.names' combinational delay)                       0.235     0.814
+[8193].out[0] (.names at (11,12))                                0.000     0.814
+| (intra 'clb' routing)                                          0.000     0.814
+[8194].in[1] (.names at (11,12))                                 0.000     0.814
+| (primitive '.names' combinational delay)                       0.235     1.049
+[8194].out[0] (.names at (11,12))                                0.000     1.049
+| (intra 'clb' routing)                                          0.000     1.049
+[121].in[1] (.names at (11,12))                                  0.000     1.049
+| (primitive '.names' combinational delay)                       0.235     1.284
+[121].out[0] (.names at (11,12))                                 0.000     1.284
+| (intra 'clb' routing)                                          0.000     1.284
+[8709].in[0] (.names at (11,12))                                 0.000     1.284
+| (primitive '.names' combinational delay)                       0.235     1.519
+[8709].out[0] (.names at (11,12))                                0.000     1.519
+| (intra 'clb' routing)                                          0.000     1.519
+| (inter-block routing)                                          0.219     1.738
+| (intra 'clb' routing)                                          0.000     1.738
+[8731].in[1] (.names at (12,9))                                  0.000     1.738
+| (primitive '.names' combinational delay)                       0.235     1.973
+[8731].out[0] (.names at (12,9))                                 0.000     1.973
+| (intra 'clb' routing)                                          0.000     1.973
+[8742].in[1] (.names at (12,9))                                  0.000     1.973
+| (primitive '.names' combinational delay)                       0.235     2.208
+[8742].out[0] (.names at (12,9))                                 0.000     2.208
+| (intra 'clb' routing)                                          0.000     2.208
+[8747].in[0] (.names at (12,9))                                  0.000     2.208
+| (primitive '.names' combinational delay)                       0.235     2.443
+[8747].out[0] (.names at (12,9))                                 0.000     2.443
+| (intra 'clb' routing)                                          0.000     2.443
+[8750].in[1] (.names at (12,9))                                  0.000     2.443
+| (primitive '.names' combinational delay)                       0.235     2.678
+[8750].out[0] (.names at (12,9))                                 0.000     2.678
+| (intra 'clb' routing)                                          0.000     2.678
+n_n47.in[1] (.names at (12,9))                                   0.000     2.678
+| (primitive '.names' combinational delay)                       0.235     2.913
+n_n47.out[0] (.names at (12,9))                                  0.000     2.913
+| (intra 'clb' routing)                                          0.000     2.913
+n_n854.D[0] (.latch at (12,9))                                   0.000     2.913
+data arrival time                                                          2.913
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n854.clk[0] (.latch at (12,9))                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.913
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.847
+
+
+#Path 13
+Startpoint: n_n854.Q[0] (.latch at (12,9) clocked by clock)
+Endpoint  : n_n856.D[0] (.latch at (8,5) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n854.clk[0] (.latch at (12,9))                                 0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n854.Q[0] (.latch at (12,9)) [clock-to-output]                 0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.365     0.489
+| (intra 'clb' routing)                                          0.000     0.489
+[6296].in[1] (.names at (8,12))                                  0.000     0.489
+| (primitive '.names' combinational delay)                       0.235     0.724
+[6296].out[0] (.names at (8,12))                                 0.000     0.724
+| (intra 'clb' routing)                                          0.000     0.724
+[6298].in[1] (.names at (8,12))                                  0.000     0.724
+| (primitive '.names' combinational delay)                       0.235     0.959
+[6298].out[0] (.names at (8,12))                                 0.000     0.959
+| (intra 'clb' routing)                                          0.000     0.959
+[500].in[1] (.names at (8,12))                                   0.000     0.959
+| (primitive '.names' combinational delay)                       0.235     1.194
+[500].out[0] (.names at (8,12))                                  0.000     1.194
+| (intra 'clb' routing)                                          0.000     1.194
+| (inter-block routing)                                          0.212     1.406
+| (intra 'clb' routing)                                          0.000     1.406
+[6365].in[0] (.names at (9,12))                                  0.000     1.406
+| (primitive '.names' combinational delay)                       0.235     1.641
+[6365].out[0] (.names at (9,12))                                 0.000     1.641
+| (intra 'clb' routing)                                          0.000     1.641
+[6372].in[1] (.names at (9,12))                                  0.000     1.641
+| (primitive '.names' combinational delay)                       0.235     1.876
+[6372].out[0] (.names at (9,12))                                 0.000     1.876
+| (intra 'clb' routing)                                          0.000     1.876
+[6375].in[0] (.names at (9,12))                                  0.000     1.876
+| (primitive '.names' combinational delay)                       0.235     2.111
+[6375].out[0] (.names at (9,12))                                 0.000     2.111
+| (intra 'clb' routing)                                          0.000     2.111
+| (inter-block routing)                                          0.220     2.331
+| (intra 'clb' routing)                                          0.000     2.331
+n_n49.in[0] (.names at (9,11))                                   0.000     2.331
+| (primitive '.names' combinational delay)                       0.235     2.566
+n_n49.out[0] (.names at (9,11))                                  0.000     2.566
+| (intra 'clb' routing)                                          0.000     2.566
+| (inter-block routing)                                          0.368     2.934
+| (intra 'clb' routing)                                          0.000     2.934
+n_n856.D[0] (.latch at (8,5))                                    0.000     2.934
+data arrival time                                                          2.934
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n856.clk[0] (.latch at (8,5))                                  0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.934
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.868
+
+
+#Path 14
+Startpoint: n_n854.Q[0] (.latch at (12,9) clocked by clock)
+Endpoint  : n_n857.D[0] (.latch at (11,5) clocked by clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n854.clk[0] (.latch at (12,9))                                 0.000     0.000
+| (primitive '.latch' Tcq_min)                                   0.124     0.124
+n_n854.Q[0] (.latch at (12,9)) [clock-to-output]                 0.000     0.124
+| (intra 'clb' routing)                                          0.000     0.124
+| (inter-block routing)                                          0.366     0.490
+| (intra 'clb' routing)                                          0.000     0.490
+[5971].in[1] (.names at (13,12))                                 0.000     0.490
+| (primitive '.names' combinational delay)                       0.235     0.725
+[5971].out[0] (.names at (13,12))                                0.000     0.725
+| (intra 'clb' routing)                                          0.000     0.725
+[5972].in[0] (.names at (13,12))                                 0.000     0.725
+| (primitive '.names' combinational delay)                       0.235     0.960
+[5972].out[0] (.names at (13,12))                                0.000     0.960
+| (intra 'clb' routing)                                          0.000     0.960
+[5973].in[1] (.names at (13,12))                                 0.000     0.960
+| (primitive '.names' combinational delay)                       0.235     1.195
+[5973].out[0] (.names at (13,12))                                0.000     1.195
+| (intra 'clb' routing)                                          0.000     1.195
+| (inter-block routing)                                          0.208     1.403
+| (intra 'clb' routing)                                          0.000     1.403
+[544].in[1] (.names at (12,12))                                  0.000     1.403
+| (primitive '.names' combinational delay)                       0.235     1.638
+[544].out[0] (.names at (12,12))                                 0.000     1.638
+| (intra 'clb' routing)                                          0.000     1.638
+[6015].in[1] (.names at (12,12))                                 0.000     1.638
+| (primitive '.names' combinational delay)                       0.235     1.873
+[6015].out[0] (.names at (12,12))                                0.000     1.873
+| (intra 'clb' routing)                                          0.000     1.873
+[6018].in[0] (.names at (12,12))                                 0.000     1.873
+| (primitive '.names' combinational delay)                       0.235     2.108
+[6018].out[0] (.names at (12,12))                                0.000     2.108
+| (intra 'clb' routing)                                          0.000     2.108
+n_n50.in[0] (.names at (12,12))                                  0.000     2.108
+| (primitive '.names' combinational delay)                       0.235     2.343
+n_n50.out[0] (.names at (12,12))                                 0.000     2.343
+| (intra 'clb' routing)                                          0.000     2.343
+| (inter-block routing)                                          0.652     2.995
+| (intra 'clb' routing)                                          0.000     2.995
+n_n857.D[0] (.latch at (11,5))                                   0.000     2.995
+data arrival time                                                          2.995
+
+clock clock (rise edge)                                          0.000     0.000
+clock source latency                                             0.000     0.000
+clock.inpad[0] (.input at (17,18))                               0.000     0.000
+| (intra 'io' routing)                                           0.000     0.000
+| (inter-block routing)                                          0.000     0.000
+| (intra 'clb' routing)                                          0.000     0.000
+n_n857.clk[0] (.latch at (11,5))                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          2.995
+--------------------------------------------------------------------------------
+slack (MET)                                                                2.929
+
+
+#End of timing report

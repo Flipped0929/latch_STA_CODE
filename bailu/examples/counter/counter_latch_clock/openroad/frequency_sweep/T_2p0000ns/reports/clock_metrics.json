@@ -1,0 +1,49 @@
+{
+  "phases": {
+    "phi1": {
+      "rise": {
+        "latency_min_ns": 0.253012,
+        "latency_max_ns": 0.253898,
+        "skew_envelope_ns": 0.000886,
+        "slew_max_ns": 0.07349,
+        "buffer_stages": [
+          2
+        ]
+      },
+      "fall": {
+        "latency_min_ns": 0.248053,
+        "latency_max_ns": 0.248206,
+        "skew_envelope_ns": 0.000153,
+        "slew_max_ns": 0.051444,
+        "buffer_stages": [
+          2
+        ]
+      }
+    },
+    "phi2": {
+      "rise": {
+        "latency_min_ns": 0.250518,
+        "latency_max_ns": 0.250706,
+        "skew_envelope_ns": 0.000188,
+        "slew_max_ns": 0.072082,
+        "buffer_stages": [
+          1
+        ]
+      },
+      "fall": {
+        "latency_min_ns": 0.263721,
+        "latency_max_ns": 0.264428,
+        "skew_envelope_ns": 0.000707,
+        "slew_max_ns": 0.051876,
+        "buffer_stages": [
+          1
+        ]
+      }
+    }
+  },
+  "nominal_phase_gaps": {
+    "phi1_close_to_phi2_open_ns": 0.022312,
+    "phi2_close_to_next_phi1_open_ns": 0.008584
+  },
+  "note": "Pin latency from full SPEF STA clock paths; phase gaps exclude uncertainty and OCV."
+}
