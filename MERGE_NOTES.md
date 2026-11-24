@@ -90,7 +90,6 @@ To refresh later: re-clone, re-run the filter, and commit the delta. Because `ba
 `rsync`/`robocopy` followed by a single commit.
 
 ## 6. Target repository
-
 This snapshot is intended to replace the contents of
 `https://github.com/Flipped0929/latch_STA_CODE`.
 
@@ -112,3 +111,17 @@ Before pushing, optionally preserve the old state:
 git fetch https://github.com/Flipped0929/latch_STA_CODE main:old-main
 git push origin old-main          # keeps the previous tree on a branch
 ```
+
+## 7. Third folder: `flipped/`
+
+`flipped/` is not an upstream import; it is this project's own result bundle, copied
+verbatim from `D:\FDU\FDUROP\submission_en` (64 files, 1.08 MB) on 2026-11-24 and committed
+in the same history.
+
+Its sources are the working trees `07_vivado_lab/all_latch_work` (experiment 1) and
+`07_vivado_lab/borrow_arb` (experiment 2), which are not part of this repository. Inside the
+bundle, `flipped/REPORT.md` §6 documents how to regenerate every number, and
+`flipped/scripts/` contains the automation used.
+
+Two files in `flipped/waves/` (`.wdb`) are force-added because the repository `.gitignore`
+excludes waveform databases; they are optional demonstration material.
