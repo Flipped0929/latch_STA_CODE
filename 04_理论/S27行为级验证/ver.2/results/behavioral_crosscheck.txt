@@ -1,0 +1,13 @@
+S27 optimized schedule cross-check
+Date: 2026-10-24
+Simulator: ver.1/sim.py (Python 3.12.14)
+Replay command from the ver.2 directory: python ..\ver.1\sim.py 5.0607 --W 0.39099 --skew 1.52313 0.82549 0.70663 --hold 0.10
+
+Functional comparison (cycles 80-159):
+T=5.0607 W=0.3910 skew=[0.0, 1.52313, 0.82549, 0.70663] -> pass=True offset=0 state_match=1.0000 tap_match=1.0000 io_ok=True
+
+Dynamic hold observation (cycles 80-159, seed 2701):
+min-delay hold: pass=True hold=0.1000 ns min_slack=-0.0000 ns worst=IO->G7 cycle=81 available=0.1000 ns
+
+The displayed -0.0000 ns is floating-point rounding at a zero-slack boundary; the simulator reports pass=True.
+This is a finite-window, stimulus-dependent behavioral cross-check. The all-edge static difference-constraint check is reported separately in edge_slacks.csv.
