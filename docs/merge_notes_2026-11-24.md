@@ -2,9 +2,13 @@
 
 > **Directory layout note (2026-11-25).** This file records the merge performed on 2026-11-24,
 > when the tree was organised by person (`bailu/` + `zqilin/` + `flipped/`). The tree was later
-> reorganised by phase (`00_工具与算法` … `05_ASIC`); see [`../STRUCTURE.md`](../STRUCTURE.md)
-> for the current layout. File contents were not changed during that reorganisation, only moved,
-> and the four theory directories were additionally recovered from zqilin's legacy branches.
+> reorganised by phase (`00_工具与算法` … `03_Vivado实验`); see [`../STRUCTURE.md`](../STRUCTURE.md)
+> for the current layout. File contents were not changed during that reorganisation, only moved.
+>
+> The four theory directories that were briefly recovered from zqilin's legacy branches were
+> removed again on the author's request; they remain reachable on the branches
+> `add-s27-validation`, `S298行为级验证`, `add-t-w-feasibility` and `two-stage-latch-model`.
+
 
 Record of how this repository was produced, so the merge can be reproduced, audited or
 refreshed.
